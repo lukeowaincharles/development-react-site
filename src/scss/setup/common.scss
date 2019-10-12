@@ -54,6 +54,16 @@ ul {
   }
 }
 
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.title,
+.web-link {
+  font-weight: bold;
+}
+
 .text-align__left {
   text-align: left;
 }
