@@ -16,7 +16,7 @@ export default class Hero extends React.Component {
   render() {
 
     const items = this.state.socialNavigation.map((item, key) =>
-      <a key={item.id} href={item.href}><i className={item.class, "fab"}></i></a>
+      <a key={item.id} href={item.href}><i className={[item.class, "fab"].join(' ')}></i></a>
     );
 
     return (
