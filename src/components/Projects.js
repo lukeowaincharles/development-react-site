@@ -9,6 +9,7 @@ export default class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      hover: false,
       projectContent: [
         {id: 1, title: 'The Macallan', text: 'The Masters of Photography was a really great project for me, it included one of my passions Photography and I also like the odd whisky on occasion. This project taught me a few new things too: better naming conventions for classes(BEM), building initial layouts using Handlebars and re- using components which sped up the build.This project also taught me to make sure my code and comments were at a high standard due to commiting changes to the clients repository.', href: 'https://bit.ly/2PB9ik0', class: 'macallan'},
         {id: 2, title: 'Mulberry Japan', text: 'Mulberry Japan was an interesting project, there were a lot of people involved and rather a large time difference to think about. But even with a large team, language barriers and time differences there was good communication and logical thinking which pushed this project on. I mainly worked on the CSS for this project, making sure the quality of the site was true to the quality of Mulberry as a brand. (Sadly I didn\'t learn any Japanese).', href: 'https://jp.mulberry.com/', class: 'mulberry'},
@@ -17,16 +18,28 @@ export default class Projects extends React.Component {
         {id: 5, title: 'Citrus Enterprise', text: 'Citrus Enterprise is a hands-on business coaching company that looks to grow their clients businesses long term. With their different approach to business growth, Citrus Enterprise required a website that stood out from the rest of the industry competition. I designed this website using Sketch and the build uses Wordpress as a CMS so that the client is able to keep the site up to date.The client and I had worked together on a previous corporate project which was quite rigid to this field but meant that we already had a good rapport.It wasn\'t until we worked on this project that I understood how important it was to have clear communication.', href: 'https://citrusenterprise.com/', class: 'citrus'},
       ]
     }
+    this.toggleHover = this.toggleHover.bind(this);
+  }
+
+  toggleHover() {
+    this.setState({hover: !this.state.hover})
   }
 
   render() {
 
+    let toggleHoverClass;
+    if (this.state.hover) {
+      toggleHoverClass = 'is-hovered';
+    } else {
+      toggleHoverClass = '';
+    }
+
     const projectItems = this.state.projectContent.map((item, key) =>
-    <div key={item.id} className={[item.class, "projects_wrapper"].join(' ')}>
+    <div key={item.id} className={[item.class, toggleHoverClass, "projects_wrapper"].join(' ')}>
       <div className="col-4 section-margin">
         <h2 className="title">{item.title}</h2>
         <p className="text">{item.text}</p>
-        <div className="device-icons_wrapper">
+        <div className="device-icons_wrapper" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
           <img className="device-icons device-icons_desktop" src={desktopIcon} alt="icon desktop computer" />
           <div className="device-icons_grouped" id="devicesGrouped">
             <img className="device-icons device-icons_ipad" src={tabletIcon} alt="icon tablet device" />
