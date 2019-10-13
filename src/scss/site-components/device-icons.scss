@@ -1,0 +1,45 @@
+.device-icons {
+  display: none;
+  
+  &_wrapper {
+    position: relative;
+    &:hover,
+    &:active {
+      .device-icons_desktop {
+        opacity: .4;
+      }
+
+      .device-icons_grouped {
+        left: 63px;
+        opacity: 1;  
+      }
+    }
+  }
+
+  &_mobile {
+    width: 15px;
+  }
+
+  &_ipad {
+    width: 23px;
+  }
+
+  &_desktop {
+    width: 47px;
+  }
+
+  &_grouped {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+  }
+}
+
+@include mq('desktop') {
+  .device-icons {
+    padding: 0 5px 22px;
+    display: inline-block;
+  }
+}
