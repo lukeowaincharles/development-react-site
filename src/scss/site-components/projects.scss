@@ -132,14 +132,14 @@
         background-image: url(../../assets/images/run_devices.png);
       }
     }
-  }
 
-  .text {
-    width: 80%;
-  }
-
-  .project-image_background {
-    height: 300px;
+    .text {
+      width: 80%;
+    }
+  
+    .project-image_background {
+      height: 300px;
+    }
   }
 }
 
@@ -220,37 +220,37 @@
         background-image: url(../../assets/images/run_devices.png);
       }
     }
-  }
 
-  .project-image_background {
-    height: 550px;
-    width: 770px;
-    top: 45px;
-    position: absolute;
-
-    &.device-image {
-      height: 484px;
-      width: 772px;
-      top: 55px;
+    .project-image_background {
+      height: 550px;
+      width: 770px;
+      top: 45px;
+      position: absolute;
+  
+      &.device-image {
+        height: 484px;
+        width: 772px;
+        top: 55px;
+      }
     }
-  }
-
-  .col-4,
-  .col-6 {
-    display: inline-block;
-  }
-
-  .col-4 {
-    width: 320px;
-  }
-
-  .col-6 {
-    width: 600px;
-  }
-
-  .text {
-    width: 100%;
-    font-size: 14px;
+  
+    .col-4,
+    .col-6 {
+      display: inline-block;
+    }
+  
+    .col-4 {
+      width: 320px;
+    }
+  
+    .col-6 {
+      width: 600px;
+    }
+  
+    .text {
+      width: 100%;
+      font-size: 14px;
+    }
   }
 }
 
