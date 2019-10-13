@@ -47,6 +47,19 @@ ul {
   padding-left: 0;
 }
 
+.col-small {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-right: 1.2rem;
+  flex: 0 0 100%;
+  @include mq('tablet') {
+      flex: 0 0 14%;
+      max-width: 14%;
+      padding-right: 1.875rem;
+  }
+}
+
 .section-margin {
   margin: 10px 30px;
   &_sides {
@@ -79,6 +92,12 @@ ul {
 @include mq('tablet') {
   .width-restrict__medium {
     width: 600px;
+  }
+
+  .col-small {
+    flex: 0 0 14%;
+    max-width: 14%;
+    padding-right: 30px;
   }
 }
 
