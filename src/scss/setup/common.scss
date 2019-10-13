@@ -36,9 +36,10 @@ a {
   text-decoration: none;
   color: #FFFFFF;
   transition: color 400ms;
+
   &:hover,
   &:active {
-      color: $color-primary-6;
+    color: $color-primary-6;
   }
 }
 
@@ -53,17 +54,19 @@ ul {
   position: relative;
   padding-right: 1.2rem;
   flex: 0 0 100%;
+
   @include mq('tablet') {
-      flex: 0 0 14%;
-      max-width: 14%;
-      padding-right: 1.875rem;
+    flex: 0 0 14%;
+    max-width: 14%;
+    padding-right: 1.875rem;
   }
 }
 
 .section-margin {
   margin: 10px 30px;
+
   &_sides {
-      margin: 0 15px;
+    margin: 0 15px;
   }
 }
 
@@ -89,6 +92,44 @@ ul {
   width: 300px;
 }
 
+.web-link {
+  position: relative;
+}
+
+.arrow_right {
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  height: 1px;
+  width: 50px;
+  right: 0;
+  top: 50%;
+  margin: auto;
+  transform: scaleX(1) translateX(70px);
+  transform-origin: left;
+  pointer-events: none;
+  transition: all .3s cubic-bezier(.12, .75, .4, 1), border-bottom .6s ease-in-out;
+
+  &:before,
+  &:after {
+    @include pseudo;
+    width: 1px;
+    height: 9px;
+    background-color: #FFF;
+    right: 2px;
+    transition: background-color .6s ease-in-out;
+  }
+
+  &:before {
+    top: -6px;
+    transform: rotate(-45deg);
+  }
+
+  &:after {
+    top: 0;
+    transform: rotate(45deg);
+  }
+}
+
 @include mq('tablet') {
   .width-restrict__medium {
     width: 600px;
@@ -104,5 +145,24 @@ ul {
 @include mq('desktop') {
   .section-margin {
     margin: 0 70px;
+  }
+
+  .web-link {
+    padding-right: 50px;
+    &:hover,
+    &:active {
+      .arrow_right {
+        transform: scaleX(1) translateX(30px);
+        border-bottom: 1px solid $color-primary-1;
+        &:before,
+        &:after {
+          background: $color-primary-1;
+        }
+      }
+    }
+  }
+
+  .arrow_right {
+    transform: scaleX(0) translateX(0);
   }
 }
