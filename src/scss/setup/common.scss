@@ -160,6 +160,21 @@ ul {
         }
       }
     }
+
+    .hiscox & {
+      &:hover,
+      &:active {
+        color: $color-primary-7;
+        .arrow_right {
+          border-bottom: 1px solid $color-primary-7;
+
+          &:before,
+          &:after {
+            background: $color-primary-7;
+          }
+        }
+      }
+    }
   }
 
   .arrow_right {
