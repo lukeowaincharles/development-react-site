@@ -1,0 +1,305 @@
+.projects_wrapper {
+  padding-top: 20px;
+  position: relative;
+  overflow: hidden;
+
+  a {
+    &:hover,
+    &:active {
+        color: $color-primary-1;
+    }
+  }
+  
+  .text {
+    margin-bottom: 37px;
+    opacity: .85;
+  }
+
+  .project-image_background {
+    background-size: cover;
+    height: 500px;
+    transition: 600ms opacity ease-in-out;
+    
+    &.device-image {
+      opacity: 0;
+      position: absolute;
+    }
+  }
+
+  &.citrus {
+      background-color: $color-primary-6;                
+      .default {
+          background-image: url(../../assets/images/citrus_mobile.png);
+
+          @include mq('tablet') {
+              background-image: url(../../assets/images/citrus_devices.png);
+              position: relative;
+              top: 30px;
+          }
+          @include mq('desktop') {
+              background-image: url(../../assets/images/citrus_desktop.png);
+              top: 0;
+          }
+      }
+      .device-image {
+          @include mq('desktop') {
+              background-image: url(../../assets/images/citrus_devices.png);
+          }
+      }
+  }
+  // &.forage-notes {
+  //     background-color: $color-primary-4;
+  //     .default {
+  //         background-image: url(..\..\..\dist\assets\img\forage-notes_mobile.png);
+  //         @include mq('tablet') {
+  //             background-image: url(..\..\..\dist\assets\img\forage-notes_devices.png);
+  //             position: relative;
+  //             top: 30px;
+  //         }
+  //         @include mq('desktop') {
+  //             background-image: url(..\..\..\dist\assets\img\forage-notes_desktop.png);
+  //             top: 0;
+  //         }
+  //     }
+  //     .device-image {
+  //         @include mq('desktop') {
+  //             background-image: url(..\..\..\dist\assets\img\forage-notes_devices.png);
+  //         }
+  //     }
+  // }
+  &.macallan {
+      background-color: $color-primary-2;
+      .default {
+          background-image: url(../../assets/images/macallan_mobile.png);
+
+          @include mq('tablet') {
+              background-image: url(../../assets/images/macallan_devices.png);
+              position: relative;
+              top: 30px;
+          }
+
+          @include mq('desktop') {
+              background-image: url(../../assets/images/macallan_desktop.png);
+              top: 0;
+          }
+      }
+      .device-image {
+          @include mq('desktop') {
+              background-image: url(../../assets/images/macallan_devices.png);
+          }
+      }
+  }
+  &.mulberry {
+      background-color: $color-primary-3;
+      flex-direction: row-reverse;
+      .project-image_background {
+          background-size: cover;
+          height: 500px;
+          @include mq('tablet') {
+              height: 300px;
+          }
+          @include mq('desktop') {
+              height: 460px;
+              position: absolute;
+              left: -160px;
+              width: 795px;
+              top: 95px;
+          }
+          @include mq('desktop-l') {
+              height: 520px;
+              left: -150px;
+              width: 915px;
+              top: 55px;
+          }
+          @include mq('desktop-xl') {
+              left: 0;
+          }
+          @include mq('desktop-xxl') {
+              left: 270px;
+              .chrome.win & {
+                  left: 200px
+              }
+          }
+          @include mq('desktop-sw') {
+              left: 480px;
+              .chrome.win & {
+                  left: 400px
+              }
+          }
+      }
+      .default {
+          background-image: url(../../assets/images/mulberry_mobile.png);
+          @include mq('tablet') {
+              background-image: url(../../assets/images/mulberry_devices.png);
+          }
+          @include mq('desktop') {
+              background-image: url(../../assets/images/mulberry_desktop.png);
+          }
+      }
+      .device-image {
+          @include mq('desktop') {
+              background-image: url(../../assets/images/mulberry_devices.png);
+              height: 570px;
+              top: 35px;
+              left: -290px;
+              width: 900px;
+          }
+          @include mq('desktop-l') {
+              left: -150px;
+              width: 915px;
+          }
+          @include mq('desktop-xl') {
+              left: 0;
+          }
+          @include mq('desktop-xxl') {
+              left: 270px;
+              .chrome.win & {
+                  left: 200px
+              }
+          }
+          @include mq('desktop-sw') {
+              left: 480px;
+              .chrome.win & {
+                  left: 400px
+              }
+          }
+      }
+  }
+  &.run {
+      background-color: $color-primary-5;
+      flex-direction: row-reverse;
+      .project-image_background {
+          background-size: cover;
+          height: 500px;
+          @include mq('tablet') {
+              height: 300px;
+          }
+          @include mq('desktop') {
+              height: 460px;
+              position: absolute;
+              left: -160px;
+              width: 795px;
+              top: 95px;
+          }
+          @include mq('desktop-l') {
+              height: 520px;
+              left: -150px;
+              width: 915px;
+              top: 55px;
+          }
+          @include mq('desktop-xl') {
+              left: 0;
+          }
+          @include mq('desktop-xxl') {
+              left: 270px;
+              .chrome.win & {
+                  left: 200px
+              }
+          }
+          @include mq('desktop-sw') {
+              left: 480px;
+              .chrome.win & {
+                  left: 400px
+              }
+          }
+      }
+      .default {
+          background-image: url(../../assets/images/run_mobile.png);
+
+          @include mq('tablet') {
+              background-image: url(../../assets/images/run_devices.png);
+          }
+
+          @include mq('desktop') {
+              background-image: url(../../assets/images/run_desktop.png);
+          }
+      }
+      .device-image {
+          @include mq('desktop') {
+              background-image: url(../../assets/images/run_devices.png);
+              height: 570px;
+              top: 35px;
+              left: -290px;
+              width: 900px;
+          }
+          @include mq('desktop-l') {
+              left: -150px;
+              width: 915px;
+          }
+          @include mq('desktop-xl') {
+              left: 0;
+          }
+          @include mq('desktop-xxl') {
+              left: 270px;
+              .chrome.win & {
+                  left: 200px
+              }
+          }
+          @include mq('desktop-sw') {
+              left: 480px;
+              .chrome.win & {
+                  left: 400px
+              }
+          }
+      }
+  }
+  &.is-hovered {
+    .default {
+      opacity: 0;
+    }
+    .device-image {
+      opacity: 1;
+    }
+  }
+}
+
+@include mq('tablet') {
+  .text {
+    width: 80%;
+  }
+
+  .project-image_background {
+    height: 300px;
+  }
+}
+
+@include mq('desktop') {
+  .projects_wrapper {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-image_background {
+    height: 550px;
+    width: 770px;
+    top: 45px;
+    position: absolute;
+
+    &.device-image {
+      height: 484px;
+      width: 772px;
+      top: 55px;
+    }
+  }
+
+  .col-4,
+  .col-6 {
+    display: inline-block;
+  }
+
+  .col-4 {
+    width: 320px;
+  }
+
+  .col-6 {
+    width: 600px;
+  }
+
+  .text {
+    width: 100%;
+    font-size: 14px;
+  }
+
+}
