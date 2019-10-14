@@ -191,13 +191,13 @@
         left: -160px;
         width: 795px;
         top: 95px;
-      }
 
-      .device-image {
-        height: 570px;
-        top: 35px;
-        left: -290px;
-        width: 900px;
+        &.device-image {
+          height: 570px;
+          top: 35px;
+          left: -290px;
+          width: 900px;
+        }
       }
     }
 
@@ -265,11 +265,6 @@
         width: 915px;
         top: 55px;
       }
-
-      .device-image {
-        left: -150px;
-        width: 915px;
-      }
     }
   }
 }
@@ -282,10 +277,6 @@
       .project-image_background {
         left: 0;
       }
-
-      .device-image {
-        left: 0;
-      }
     }
   }
 }
@@ -296,11 +287,7 @@
     &.mulberry,
     &.run {
       .project-image_background {
-        left: 200px;
-      }
-
-      .device-image {
-        left: 200px;
+        left: 270px;
       }
     }
   }
@@ -312,11 +299,7 @@
     &.mulberry,
     &.run {
       .project-image_background {
-        left: 400px;
-      }
-
-      .device-image {
-        left: 400px;
+        left: 480px;
       }
     }
   }
