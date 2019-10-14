@@ -5,7 +5,6 @@ import mobileIcon from '../assets/images/icons/mobile_icon.svg';
 
 export default class Projects extends React.Component {
   
-
   constructor(props) {
     super(props);
     this.state = {
@@ -25,21 +24,22 @@ export default class Projects extends React.Component {
     this.setState({hover: !this.state.hover})
   }
 
+  handleMouseEnter = (e) => {
+    e.target.closest('.projects_wrapper').classList.add('is-hovered');
+  }
+
+  handleMouseLeave = (e) => {
+    e.target.closest('.projects_wrapper').classList.remove('is-hovered');
+  }
+
   render() {
 
-    let toggleHoverClass;
-    if (this.state.hover) {
-      toggleHoverClass = 'is-hovered';
-    } else {
-      toggleHoverClass = '';
-    }
-
     const projectItems = this.state.projectContent.map((item, key) =>
-    <div key={item.id} className={[item.class, toggleHoverClass, "projects_wrapper"].join(' ')}>
+    <div key={item.id} className={[item.class, "projects_wrapper"].join(' ')}>
       <div className="col-4 section-margin">
         <h2 className="title">{item.title}</h2>
         <p className="text">{item.text}</p>
-        <div className="device-icons_wrapper" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
+        <div className="device-icons_wrapper" onMouseEnter={(e) => this.handleMouseEnter(e)} onMouseLeave={(e) => this.handleMouseLeave(e)}>
           <img className="device-icons device-icons_desktop" src={desktopIcon} alt="icon desktop computer" />
           <div className="device-icons_grouped" id="devicesGrouped">
             <img className="device-icons device-icons_ipad" src={tabletIcon} alt="icon tablet device" />
