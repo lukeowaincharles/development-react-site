@@ -39,7 +39,7 @@
     background-color: $color-primary-1;
 
     .default {
-      // background-image: url(../../assets/images/);
+      background-image: url(../../assets/images/hiscox_mobile.png);
     }
   }
 
@@ -100,7 +100,7 @@
 
     &.hiscox {
       .default {
-        // background-image: url(../../assets/images/);
+        background-image: url(../../assets/images/hiscox_devices.png);
         position: relative;
         top: 30px;
       }
@@ -163,12 +163,12 @@
 
     &.hiscox {
       .default {
-        // background-image: url(../../assets/images/);
+        background-image: url(../../assets/images/hiscox_desktop.png);
         top: 0;
       }
 
       .device-image {
-        // background-image: url(../../assets/images/);
+        background-image: url(../../assets/images/hiscox_devices.png);
       }
     }
 
