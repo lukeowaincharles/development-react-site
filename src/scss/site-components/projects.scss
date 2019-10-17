@@ -274,7 +274,8 @@
 
     &.mulberry,
     &.run {
-      .project-image_background {
+      .project-image_background,
+      .project-image_background.device-image {
         left: 0;
       }
     }
