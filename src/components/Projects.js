@@ -58,7 +58,7 @@ export default class Projects extends React.Component {
     );
 
     return (
-      <section className="projects" id="projects">
+      <section className="projects" id="projects" name="#projects">
         {projectItems}
       </section>
     )

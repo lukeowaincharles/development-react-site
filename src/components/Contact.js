@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Hero extends React.Component {
+export default class Contact extends React.Component {
 
   constructor(props) {
     super(props);
@@ -20,7 +20,7 @@ export default class Hero extends React.Component {
     );
 
     return (
-      <div className="contact" id="contact">
+      <div className="contact" name="#contact" id="contact">
         <h2 className="title">Contact</h2>
         <p className="text">The best place for you to get in touch is through my email
           <br/><a href="mailto:lukeowaincharles@gmail.com">lukeowaincharles@gmail.com</a>
