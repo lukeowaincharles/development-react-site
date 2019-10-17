@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 export default class Hero extends React.Component {
 
@@ -8,7 +9,7 @@ export default class Hero extends React.Component {
         <h1>Hello, I'm Luke. A Frontend Developer,
           <br /> Photographer and Motorbike Rider.
         </h1>
-        <a href="#projects"><i className="fas fa-chevron-down"></i></a>
+        <Link href="#projects" to="#projects" spy={true} smooth={true} duration={800}><i className="fas fa-chevron-down"></i></Link>
       </div>
     )
   }

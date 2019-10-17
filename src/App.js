@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Nav />
         <Hero />
+        <Projects />
         <footer className="section-margin">
           <About />
           <Experience />
