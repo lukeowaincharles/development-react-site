@@ -54,12 +54,6 @@ ul {
   position: relative;
   padding-right: 1.2rem;
   flex: 0 0 100%;
-
-  @include mq('tablet') {
-    flex: 0 0 14%;
-    max-width: 14%;
-    padding-right: 1.875rem;
-  }
 }
 
 .section-margin {
