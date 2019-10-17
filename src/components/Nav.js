@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 export default class Nav extends React.Component {
 
@@ -16,7 +17,7 @@ export default class Nav extends React.Component {
 
     const items = this.state.navigation.map((item, key) =>
       <li key={item.id}>
-        <a href={item.href}>{item.title}</a>
+        <Link href={item.href} to={item.href} spy={true} smooth={true} duration={800}>{item.title}</Link>
       </li>
     );
 
