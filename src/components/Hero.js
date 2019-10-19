@@ -9,7 +9,7 @@ export default class Hero extends React.Component {
         <h1>Hello, I'm Luke. A Frontend Developer,
           <br /> Photographer and Motorbike Rider.
         </h1>
-        <Link href="#projects" to="#projects" spy={true} smooth={true} duration={800}><i className="fas fa-chevron-down"></i></Link>
+        <Link href="#projects" to="#projects" spy={true} smooth={true} duration={800} aria-label="Scroll to projects"><i className="fas fa-chevron-down"></i></Link>
       </div>
     )
   }
