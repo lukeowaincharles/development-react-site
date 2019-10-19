@@ -1,0 +1,36 @@
+footer {
+  padding: 30px 0 65px;
+
+  .about {
+    .title {
+      font-size: 30px;
+    }
+  }
+
+  .experience {
+    &_wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        padding-bottom: 6px;
+      }
+    }
+  }
+  .social {
+    i {
+      font-size: 32px;
+      padding-right: 8px
+    }
+  }
+}
+
+@include mq('desktop') {
+  footer {
+    padding: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
