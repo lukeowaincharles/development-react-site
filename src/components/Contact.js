@@ -35,6 +35,7 @@ export default class Contact extends React.Component {
           <br/>
           <a
             aria-label="Email link"
+            onClick={() => {Event("email", "emailLinkClicked", "Footer Email clicked");}}
             href="mailto:lukeowaincharles@gmail.com"
           >
             lukeowaincharles@gmail.com
