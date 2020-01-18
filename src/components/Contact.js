@@ -1,4 +1,5 @@
 import React from 'react';
+import { Event } from './Tracking';
 
 export default class Contact extends React.Component {
 
@@ -16,14 +17,29 @@ export default class Contact extends React.Component {
   render() {
 
     const items = this.state.socialNavigation.map((item, key) =>
-      <a key={item.id} href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.ariaLabel}><i className={[item.class, "fab"].join(' ')}></i></a>
+      <a
+        onClick={() => {Event("social", "socialIconClicked", `${item.title}`);}}
+        key={key}
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={item.ariaLabel}>
+        <i className={[item.class, "fab"].join(' ')}></i>
+      </a>
     );
 
     return (
       <div className="contact" name="#contact" id="contact">
         <h2 className="title">Contact</h2>
         <p className="text">The best place for you to get in touch is through my email
-          <br/><a href="mailto:lukeowaincharles@gmail.com">lukeowaincharles@gmail.com</a>
+          <br/>
+          <a
+            aria-label="Email link"
+            onClick={() => {Event("email", "emailLinkClicked", "Footer Email clicked");}}
+            href="mailto:lukeowaincharles@gmail.com"
+          >
+            lukeowaincharles@gmail.com
+          </a>
         </p>
         <div className="social">
           {items}

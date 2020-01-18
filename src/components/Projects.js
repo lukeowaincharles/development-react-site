@@ -1,4 +1,5 @@
 import React from 'react';
+import { Event } from './Tracking';
 import desktopIcon from '../assets/images/icons/desktop_icon.svg';
 import tabletIcon from '../assets/images/icons/ipad_icon.svg';
 import mobileIcon from '../assets/images/icons/mobile_icon.svg';
@@ -50,7 +51,16 @@ export default class Projects extends React.Component {
             <img className="device-icons device-icons_mobile" src={mobileIcon} alt="icon mobile device" />
           </div>
         </div>
-        <a className="web-link" href={item.href} target="_blank" rel="noopener noreferrer">View live site<span className="arrow_right"></span></a>
+        <a
+          className="web-link"
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {Event("project", "viewLiveSite", `${item.title}`);}}
+        >
+          View live site
+          <span className="arrow_right"></span>
+        </a>
       </div>
       <div className="col-6 section-margin_slides">
         <div className="project-image_wrapper">

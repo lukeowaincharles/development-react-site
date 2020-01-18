@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { Event } from './Tracking';
 
 export default class Nav extends React.Component {
 
@@ -17,7 +18,16 @@ export default class Nav extends React.Component {
 
     const items = this.state.navigation.map((item, key) =>
       <li key={item.id}>
-        <Link href={item.href} to={item.href} spy={true} smooth={true} duration={800}>{item.title}</Link>
+        <Link
+          href={item.href}
+          to={item.href}
+          spy={true}
+          smooth={true}
+          duration={800}
+          onClick={() => {Event("nav", "navScrollLink", `${item.title}`);}}
+        >
+          {item.title}
+        </Link>
       </li>
     );
 
