@@ -26,16 +26,16 @@
     }
   }
 
-  &.citrus {
-    background-color: $color-primary-6;
+  &.tct {
+    background-color: $color-primary-9;
 
     .default {
-      background-image: url(../../assets/images/citrus_mobile.png);
+      background-image: url(../../assets/images/tct_mobile.png);
     }
   }
 
   &.hiscox {
-    background-color: $color-primary-1;
+    background-color: $color-primary-10;
 
     .default {
       background-image: url(../../assets/images/hiscox_mobile.png);
@@ -51,7 +51,8 @@
   }
 
   &.mulberry,
-  &.run {
+  &.run,
+  &.hiscox {
     flex-direction: row-reverse;
 
     .project-image_background {
@@ -89,9 +90,9 @@
 
 @include mq('tablet') {
   .projects_wrapper {
-    &.citrus {
+    &.tct {
       .default {
-        background-image: url(../../assets/images/citrus_devices.png);
+        background-image: url(../../assets/images/tct_devices.png);
         position: relative;
         top: 30px;
       }
@@ -114,7 +115,8 @@
     }
 
     &.mulberry,
-    &.run {
+    &.run,
+    &.hiscox {
       .project-image_background {
         height: 300px;
       }
@@ -149,14 +151,14 @@
     justify-content: center;
     align-items: center;
 
-    &.citrus {
+    &.tct {
       .default {
-        background-image: url(../../assets/images/citrus_desktop.png);
+        background-image: url(../../assets/images/tct_desktop.png);
         top: 0;
       }
 
       .device-image {
-        background-image: url(../../assets/images/citrus_devices.png);
+        background-image: url(../../assets/images/tct_devices.png);
       }
     }
 
@@ -183,7 +185,8 @@
     }
 
     &.mulberry,
-    &.run {
+    &.run,
+    &.hiscox {
       .project-image_background {
         height: 460px;
         position: absolute;
@@ -257,7 +260,8 @@
   .projects_wrapper {
 
     &.mulberry,
-    &.run {
+    &.run,
+    &.hiscox {
       .project-image_background {
         height: 520px;
         left: -150px;
@@ -272,7 +276,8 @@
   .projects_wrapper {
 
     &.mulberry,
-    &.run {
+    &.run,
+    &.hiscox {
       .project-image_background,
       .project-image_background.device-image {
         left: 0;
@@ -285,7 +290,8 @@
   .projects_wrapper {
 
     &.mulberry,
-    &.run {
+    &.run,
+    &.hiscox {
       .project-image_background {
         left: 270px;
       }
@@ -297,7 +303,8 @@
   .projects_wrapper {
 
     &.mulberry,
-    &.run {
+    &.run,
+    &.hiscox {
       .project-image_background {
         left: 480px;
       }
