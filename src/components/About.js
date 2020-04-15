@@ -7,7 +7,7 @@ export default class About extends React.Component {
       <div className="about" id="about" name="#about">
         <h2 className="title">About</h2>
         <p className="text width-restrict__medium">
-        I'm a front-end developer, who has a keen eye for detail. I love building sites from designs making sure they are pixel perfect and seeing new creations grow as I learn new things along the journey.
+        I'm a Frontend Developer, who has a keen eye for detail. I love building sites from designs making sure they are pixel perfect and seeing new creations grow as I learn new things along the journey.
         </p>
       </div>
     )
