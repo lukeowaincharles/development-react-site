@@ -14,7 +14,7 @@ export default class Experience extends React.Component {
       experience: [
         {id: 'experienceItem-1', title: 'HTML5'},
         {id: 'experienceItem-2', title: 'SCSS'},
-        {id: 'experienceItem-3', title: 'LESS'},
+        {id: 'experienceItem-3', title: 'React'},
         {id: 'experienceItem-4', title: 'Drupal'},
         {id: 'experienceItem-5', title: 'Magento'},
         {id: 'experienceItem-6', title: 'Wordpress'},
