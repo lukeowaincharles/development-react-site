@@ -20,8 +20,8 @@ export default class Experience extends React.Component {
         {id: 'experienceItem-6', title: 'Wordpress'},
         {id: 'experienceItem-7', title: 'Npm'},
         {id: 'experienceItem-8', title: 'Gulp'},
-        {id: 'experienceItem-9', title: 'Grunt'},
-        {id: 'experienceItem-10', title: 'Zeplin'},
+        {id: 'experienceItem-9', title: 'Figma'},
+        {id: 'experienceItem-10', title: 'Gatsby'},
         {id: 'experienceItem-11', title: 'JS/jQuery'},
         {id: 'experienceItem-12', title: 'BEM'},
       ]
