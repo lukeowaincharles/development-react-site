@@ -8,7 +8,9 @@ $color-primary-6: #f99d1c;
 $color-primary-7: #da291c;
 $color-primary-8: #85b1ff;
 $color-primary-9: #0067ac;
-$color-primary-10: #CD2D22;
+$color-primary-10: #cd2d22;
+$color-primary-11: #122032;
+$color-primary-12: #0b046c;
 
 $color-secondary-1: #70007f;
 
@@ -34,25 +36,25 @@ $color-grey-95: #222222;
 
 /* Fonts */
 
-$body-font: 'Noto Sans', sans-serif;
+$body-font: "Noto Sans", sans-serif;
 
 $breakpoints: (
-  'phone': 400px,
-  'phone-wide': 480px,
-  'phablet': 560px,
-  'tablet-small': 640px,
-  'tablet': 768px,
-  'desktop': 992px,
-  'desktop-l': 1200px,
-  'desktop-xl': 1440px,
-  'desktop-xxl': 1890px,
-  'desktop-sw': 2300px,
-  'xs': 0,
-  'sm': 576px,
-  'md': 768px,
-  'lg': 992px,
-  'xl': 1200px,
-  'xxl': 1550px
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "desktop": 992px,
+  "desktop-l": 1200px,
+  "desktop-xl": 1440px,
+  "desktop-xxl": 1890px,
+  "desktop-sw": 2300px,
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1550px,
 );
 
 // z-indexes

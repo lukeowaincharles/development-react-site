@@ -30,7 +30,7 @@
     background-color: $color-primary-9;
 
     .default {
-      background-image: url(../../assets/images/tct_mobile.png);
+      background-image: url('../../assets/images/tct_mobile.png');
     }
   }
 
@@ -38,7 +38,7 @@
     background-color: $color-primary-10;
 
     .default {
-      background-image: url(../../assets/images/hiscox_mobile.png);
+      background-image: url('../../assets/images/hiscox_mobile.png');
     }
   }
 
@@ -46,11 +46,27 @@
     background-color: $color-primary-2;
 
     .default {
-      background-image: url(../../assets/images/macallan_mobile.png);
+      background-image: url('../../assets/images/macallan_mobile.png');
     }
   }
 
-  &.mulberry,
+  &.jmfinn {
+    background-color: $color-primary-11;
+
+    .default {
+      background-image: url('../../assets/images/jmfinn_mobile.png');
+    }
+  }
+
+  &.silverstone {
+    background-color: $color-primary-12;
+
+    .default {
+      background-image: url('../../assets/images/silverstone_mobile.png');
+    }
+  }
+
+  &.silverstone,
   &.run,
   &.hiscox {
     flex-direction: row-reverse;
@@ -61,19 +77,11 @@
     }
   }
 
-  &.mulberry {
-    background-color: $color-primary-3;
-
-    .default {
-      background-image: url(../../assets/images/mulberry_mobile.png);
-    }
-  }
-
   &.run {
     background-color: $color-primary-5;
 
     .default {
-      background-image: url(../../assets/images/run_mobile.png);
+      background-image: url('../../assets/images/run_mobile.png');
     }
   }
 
@@ -92,7 +100,7 @@
   .projects_wrapper {
     &.tct {
       .default {
-        background-image: url(../../assets/images/tct_devices.png);
+        background-image: url('../../assets/images/tct_devices.png');
         position: relative;
         top: 30px;
       }
@@ -100,7 +108,7 @@
 
     &.hiscox {
       .default {
-        background-image: url(../../assets/images/hiscox_devices.png);
+        background-image: url('../../assets/images/hiscox_devices.png');
         position: relative;
         top: 30px;
       }
@@ -108,13 +116,29 @@
 
     &.macallan {
       .default {
-        background-image: url(../../assets/images/macallan_devices.png);
+        background-image: url('../../assets/images/macallan_devices.png');
         position: relative;
         top: 30px;
       }
     }
 
-    &.mulberry,
+    &.jmfinn {
+      .default {
+        background-image: url('../../assets/images/jmfinn_devices.png');
+        position: relative;
+        top: 30px;
+      }
+    }
+
+    &.silverstone {
+      .default {
+        background-image: url('../../assets/images/silverstone_devices.png');
+        position: relative;
+        top: 30px;
+      }
+    }
+
+    &.silverstone,
     &.run,
     &.hiscox {
       .project-image_background {
@@ -122,15 +146,9 @@
       }
     }
 
-    &.mulberry {
-      .default {
-        background-image: url(../../assets/images/mulberry_devices.png);
-      }
-    }
-
     &.run {
       .default {
-        background-image: url(../../assets/images/run_devices.png);
+        background-image: url('../../assets/images/run_devices.png');
       }
     }
 
@@ -153,38 +171,60 @@
 
     &.tct {
       .default {
-        background-image: url(../../assets/images/tct_desktop.png);
+        background-image: url('../../assets/images/tct_desktop.png');
         top: 0;
       }
 
       .device-image {
-        background-image: url(../../assets/images/tct_devices.png);
+        background-image: url('../../assets/images/tct_devices.png');
       }
     }
 
     &.hiscox {
       .default {
-        background-image: url(../../assets/images/hiscox_desktop.png);
+        background-image: url('../../assets/images/hiscox_desktop.png');
         top: 0;
       }
 
       .device-image {
-        background-image: url(../../assets/images/hiscox_devices.png);
+        background-image: url('../../assets/images/hiscox_devices.png');
       }
     }
 
     &.macallan {
       .default {
-        background-image: url(../../assets/images/macallan_desktop.png);
+        background-image: url('../../assets/images/macallan_desktop.png');
         top: 0;
       }
 
       .device-image {
-        background-image: url(../../assets/images/macallan_devices.png);
+        background-image: url('../../assets/images/macallan_devices.png');
       }
     }
 
-    &.mulberry,
+    &.jmfinn {
+      .default {
+        background-image: url('../../assets/images/jmfinn_desktop.png');
+        top: 0;
+      }
+
+      .device-image {
+        background-image: url('../../assets/images/jmfinn_devices.png');
+      }
+    }
+
+    &.silverstone {
+      .default {
+        background-image: url('../../assets/images/silverstone_desktop.png');
+        top: 0;
+      }
+
+      .device-image {
+        background-image: url('../../assets/images/silverstone_devices.png');
+      }
+    }
+
+    &.silverstone,
     &.run,
     &.hiscox {
       .project-image_background {
@@ -203,23 +243,13 @@
       }
     }
 
-    &.mulberry {
-      .default {
-        background-image: url(../../assets/images/mulberry_desktop.png);
-      }
-
-      .device-image {
-        background-image: url(../../assets/images/mulberry_devices.png);
-      }
-    }
-
     &.run {
       .default {
-        background-image: url(../../assets/images/run_desktop.png);
+        background-image: url('../../assets/images/run_desktop.png');
       }
 
       .device-image {
-        background-image: url(../../assets/images/run_devices.png);
+        background-image: url('../../assets/images/run_devices.png');
       }
     }
 
@@ -259,7 +289,7 @@
 @include mq('desktop-l') {
   .projects_wrapper {
 
-    &.mulberry,
+    &.silverstone,
     &.run,
     &.hiscox {
       .project-image_background {
@@ -275,38 +305,12 @@
 @include mq('desktop-xl') {
   .projects_wrapper {
 
-    &.mulberry,
+    &.silverstone,
     &.run,
     &.hiscox {
       .project-image_background,
       .project-image_background.device-image {
         left: 0;
-      }
-    }
-  }
-}
-
-@include mq('desktop-xxl') {
-  .projects_wrapper {
-
-    &.mulberry,
-    &.run,
-    &.hiscox {
-      .project-image_background {
-        left: 270px;
-      }
-    }
-  }
-}
-
-@include mq('desktop-sw') {
-  .projects_wrapper {
-
-    &.mulberry,
-    &.run,
-    &.hiscox {
-      .project-image_background {
-        left: 480px;
       }
     }
   }
