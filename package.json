@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/dom": "^8.5.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "prop-types": "^15.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-scripts": "3.4.1",
-    "node-sass": "^4.13.1",
-    "react-ga": "^2.7.0",
-    "react-scroll": "^1.7.14"
+    "react-scroll": "^1.7.14",
+    "sass": "^1.42.0",
+    "typescript": "^4.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
