@@ -1,8 +1,8 @@
 import React from 'react';
 import { Event } from './Tracking';
-import desktopIcon from '../assets/images/icons/desktop_icon.svg';
-import tabletIcon from '../assets/images/icons/ipad_icon.svg';
-import mobileIcon from '../assets/images/icons/mobile_icon.svg';
+import desktopIcon from '../../assets/images/icons/desktop_icon.svg';
+import tabletIcon from '../../assets/images/icons/ipad_icon.svg';
+import mobileIcon from '../../assets/images/icons/mobile_icon.svg';
 
 export default class Projects extends React.Component {
   
