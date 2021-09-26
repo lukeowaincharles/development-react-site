@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import ProjectDetails from "./components/Portfolio/Project-details";
+import ProjectDetails from "./components/Portfolio/Projects/Project-details";
 import "./App.scss";
 import PageLoader from "./components/Archive/PageLoader";
 import Nav from "./components/Archive/Nav";
@@ -12,6 +12,7 @@ import Projects from "./components/Archive/Projects";
 import Header from "./components/Portfolio/Header/Header";
 import { Container, Row, Col } from "react-bootstrap";
 import BrowserWindow from "./components/Portfolio/Browser/BrowserWindow";
+import PortfolioProjects from "./components/Portfolio/Projects/PortfolioProjects";
 
 function App() {
   return (
@@ -26,7 +27,9 @@ function App() {
               <div className="portfolio">
                 <Container>
                   <Row>
-                    <Col md={6} lg={10}></Col>
+                    <Col md={6} lg={10}>
+                      <PortfolioProjects />
+                    </Col>
                     <Col md={6} lg={2}></Col>
                   </Row>
                 </Container>

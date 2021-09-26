@@ -2,6 +2,10 @@
   box-shadow: 0px 4px 4px 0px #0000001a;
   border-radius: 8px;
 
+  &.silverstone {
+    max-width: 591px;
+  }
+
   &.light {
     background-color: $white;
   }

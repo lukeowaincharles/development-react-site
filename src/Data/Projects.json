@@ -1,6 +1,7 @@
 [
   {
     "url": "silverstone",
+    "image": "/images/portfolio-silverstone.png",
     "headline": "Building a world class website for one of the UK’s biggest sport’s brand.",
     "brief": "Redesign/rebuild current website",
     "approach": "Drupal 8, Twig, Agile, Component based site for client to build out pages with various layouts of their choosing",
