@@ -1,10 +1,14 @@
-@import './scss/setup/vars.scss';
-@import './scss/setup/mixins.scss';
-@import './scss/setup/common.scss';
+@import "~bootstrap/scss/bootstrap";
 
-@import './scss/site-components/pageloader.scss';
-@import './scss/site-components/nav.scss';
-@import './scss/site-components/hero.scss';
-@import './scss/site-components/projects.scss';
-@import './scss/site-components/device-icons.scss';
-@import './scss/site-components/footer.scss';
+@import "./scss/Portfolio-scss/Portfolio-components.scss";
+
+@import "./scss/setup/vars.scss";
+@import "./scss/setup/mixins.scss";
+@import "./scss/setup/common.scss";
+
+@import "./scss/site-components/pageloader.scss";
+@import "./scss/site-components/nav.scss";
+@import "./scss/site-components/hero.scss";
+@import "./scss/site-components/projects.scss";
+@import "./scss/site-components/device-icons.scss";
+@import "./scss/site-components/footer.scss";
