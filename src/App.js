@@ -13,6 +13,7 @@ import Header from "./components/Portfolio/Header/Header";
 import { Container, Row, Col } from "react-bootstrap";
 import BrowserWindow from "./components/Portfolio/Browser/BrowserWindow";
 import PortfolioProjects from "./components/Portfolio/Projects/PortfolioProjects";
+import AboutMe from "./components/Portfolio/About/AboutMe";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                   <Row>
                     <Col md={6} lg={10}>
                       <PortfolioProjects />
+                      <AboutMe />
                     </Col>
                     <Col md={6} lg={2}></Col>
                   </Row>
