@@ -2,6 +2,7 @@
   {
     "url": "silverstone",
     "image": "/images/portfolio-silverstone.png",
+    "logo": "",
     "headline": "Building a world class website for one of the UK’s biggest sport’s brand.",
     "brief": "Redesign/rebuild current website",
     "approach": "Drupal 8, Twig, Agile, Component based site for client to build out pages with various layouts of their choosing",
@@ -11,7 +12,9 @@
   },
   {
     "url": "jmfinn",
-    "headline": "",
+    "image": "/images/portfolio-jmfinn.png",
+    "logo": "",
+    "headline": "Headless Gatsby build using Drupal as the CMS.",
     "brief": "Update website and use newer tech to deliver a sleek fast website",
     "approach": "Drupal BE + Gatsby FE, Agile",
     "role": "FE dev working as part of small FE team to deliver the updated site",
@@ -20,6 +23,8 @@
   },
   {
     "url": "hiscox",
+    "image": "/images/portfolio-hiscox.png",
+    "logo": "",
     "headline": "",
     "brief": "Redesign and rebuild of a sector of Hiscox and custom insurance journey.",
     "approach": "Drupal, Agile methodology",
