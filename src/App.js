@@ -14,6 +14,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import BrowserWindow from "./components/Portfolio/Browser/BrowserWindow";
 import PortfolioProjects from "./components/Portfolio/Projects/PortfolioProjects";
 import AboutMe from "./components/Portfolio/About/AboutMe";
+import AppFolder from "./components/Portfolio/AppFolder/AppFolder";
 
 function App() {
   return (
@@ -32,7 +33,9 @@ function App() {
                       <PortfolioProjects />
                       <AboutMe />
                     </Col>
-                    <Col md={6} lg={2}></Col>
+                    <Col md={6} lg={2}>
+                      <AppFolder />
+                    </Col>
                   </Row>
                 </Container>
               </div>

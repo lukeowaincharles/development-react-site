@@ -1,0 +1,9 @@
+.app-folder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__background {
+    background-color: $brand-dark-purple;
+  }
+}

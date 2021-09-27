@@ -2,6 +2,7 @@
   {
     "url": "silverstone",
     "image": "/images/portfolio-silverstone.png",
+    "icon": "folder folder--shortcut",
     "logo": "",
     "headline": "Building a world class website for one of the UK’s biggest sport’s brand.",
     "brief": "Redesign/rebuild current website",
