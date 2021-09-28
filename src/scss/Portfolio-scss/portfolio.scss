@@ -1,0 +1,18 @@
+.portfolio {
+  &__content {
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__column {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
