@@ -30,10 +30,12 @@ function App() {
                 <Container>
                   <Row>
                     <Col md={6} lg={10}>
-                      <PortfolioProjects />
-                      <AboutMe />
+                      <section className="portfolio__content">
+                        <PortfolioProjects />
+                        <AboutMe />
+                      </section>
                     </Col>
-                    <Col md={6} lg={2}>
+                    <Col md={6} lg={2} className="portfolio__column">
                       <AppFolder />
                     </Col>
                   </Row>
