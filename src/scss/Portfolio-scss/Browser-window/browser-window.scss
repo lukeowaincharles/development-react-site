@@ -1,6 +1,7 @@
 .browser-window {
   box-shadow: 0px 4px 4px 0px #0000001a;
   border-radius: 8px;
+  width: 100%;
 
   @include media-breakpoint-up(lg) {
     position: absolute;
@@ -11,11 +12,25 @@
   }
 
   &__content {
-    padding: 37px 40px 31px;
+    padding: 22px 15px 26px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
 
     h2 {
       font-size: rem(18px);
       margin-bottom: 16px;
+      max-width: 200px;
     }
 
     .btn {
@@ -47,6 +62,10 @@
     .browser-window__content {
       background-color: $silverstone-blue;
 
+      @include media-breakpoint-up(lg) {
+        padding: 37px 40px 31px;
+      }
+
       h2 {
         font-size: rem(20px);
         margin-bottom: 24px;
@@ -72,6 +91,7 @@
     }
 
     .browser-window__content {
+
       .btn {
         background-color: $jmfinn-pink;
         border: $jmfinn-pink;
@@ -93,6 +113,12 @@
     .browser-window__content {
       background-color: $white;
       color: $black;
+
+      &:after {
+        right: 0;
+        background-image: url("../../../assets/images/portfolio-hiscox-background.svg");
+        width: 177px;
+      }
 
       .btn {
         background-color: $hiscox-red;
