@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function BrowserWindow({ children, classes }) {
+function BrowserWindow({ children, classes, tab }) {
   const [browserColor] = useState("dark");
 
   return (
@@ -9,6 +9,13 @@ function BrowserWindow({ children, classes }) {
         <span className="browser-window__button close"></span>
         <span className="browser-window__button minimise"></span>
         <span className="browser-window__button enlarge"></span>
+        {tab ? (
+          <div className="browser-window__tab">
+            <p>{tab}</p>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <div className="browser-window__content">{children}</div>
     </div>
