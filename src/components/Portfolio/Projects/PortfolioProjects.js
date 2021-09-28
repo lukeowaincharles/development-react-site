@@ -8,7 +8,7 @@ function PortfolioProjects() {
     return (
       <React.Fragment key={index}>
         {item.url && item.image ? (
-          <BrowserWindow key={index} classes={item.url}>
+          <BrowserWindow key={index} classes={item.url} tab={`${item.url} ${"casestudy"}`}>
             <div className="projects__logo">
               <img src={item.logo} alt={`${item.url} ${"logo"}`} />
             </div>
