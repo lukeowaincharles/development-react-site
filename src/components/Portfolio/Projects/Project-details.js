@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import ProjectData from "../../../Data/Projects.json";
+import BrowserWindow from "../Browser/BrowserWindow";
 
 function ProjectDetails() {
   const [id] = useState(useParams().id),
@@ -36,14 +38,24 @@ function ProjectDetails() {
           <a className="btn btn-primary" href="/">Return to home</a>
         </div>
       ) : (
-        <div className="project-details" id={`${id}`}>
-          {headline ? <h1>{headline}</h1> : ""}
-          {brief ? <p>{brief}</p> : ""}
-          {approach ? <p>{approach}</p> : ""}
-          {role ? <p>{role}</p> : ""}
-          {whatwentwell ? <p>{whatwentwell}</p> : ""}
-          {whatyoudchange ? <p>{whatyoudchange}</p> : ""}
-        </div>
+        <BrowserWindow classes={`${"browser-window--project-page"} ${url + "--project-page"}`} tab={`${url} ${"casestudy"}`}>
+          <div className="project-details" id={`${id}`}>
+            <div className="project-details__header">
+              <Container>
+                {headline ? <h1>{headline}</h1> : ""}
+              </Container>
+            </div>
+            <div className="project-details__content">
+              <Container>
+                {brief ? <p>{brief}</p> : ""}
+                {approach ? <p>{approach}</p> : ""}
+                {role ? <p>{role}</p> : ""}
+                {whatwentwell ? <p>{whatwentwell}</p> : ""}
+                {whatyoudchange ? <p>{whatyoudchange}</p> : ""}
+              </Container>
+            </div>
+          </div>
+        </BrowserWindow>
       )}
     </div>
   );
