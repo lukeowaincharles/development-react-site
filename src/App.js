@@ -15,6 +15,7 @@ import BrowserWindow from "./components/Portfolio/Browser/BrowserWindow";
 import PortfolioProjects from "./components/Portfolio/Projects/PortfolioProjects";
 import AboutMe from "./components/Portfolio/About/AboutMe";
 import AppFolder from "./components/Portfolio/AppFolder/AppFolder";
+import Taskbar from "./components/Portfolio/Taskbar/Taskbar";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
                       <AppFolder />
                     </Col>
                   </Row>
+                  <Taskbar />
                 </Container>
               </div>
             )}
