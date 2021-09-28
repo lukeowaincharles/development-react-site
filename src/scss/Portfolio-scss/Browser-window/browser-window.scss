@@ -2,9 +2,25 @@
   box-shadow: 0px 4px 4px 0px #0000001a;
   border-radius: 8px;
 
-  img {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+  }
+
+  .projects__logo {
+    margin-bottom: 24px;
+  }
+
+  &__content {
+    padding: 37px 40px 31px;
+
+    h2 {
+      font-size: rem(18px);
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      color: $white;
+    }
   }
 
   &.aboutme {
@@ -12,27 +28,81 @@
 
     .browser-window__content {
       padding: 22px 15px 26px;
-      font-size: rem(22);
+      font-size: rem(22px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: 117px;
+      right: 0;
     }
   }
 
   &.silverstone {
     max-width: 591px;
 
+    .projects__logo {
+      width: 156px;
+    }
+
     .browser-window__content {
       background-color: $silverstone-blue;
+
+      h2 {
+        font-size: rem(20px);
+        margin-bottom: 24px;
+      }
+
+      .btn {
+        color: $silverstone-blue;
+        background-color: $white;
+        border-color: $white;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: 65px;
     }
   }
 
   &.jmfinn {
     max-width: 280px;
+
+    .projects__logo {
+      width: 92px;
+    }
+
+    .browser-window__content {
+      .btn {
+        background-color: $jmfinn-pink;
+        border: $jmfinn-pink;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      left: 0;
+    }
   }
 
   &.hiscox {
     max-width: 384px;
 
+    .projects__logo {
+      width: 77px;
+    }
+
     .browser-window__content {
       background-color: $white;
+      color: $black;
+
+      .btn {
+        background-color: $hiscox-red;
+        border: $hiscox-red;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      right: 120px;
+      bottom: 100px;
     }
   }
 

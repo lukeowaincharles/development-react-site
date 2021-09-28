@@ -9,9 +9,12 @@ function PortfolioProjects() {
       <React.Fragment key={index}>
         {item.url && item.image ? (
           <BrowserWindow key={index} classes={item.url}>
-            <div>
-              <img src={ `${item.image}`} alt="" />
+            <div className="projects__logo">
+              <img src={item.logo} alt={`${item.url} ${"logo"}`} />
             </div>
+            {/* <div>
+              <img src={ `${item.image}`} alt="" />
+            </div> */}
             <h2>{item.headline}</h2>
             <ButtonPrimary link={item.url} title="View casestudy" />
           </BrowserWindow>
