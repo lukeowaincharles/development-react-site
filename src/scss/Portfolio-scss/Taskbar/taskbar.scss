@@ -1,0 +1,20 @@
+.taskbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  position: fixed;
+  width: fit-content;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border-radius: 24px;
+  z-index: 20;
+  background-color: rgba($brand-darker-purple, 50%);
+
+  .app-folder__link {
+    margin: 0 16px;
+  }
+}
