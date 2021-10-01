@@ -9,6 +9,7 @@ function Taskbar() {
         target="_blank"
         rel="noopener noreferrer"
         className="app-folder__link"
+        key={index}
       >
         <div className="app-folder__content">
           <div className="app-folder__background">
