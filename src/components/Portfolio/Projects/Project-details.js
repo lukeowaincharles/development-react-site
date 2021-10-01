@@ -38,7 +38,7 @@ function ProjectDetails() {
           <a className="btn btn-primary" href="/">Return to home</a>
         </div>
       ) : (
-        <BrowserWindow classes={`${"browser-window--project-page"} ${url + "--project-page"}`} tab={`${url} ${"casestudy"}`}>
+        <BrowserWindow hasDrag={false} classes={`${"browser-window--project-page"} ${url + "--project-page"}`} tab={`${url} ${"casestudy"}`}>
           <div className="project-details" id={`${id}`}>
             <div className="project-details__header">
               <Container>

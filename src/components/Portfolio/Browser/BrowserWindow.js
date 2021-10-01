@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import useWindowWidth from "../Utilities/WindowWidth";
 
-function BrowserWindow({ children, classes, tab }) {
+function BrowserWindow({ children, classes, tab, hasDrag }) {
   const [browserColor] = useState("dark"),
     width = useWindowWidth();
 
-  const dragAttr =
-    width >= 992
-      ? {
-          drag: true,
-          dragConstraints: { top: 0, left: 0, right: 200, bottom: 50 },
-        }
-      : {};
+  let dragAttr = "";
+
+  if (hasDrag !== false) {
+    dragAttr =
+      width >= 992
+        ? {
+            drag: true,
+            dragConstraints: { top: 0, left: 0, right: 200, bottom: 50 },
+          }
+        : {};
+  }
 
   return (
     <motion.div
