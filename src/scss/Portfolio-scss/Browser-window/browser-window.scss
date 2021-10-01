@@ -69,6 +69,11 @@
       font-size: rem(22px);
     }
 
+    .btn {
+      background-color: $brand-light-purple;
+      border-color: $brand-light-purple;
+    }
+
     @include media-breakpoint-up(lg) {
       top: 117px;
       right: 0;
@@ -238,5 +243,11 @@
     position: relative;
     max-width: 95%;
     margin: 16px auto 32px;
+  }
+
+  &--archive {
+    .browser-window__content {
+      padding: 0;
+    }
   }
 }
