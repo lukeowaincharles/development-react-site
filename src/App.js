@@ -3,12 +3,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ProjectDetails from "./components/Portfolio/Projects/Project-details";
 import "./App.scss";
 import PageLoader from "./components/Archive/PageLoader";
-import Nav from "./components/Archive/Nav";
-import Hero from "./components/Archive/Hero";
-import About from "./components/Archive/About";
-import Experience from "./components/Archive/Experience";
-import Contact from "./components/Archive/Contact";
-import Projects from "./components/Archive/Projects";
 import Header from "./components/Portfolio/Header/Header";
 import { Container, Row, Col } from "react-bootstrap";
 import BrowserWindow from "./components/Portfolio/Browser/BrowserWindow";
@@ -16,8 +10,13 @@ import PortfolioProjects from "./components/Portfolio/Projects/PortfolioProjects
 import AboutMe from "./components/Portfolio/About/AboutMe";
 import AppFolder from "./components/Portfolio/AppFolder/AppFolder";
 import Taskbar from "./components/Portfolio/Taskbar/Taskbar";
+import useWindowWidth from "./components/Portfolio/Utilities/WindowWidth";
+import ArchiveSiteDesktop from "./assets/images/archive-site--desktop.png";
+import ArchiveSiteMobile from "./assets/images/archive-site--mobile.png";
 
 function App() {
+  const width = useWindowWidth();
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -49,19 +48,14 @@ function App() {
             exact
             path="/archive"
             render={() => (
-              <BrowserWindow classes="browser-window--archive">
+              <BrowserWindow hasDrag={false} classes="browser-window--archive">
                 <div className="archived">
                   <PageLoader />
-                  <main>
-                    <Nav />
-                    <Hero />
-                    <Projects />
-                    <footer className="section-margin">
-                      <About />
-                      <Experience />
-                      <Contact />
-                    </footer>
-                  </main>
+                  {width >= 992 ? (
+                    <img src={ArchiveSiteDesktop} alt="" />
+                  ) : (
+                    <img src={ArchiveSiteMobile} alt="" />
+                  )}
                 </div>
               </BrowserWindow>
             )}
