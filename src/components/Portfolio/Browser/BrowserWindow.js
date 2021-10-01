@@ -1,10 +1,24 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import useWindowWidth from "../Utilities/WindowWidth";
 
 function BrowserWindow({ children, classes, tab }) {
-  const [browserColor] = useState("dark");
+  const [browserColor] = useState("dark"),
+    width = useWindowWidth();
+
+  const dragAttr =
+    width >= 992
+      ? {
+          drag: true,
+          dragConstraints: { top: 0, left: 0, right: 200, bottom: 50 },
+        }
+      : {};
 
   return (
-    <div className={`${"browser-window"} ${classes} ${browserColor}`}>
+    <motion.div
+      {...dragAttr}
+      className={`${"browser-window"} ${classes} ${browserColor}`}
+    >
       <div className="browser-window__bar">
         <span className="browser-window__button close"></span>
         <span className="browser-window__button minimise"></span>
@@ -18,7 +32,7 @@ function BrowserWindow({ children, classes, tab }) {
         )}
       </div>
       <div className="browser-window__content">{children}</div>
-    </div>
+    </motion.div>
   );
 }
 
