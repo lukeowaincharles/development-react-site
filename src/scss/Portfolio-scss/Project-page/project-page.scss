@@ -39,16 +39,14 @@
     background-color: $white;
     padding: 32px 0;
 
-    h2 {
+    h2,
+    h3 {
       color: $grey-900;
     }
 
     p {
       color: $grey-700;
     }
-  }
-
-  &.aboutme {
   }
 
   &.silverstone {

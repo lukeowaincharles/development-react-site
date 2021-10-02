@@ -107,8 +107,49 @@ function ProjectDetails() {
                   </div>
                   <div className="project-details__content">
                     <Container>
+                      <Row>
+                        <Col>
+                          <h2>title</h2>
+                          <p>text</p>
+                          <div className="project-details__information">
+                            <div className="project-details__site">
+                              <h3>Live site</h3>
+                              <p>
+                                <a
+                                  href="/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  Link
+                                </a>
+                              </p>
+                            </div>
+                            <div className="project-details__stack">
+                              <h3>Stack</h3>
+                              <p></p>
+                            </div>
+                          </div>
+                        </Col>
+                        <Col>IMG</Col>
+                      </Row>
+                      <Row>
+                        <Col>IMG</Col>
+                        <Col>
+                          {approach ? (
+                            <div className="project-details__approach">
+                              <h2>What the approach of the project was</h2>
+                              <p>{approach}</p>
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col></Col>
+                        <Col>IMG</Col>
+                      </Row>
                       {brief ? <p>{brief}</p> : ""}
-                      {approach ? <p>{approach}</p> : ""}
                       {role ? <p>{role}</p> : ""}
                       {whatwentwell ? <p>{whatwentwell}</p> : ""}
                       {whatyoudchange ? <p>{whatyoudchange}</p> : ""}
