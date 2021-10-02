@@ -5,7 +5,7 @@ import Clock from "../../Clock/Clock";
 
 function Header() {
   let myCurrentDate = new Date(),
-    day = myCurrentDate.toLocaleString("default", {weekday: "short"}),
+    day = myCurrentDate.toLocaleString("default", { weekday: "short" }),
     date = myCurrentDate.getDate(),
     month = myCurrentDate.toLocaleString("default", { month: "short" }),
     year = myCurrentDate.getFullYear(),
@@ -16,7 +16,8 @@ function Header() {
         <div className="header__content">
           <div className="menu">
             <a href="/" className="menu__link">
-              <img width="16" height="24" src={homeIcon} alt="" /> <p>Desktop</p>
+              <img width="16" height="24" src={homeIcon} alt="" />{" "}
+              <p>Luke Charles</p>
             </a>
           </div>
           <div className="time">
