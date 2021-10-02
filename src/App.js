@@ -48,7 +48,7 @@ function App() {
             exact
             path="/archive"
             render={() => (
-              <BrowserWindow hasDrag={false} classes="browser-window--archive">
+              <BrowserWindow hasDrag={false} classes="browser-window--archive" tab="Archived web site">
                 <div className="archived">
                   <PageLoader />
                   {width >= 992 ? (
