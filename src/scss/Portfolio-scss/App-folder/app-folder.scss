@@ -10,6 +10,22 @@
     @include media-breakpoint-up(md) {
       margin-bottom: 30px;
     }
+
+    &.bin {
+      position: relative;
+
+      @include media-breakpoint-up(md) {
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -16px;
+          height: 100%;
+          width: 1px;
+          background-color: rgba($off-white, 30%);
+        }
+      }
+    }
   }
 
   &__content {
@@ -47,6 +63,8 @@
 
     &.gmail {
       background-image: url("../../../assets/images/icons/gmail.svg");
+      max-width: 32px;
+      margin: 0 auto;
     }
 
     &.github {
@@ -55,6 +73,10 @@
 
     &.linkedin {
       background-image: url("../../../assets/images/icons/linkedin.svg");
+    }
+
+    &.bin {
+      background-image: url("../../../assets/images/icons/bin.svg");
     }
   }
 }
