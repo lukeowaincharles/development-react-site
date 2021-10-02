@@ -10,6 +10,14 @@
       margin: 0;
     }
   }
+
+  .time {
+    display: flex;
+
+    .clock {
+      margin-left: 16px;
+    }
+  }
 }
 
 .menu {

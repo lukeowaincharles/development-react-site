@@ -1,13 +1,15 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import homeIcon from "../../../assets/images/icons/home.svg";
+import Clock from "../../Clock/Clock";
 
 function Header() {
   let myCurrentDate = new Date(),
+    day = myCurrentDate.toLocaleString("default", {weekday: "short"}),
     date = myCurrentDate.getDate(),
     month = myCurrentDate.toLocaleString("default", { month: "short" }),
     year = myCurrentDate.getFullYear(),
-    fullYear = date + " " + month + " " + year;
+    fullYear = day + " " + date + " " + month + " " + year;
   return (
     <div className="header">
       <Container>
@@ -19,6 +21,7 @@ function Header() {
           </div>
           <div className="time">
             <p>{fullYear}</p>
+            <Clock />
           </div>
         </div>
       </Container>
