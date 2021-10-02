@@ -22,7 +22,7 @@ function AppFolder() {
     );
   });
 
-  const ABOUTCONTENT = AboutData.content.map((item, index) => {
+  const ABOUTCONTENT = AboutData.map((item, index) => {
     return (
       <React.Fragment key={index}>
         <a href={item.url} target="_self" rel="bookmark" className="app-folder__link">
