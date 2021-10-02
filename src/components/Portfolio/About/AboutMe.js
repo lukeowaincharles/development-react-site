@@ -4,7 +4,7 @@ import AboutData from "../../../Data/About.json";
 import ButtonPrimary from "../Utilities/Button";
 
 function AboutMe() {
-  const ABOUTCONTENT = AboutData.content,
+  const ABOUTCONTENT = AboutData,
     TITLE = ABOUTCONTENT[0].title;
   return (
     <BrowserWindow classes="aboutme" tab="About Luke">
