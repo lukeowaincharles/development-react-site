@@ -14,7 +14,7 @@ function Header() {
         <div className="header__content">
           <div className="menu">
             <a href="/" className="menu__link">
-              <img src={homeIcon} alt="" /> <p>Desktop</p>
+              <img width="16" height="24" src={homeIcon} alt="" /> <p>Desktop</p>
             </a>
           </div>
           <div className="time">
