@@ -1,6 +1,9 @@
 .portfolio {
   &__content {
+    margin-top: 40px;
+
     @include media-breakpoint-up(lg) {
+      margin-top: 0;
       position: relative;
       height: 100%;
       display: flex;
