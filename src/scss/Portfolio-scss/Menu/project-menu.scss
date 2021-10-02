@@ -11,7 +11,7 @@
   border-radius: 6px;
   background-color: rgba($brand-dark-purple, 95%);
   box-shadow: 0 4px 4px 0 rgba($black, 25%);
-  min-width: max-content;
+  min-width: 224px;
   margin-left: 26px;
 
   @include media-breakpoint-up(sm) {
@@ -46,6 +46,7 @@
     display: block;
     font-size: rem(14px);
     border-radius: 4px;
+    color: $off-white;
 
     &:active,
     &:hover {

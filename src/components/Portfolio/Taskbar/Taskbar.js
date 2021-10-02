@@ -13,7 +13,7 @@ function Taskbar() {
   ];
   const PROJECTMENUITEMS = MENUITEMS.map((item, index) => {
     return (
-      <li>
+      <li key={index}>
         <a href={item.url}>{item.title}</a>
       </li>
     );

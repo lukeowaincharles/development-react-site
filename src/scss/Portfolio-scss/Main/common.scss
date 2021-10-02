@@ -10,6 +10,7 @@ body {
   animation-duration: 0.75s;
   animation-delay: 0.4s;
   color: $white;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
