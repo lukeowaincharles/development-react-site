@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import ProjectDetails from "./components/Portfolio/Projects/Project-details";
+import ProjectDetails from "./components/Portfolio/Projects/ProjectDetails";
 import "./App.scss";
 import PageLoader from "./components/Archive/PageLoader";
 import Header from "./components/Portfolio/Header/Header";
