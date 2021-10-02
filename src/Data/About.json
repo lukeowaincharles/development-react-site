@@ -1,13 +1,10 @@
-{
-  "content": [
-    {
-      "url": "about",
-      "title": "Frontend Developer",
-      "name": "Luke Charles",
-      "description": "descript",
-      "image": "",
-      "icon": "text"
-    }
-
-  ]
-}
+[
+  {
+    "url": "about",
+    "title": "Frontend Developer",
+    "name": "Luke Charles",
+    "description": "descript",
+    "image": "",
+    "icon": "text"
+  }
+]

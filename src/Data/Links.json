@@ -2,16 +2,25 @@
   {
     "link": "https://github.com/lukeowaincharles",
     "title": "Github",
-    "icon": "github"
+    "icon": "github",
+    "target": "_blank"
   },
   {
     "link": "https://www.linkedin.com/in/luke-charles-01a58070/",
     "title": "Linkedin",
-    "icon": "linkedin"
+    "icon": "linkedin",
+    "target": "_blank"
   },
   {
     "link": "mailto:lukeowaincharles@gmail.com",
     "title": "Gmail",
-    "icon": "gmail"
+    "icon": "gmail",
+    "target": "_blank"
+  },
+  {
+    "link": "archive",
+    "title": "Archive",
+    "icon": "bin",
+    "target": "_self"
   }
 ]
