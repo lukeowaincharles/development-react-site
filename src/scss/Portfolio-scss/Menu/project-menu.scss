@@ -1,0 +1,56 @@
+.menu {
+  cursor: pointer;
+  position: relative;
+}
+
+.project-menu {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+  background-color: rgba($brand-dark-purple, 95%);
+  box-shadow: 0 4px 4px 0 rgba($black, 25%);
+  min-width: max-content;
+  margin-left: 26px;
+
+  @include media-breakpoint-up(sm) {
+    margin-left: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 35%;
+    transform: translateX(-50%);
+    height: 14px;
+    width: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 14px solid rgba($brand-dark-purple, 95%);
+
+    @include media-breakpoint-up(sm) {
+      left: 50%;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  a {
+    padding: 12px 16px;
+    display: block;
+    font-size: rem(14px);
+    border-radius: 4px;
+
+    &:active,
+    &:hover {
+      background-color: $brand-light-purple;
+      color: $white;
+    }
+  }
+}

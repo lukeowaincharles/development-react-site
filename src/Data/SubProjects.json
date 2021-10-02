@@ -1,0 +1,26 @@
+[
+  {
+    "url": "teenage-cancer-trust",
+    "image": "",
+    "icon": "",
+    "logo": "",
+    "headline": "",
+    "brief": "Build a sleek new donation site to help make donating easier",
+    "approach": "React using semantic ui for layouts and custom SCSS for the styling.",
+    "role": "",
+    "whatwentwell": "Working closely with with other FE devs and pushing the project forward",
+    "whatyoudchange": ""
+  },
+  {
+    "url": "run-digital",
+    "image": "",
+    "icon": "",
+    "logo": "",
+    "headline": "Redesign",
+    "brief": "Redesign/rebuild of old website",
+    "approach": "Wordpress",
+    "role": "Designer and FE developer",
+    "whatwentwell": "",
+    "whatyoudchange": ""
+  }
+]
