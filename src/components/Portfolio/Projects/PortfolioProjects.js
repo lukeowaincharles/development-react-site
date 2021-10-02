@@ -14,7 +14,12 @@ function PortfolioProjects() {
             tab={`${item.url} ${"casestudy"}`}
           >
             <div className="projects__logo">
-              <img src={item.logo} alt={`${item.url} ${"logo"}`} />
+              <img
+                width="100%"
+                height="100%"
+                src={item.logo}
+                alt={`${item.url} ${"logo"}`}
+              />
             </div>
             {/* <div>
               <img src={ `${item.image}`} alt="" />
