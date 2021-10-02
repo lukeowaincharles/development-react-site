@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import ProjectData from "../../../Data/Projects.json";
 import SubProjectData from "../../../Data/SubProjects.json";
 import AboutData from "../../../Data/About.json";
 import BrowserWindow from "../Browser/BrowserWindow";
+import AppFolder from "../AppFolder/AppFolder";
 
 function ProjectDetails() {
   const [id] = useState(useParams().id),
     [url, setUrl] = useState(""),
+    [logo, setLogo] = useState(""),
     [headline, setHeadline] = useState(""),
     [brief, setBrief] = useState(""),
     [approach, setApproach] = useState(""),
@@ -24,6 +26,7 @@ function ProjectDetails() {
       let obj = ProjectData[i];
       if (obj.url === id) {
         setUrl(obj.url);
+        setLogo(obj.logo);
         setHeadline(obj.headline);
         setBrief(obj.brief);
         setApproach(obj.approach);
@@ -66,38 +69,60 @@ function ProjectDetails() {
           </a>
         </div>
       ) : (
-        <BrowserWindow
-          hasDrag={false}
-          classes={`${"browser-window--project-page"} ${
-            url + "--project-page"
-          }`}
-          tab={`${url} ${"casestudy"}`}
-        >
-          <div className="project-details" id={`${id}`}>
-            <div className="project-details__header">
-              <Container>
-                {headline ? <h1>{headline}</h1> : ""}
-                {title ? (
-                  <h1>
-                    {name} {title}
-                  </h1>
-                ) : (
-                  ""
-                )}
-              </Container>
-            </div>
-            <div className="project-details__content">
-              <Container>
-                {brief ? <p>{brief}</p> : ""}
-                {approach ? <p>{approach}</p> : ""}
-                {role ? <p>{role}</p> : ""}
-                {whatwentwell ? <p>{whatwentwell}</p> : ""}
-                {whatyoudchange ? <p>{whatyoudchange}</p> : ""}
-                {description ? <p>{description}</p> : ""}
-              </Container>
-            </div>
-          </div>
-        </BrowserWindow>
+        <Container>
+          <Row>
+            <Col lg={1}></Col>
+            <Col md={10} lg={10}>
+              <BrowserWindow
+                hasDrag={false}
+                classes={`${"browser-window--project-page"} ${
+                  url + "--project-page"
+                }`}
+                tab={`${url} ${"casestudy"}`}
+              >
+                <div className={`${"project-details"} ${url}`} id={`${id}`}>
+                  <div className="project-details__header">
+                    <Container>
+                      {logo ? (
+                        <div className="projects__logo">
+                          <img
+                            width="100%"
+                            height="100%"
+                            src={logo}
+                            alt={`${url} ${"logo"}`}
+                          />
+                        </div>
+                      ) : (
+                        ""
+                      )}
+                      {headline ? <h1>{headline}</h1> : ""}
+                      {title ? (
+                        <h1>
+                          {name} {title}
+                        </h1>
+                      ) : (
+                        ""
+                      )}
+                    </Container>
+                  </div>
+                  <div className="project-details__content">
+                    <Container>
+                      {brief ? <p>{brief}</p> : ""}
+                      {approach ? <p>{approach}</p> : ""}
+                      {role ? <p>{role}</p> : ""}
+                      {whatwentwell ? <p>{whatwentwell}</p> : ""}
+                      {whatyoudchange ? <p>{whatyoudchange}</p> : ""}
+                      {description ? <p>{description}</p> : ""}
+                    </Container>
+                  </div>
+                </div>
+              </BrowserWindow>
+            </Col>
+            <Col md={2} lg={1}>
+              <AppFolder />
+            </Col>
+          </Row>
+        </Container>
       )}
     </div>
   );
