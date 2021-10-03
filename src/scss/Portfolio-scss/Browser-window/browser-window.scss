@@ -72,6 +72,12 @@
     .btn {
       background-color: $brand-blue;
       border-color: $brand-blue;
+
+      &:active,
+      &:hover {
+        background-color: darken($brand-blue, 30%);
+        border-color: darken($brand-blue, 30%);
+      }
     }
 
     @include media-breakpoint-up(lg) {
@@ -113,6 +119,13 @@
         color: $silverstone-blue;
         background-color: $white;
         border-color: $white;
+
+        &:active,
+        &:hover {
+          background-color: $black;
+          border-color: $black;
+          color: $white;
+        }
       }
     }
 
@@ -155,6 +168,12 @@
       .btn {
         background-color: $jmfinn-pink;
         border: $jmfinn-pink;
+
+        &:active,
+        &:hover {
+          background-color: darken($jmfinn-pink, 30%);
+          border: darken($jmfinn-pink, 30%);
+        }
       }
 
       @include media-breakpoint-up(lg) {
@@ -193,6 +212,12 @@
       .btn {
         background-color: $hiscox-red;
         border: $hiscox-red;
+
+        &:active,
+        &:hover {
+          background-color: darken($hiscox-red, 30%);
+          border: darken($hiscox-red, 30%);
+        }
       }
     }
 
