@@ -7,7 +7,7 @@ function AppFolder() {
     return (
       <React.Fragment key={index}>
         {item.url ? (
-          <a href={item.url} target="_self" rel="bookmark" className="app-folder__link">
+          <a href={item.url} target="_self" rel="bookmark" className="app-folder__link" title={`${"Quicklink to"} ${item.url} ${"casestudy"}`}>
             <div className="app-folder__content">
               <div className="app-folder__background">
                 <div className={`${"app-folder__icon"} ${item.icon}`}></div>

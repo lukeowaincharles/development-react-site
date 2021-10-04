@@ -28,6 +28,7 @@ function Taskbar() {
         className={`${"app-folder__link"} ${item.icon}`}
         key={index}
         aria-label={`${"Link to"} ${item.title}`}
+        title={`${"Link to "}${item.title}`}
       >
         <div className="app-folder__content">
           <div className="app-folder__background">
@@ -39,7 +40,7 @@ function Taskbar() {
   });
   return (
     <div className="taskbar">
-      <div className="app-folder__link menu">
+      <div className="app-folder__link menu" title="Menu for casestudies">
         <div
           className="app-folder__background"
           onClick={() => {
