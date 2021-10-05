@@ -13,6 +13,7 @@ import Taskbar from "./components/Portfolio/Taskbar/Taskbar";
 import useWindowWidth from "./components/Portfolio/Utilities/WindowWidth";
 import ArchiveSiteDesktop from "./assets/images/archive-site--desktop.png";
 import ArchiveSiteMobile from "./assets/images/archive-site--mobile.png";
+import CookieConsentBanner from "./components/Portfolio/Utilities/CookieConsentBanner/CookieConsentBanner";
 
 function App() {
   const width = useWindowWidth();
@@ -63,6 +64,7 @@ function App() {
           <Route exact path="/:id" component={ProjectDetails} />
         </Switch>
       </BrowserRouter>
+      <CookieConsentBanner />
     </div>
   );
 }
