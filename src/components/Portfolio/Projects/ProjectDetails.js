@@ -12,14 +12,19 @@ function ProjectDetails() {
     [url, setUrl] = useState(""),
     [logo, setLogo] = useState(""),
     [headline, setHeadline] = useState(""),
-    [brief, setBrief] = useState(""),
-    [approach, setApproach] = useState(""),
-    [role, setRole] = useState(""),
-    [whatwentwell, setWell] = useState(""),
-    [whatyoudchange, setWhatyoudchange] = useState(""),
-    [title, setTitle] = useState(""),
-    [name, setName] = useState(""),
-    [description, setDescription] = useState("");
+    [section_1_title, setSection1Title] = useState(""),
+    [section_1_text, setSection1Text] = useState(""),
+    [section_1_image, setSection1Image] = useState(""),
+    [live_site, setLiveSite] = useState(""),
+    [alias, setAlias] = useState(""),
+    [stack, setStack] = useState(""),
+    [section_2_text, setSection2Text] = useState(""),
+    [section_2_image, setSection2Image] = useState(""),
+    [section_3_text, setSection3Text] = useState(""),
+    [section_3_image, setSection3Image] = useState(""),
+    [intro, setIntro] = useState(""),
+    [description, setDescription] = useState(""),
+    [stack_skills, setStackSkills] = useState("");
 
   useEffect(() => {
     for (let i = 0; i < ProjectData.length; i++) {
@@ -28,11 +33,16 @@ function ProjectDetails() {
         setUrl(obj.url);
         setLogo(obj.logo);
         setHeadline(obj.headline);
-        setBrief(obj.brief);
-        setApproach(obj.approach);
-        setRole(obj.role);
-        setWell(obj.whatwentwell);
-        setWhatyoudchange(obj.whatyoudchange);
+        setSection1Title(obj.section_1_title);
+        setSection1Text(obj.section_1_text);
+        setSection1Image(obj.section_1_image);
+        setLiveSite(obj.live_site);
+        setAlias(obj.alias);
+        setStack(obj.stack);
+        setSection2Text(obj.section_2_text);
+        setSection2Image(obj.section_2_image);
+        setSection3Text(obj.section_3_text);
+        setSection3Image(obj.section_3_image);
       }
     }
     for (let i = 0; i < SubProjectData.length; i++) {
@@ -40,20 +50,25 @@ function ProjectDetails() {
       if (obj.url === id) {
         setUrl(obj.url);
         setHeadline(obj.headline);
-        setBrief(obj.brief);
-        setApproach(obj.approach);
-        setRole(obj.role);
-        setWell(obj.whatwentwell);
-        setWhatyoudchange(obj.whatyoudchange);
+        setSection1Title(obj.section_1_title);
+        setSection1Text(obj.section_1_text);
+        setSection1Image(obj.section_1_image);
+        setLiveSite(obj.live_site);
+        setAlias(obj.alias);
+        setStack(obj.stack);
+        setSection2Text(obj.section_2_text);
+        setSection2Image(obj.section_2_image);
+        setSection3Text(obj.section_3_text);
+        setSection3Image(obj.section_3_image);
       }
     }
     for (let i = 0; i < AboutData.length; i++) {
       let obj = AboutData[i];
       if (obj.url === id) {
         setUrl(obj.url);
-        setTitle(obj.title);
-        setName(obj.name);
+        setIntro(obj.intro);
         setDescription(obj.description);
+        setStackSkills(obj.stack_skills);
       }
     }
   }, [id]);
@@ -96,10 +111,19 @@ function ProjectDetails() {
                         ""
                       )}
                       {headline ? <h1>{headline}</h1> : ""}
-                      {title ? (
-                        <h1>
-                          {name} {title}
-                        </h1>
+                      {intro ? (
+                        <Row>
+                          <Col md={6}>
+                            <h1>
+                              {intro}
+                            </h1>
+                          </Col>
+                          <Col md={6}>
+                            <div className="">
+                              <img src="" alt="" />
+                            </div>
+                          </Col>
+                        </Row>
                       ) : (
                         ""
                       )}
@@ -108,37 +132,61 @@ function ProjectDetails() {
                   <div className="project-details__content">
                     <Container>
                       <Row>
-                        <Col>
-                          <h2>title</h2>
-                          <p>text</p>
-                          <div className="project-details__information">
-                            <div className="project-details__site">
-                              <h3>Live site</h3>
-                              <p>
-                                <a
-                                  href="/"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  Link
-                                </a>
-                              </p>
+                        <Col md={6}>
+                          {section_1_title ? <h2>{section_1_title}</h2> : ""}
+                          {section_1_text ? <p>{section_1_text}</p> : ""}
+                          {live_site ? (
+                            <div className="project-details__information">
+                              <div className="project-details__site">
+                                <h3>Live site</h3>
+                                <p>
+                                  <a
+                                    href={live_site}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    {alias}
+                                  </a>
+                                </p>
+                              </div>
+                              <div className="project-details__stack">
+                                <h3>Stack</h3>
+                                <p>{stack}</p>
+                              </div>
                             </div>
-                            <div className="project-details__stack">
-                              <h3>Stack</h3>
-                              <p></p>
+                          ) : (
+                            ""
+                          )}
+                          {description ? (
+                            // ABOUT Desc
+                            <div className="about__description">
+                              <h3>A bit about me</h3>
+                              {AboutData[0].description.map((paragraph, i) => (
+                                <p key={i}>{paragraph}</p>
+                              ))}
                             </div>
-                          </div>
+                          ) : (
+                            ""
+                          )}
                         </Col>
-                        <Col>IMG</Col>
-                      </Row>
-                      <Row>
-                        <Col>IMG</Col>
-                        <Col>
-                          {approach ? (
-                            <div className="project-details__approach">
-                              <h2>What the approach of the project was</h2>
-                              <p>{approach}</p>
+                        <Col md={6}>
+                          {section_1_image ? (
+                            <div className="project-details__image">
+                              <img src={section_1_image} alt="" />
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                          {stack_skills ? (
+                            <div className="about__skills">
+                              <h4>Stack and skills</h4>
+                              <ul>
+                                {AboutData[0].stack_skills.map(
+                                  (listItem, i) => (
+                                    <li key={i}>{listItem}</li>
+                                  )
+                                )}
+                              </ul>
                             </div>
                           ) : (
                             ""
@@ -146,14 +194,47 @@ function ProjectDetails() {
                         </Col>
                       </Row>
                       <Row>
-                        <Col></Col>
-                        <Col>IMG</Col>
+                        <Col md={6}>
+                          {section_2_image ? (
+                            <div className="project-details__image">
+                              <img src={section_2_image} alt="" />
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </Col>
+                        <Col md={6}>
+                          {section_2_text ? (
+                            <div className="project-details__approach">
+                              <h2>What the approach of the project was</h2>
+                              <p>{section_2_text}</p>
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </Col>
                       </Row>
-                      {brief ? <p>{brief}</p> : ""}
-                      {role ? <p>{role}</p> : ""}
-                      {whatwentwell ? <p>{whatwentwell}</p> : ""}
-                      {whatyoudchange ? <p>{whatyoudchange}</p> : ""}
-                      {description ? <p>{description}</p> : ""}
+                      <Row>
+                        <Col md={6}>
+                          {section_3_text ? (
+                            <div className="project-details__approach">
+                              <h2>What the outcome was of the project</h2>
+                              <p>{section_3_text}</p>
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </Col>
+                        <Col md={6}>
+                          {section_3_image ? (
+                            <div className="project-details__image">
+                              <img src={section_3_image} alt="" />
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </Col>
+                      </Row>
                     </Container>
                   </div>
                 </div>

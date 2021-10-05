@@ -40,13 +40,47 @@
     padding: 32px 0;
 
     h2,
-    h3 {
+    h3,
+    h4 {
       color: $grey-900;
+      max-width: 100%;
+      font-weight: bold;
     }
 
-    p {
+    h4 {
+      font-size: rem(16px);
+    }
+
+    p,
+    ul {
       color: $grey-700;
     }
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+
+    a {
+      color: $grey-700;
+
+      &:active,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h3 {
+      font-size: rem(16px);
+    }
+  }
+
+  &__site {
+    margin-right: 32px;
   }
 
   &.silverstone {
@@ -87,7 +121,7 @@
       }
 
       &:after {
-        background-image: url("../../../assets/images/portfolio-jmfinn-background.svg");
+        background-image: url("../../../assets/images/jmfinn-project-detail.jpeg");
         left: 0;
         width: 100%;
         background-size: cover;
@@ -106,12 +140,12 @@
       color: $black;
 
       &:after {
-        right: -40px;
+        right: -47%;
         background-image: url("../../../assets/images/portfolio-hiscox-background.svg");
-        width: 177px;
+        width: 100%;
 
         @include media-breakpoint-up(lg) {
-          right: -15px;
+          right: -38%;
         }
       }
     }
