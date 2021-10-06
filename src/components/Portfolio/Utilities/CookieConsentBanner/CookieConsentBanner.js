@@ -43,7 +43,7 @@ function CookieConsentBanner() {
       }}
       buttonStyle={{ marginLeft: "16px" }}
     >
-      <span>This site uses some cookies to collect data</span>
+      <span>We use cookies to improve user experience and analyze website traffic. By clicking “Accept“, you agree and opt-in to use our website's cookies.</span>
     </CookieConsent>
   );
 }
