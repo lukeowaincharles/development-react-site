@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import ProjectData from "../../../Data/Projects.json";
 import SubProjectData from "../../../Data/SubProjects.json";
 import AboutData from "../../../Data/About.json";
+import WorkExperienceData from "../../../Data/WorkExperience.json";
 import BrowserWindow from "../Browser/BrowserWindow";
 import AppFolder from "../AppFolder/AppFolder";
 
@@ -72,12 +73,31 @@ function ProjectDetails() {
       }
     }
   }, [id]);
+
+  const placesWorked = WorkExperienceData.map((item, index) => {
+    return (
+      <div className="" key={index}>
+        <h3>
+          {item.job_role} @{" "}
+          <a href={item.company_link} target="_blank" rel="noopener noreferrer">
+            {item.company}
+          </a>
+        </h3>
+        <p>{item.work_period}</p>
+        <ul>
+          {item.experience.map((listItem, index) => (
+            <li key={index}>{listItem}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  });
   return (
     <div>
       {!url ? (
         <div>
           <div style={{ textAlign: "center" }}>
-            <h1> 404: Page Not Found</h1>
+            <h1>404: Page Not Found</h1>
           </div>
           <a className="btn btn-primary" href="/">
             Return to home
@@ -114,13 +134,11 @@ function ProjectDetails() {
                       {intro ? (
                         <Row>
                           <Col md={6}>
-                            <h1>
-                              {intro}
-                            </h1>
+                            <h1>{intro}</h1>
                           </Col>
                           <Col md={6}>
-                            <div className="">
-                              <img src="" alt="" />
+                            <div className="about__image">
+                              <img src="/images/about-me.jpg" alt="" />
                             </div>
                           </Col>
                         </Row>
@@ -193,49 +211,67 @@ function ProjectDetails() {
                           )}
                         </Col>
                       </Row>
-                      <Row>
-                        <Col md={6}>
-                          {section_2_image ? (
-                            <div className="project-details__image">
-                              <img src={section_2_image} alt="" />
-                            </div>
-                          ) : (
-                            ""
-                          )}
-                        </Col>
-                        <Col md={6}>
-                          {section_2_text ? (
-                            <div className="project-details__approach">
-                              <h2>What the approach of the project was</h2>
-                              <p>{section_2_text}</p>
-                            </div>
-                          ) : (
-                            ""
-                          )}
-                        </Col>
-                      </Row>
-                      <Row>
-                        <Col md={6}>
-                          {section_3_text ? (
-                            <div className="project-details__approach">
-                              <h2>What the outcome was of the project</h2>
-                              <p>{section_3_text}</p>
-                            </div>
-                          ) : (
-                            ""
-                          )}
-                        </Col>
-                        <Col md={6}>
-                          {section_3_image ? (
-                            <div className="project-details__image">
-                              <img src={section_3_image} alt="" />
-                            </div>
-                          ) : (
-                            ""
-                          )}
-                        </Col>
-                      </Row>
                     </Container>
+                    {url === "about" ? (
+                      <section>
+                        <Container>
+                          <Row>
+                            <Col md={10}>{placesWorked}</Col>
+                          </Row>
+                        </Container>
+                      </section>
+                    ) : (
+                      <Container>
+                        <Row>
+                          <Col md={6}>
+                            {section_2_image ? (
+                              <div className="project-details__image">
+                                <img src={section_2_image} alt="" />
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </Col>
+                          <Col md={6}>
+                            {section_2_text ? (
+                              <div className="project-details__approach">
+                                <h2>What the approach of the project was</h2>
+                                <p>{section_2_text}</p>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </Col>
+                        </Row>
+                      </Container>
+                    )}
+                    {url === "about" ? (
+                      ""
+                    ) : (
+                      <Container>
+                        <Row>
+                          <Col md={6}>
+                            {section_3_text ? (
+                              <div className="project-details__approach">
+                                <h2>What the outcome was of the project</h2>
+                                <p>{section_3_text}</p>
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </Col>
+                          <Col md={6}>
+                            {section_3_image ? (
+                              <div className="project-details__image">
+                                <img src={section_3_image} alt="" />
+                              </div>
+                            ) : (
+                              ""
+                            )}
+                          </Col>
+                        </Row>
+                      </Container>
+                    )}
                   </div>
                 </div>
               </BrowserWindow>
