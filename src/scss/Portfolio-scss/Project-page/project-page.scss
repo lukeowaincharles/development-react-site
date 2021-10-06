@@ -5,6 +5,23 @@
 }
 
 .project-details {
+  .about {
+    &__image {
+      max-width: 306px;
+      max-height: 306px;
+      margin: 0 auto;
+      position: relative;
+
+      img {
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+
+      @include imageBackground(100%, 100%, 16px, 168.46deg, $bodyGrad, -5deg);
+    }
+  }
   .container {
     position: relative;
     z-index: 5;
