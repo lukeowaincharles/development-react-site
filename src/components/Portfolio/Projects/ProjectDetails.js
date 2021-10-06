@@ -7,6 +7,7 @@ import AboutData from "../../../Data/About.json";
 import WorkExperienceData from "../../../Data/WorkExperience.json";
 import BrowserWindow from "../Browser/BrowserWindow";
 import AppFolder from "../AppFolder/AppFolder";
+import Contact from "../Contact/Contact";
 
 function ProjectDetails() {
   const [id] = useState(useParams().id),
@@ -281,6 +282,7 @@ function ProjectDetails() {
                         </Row>
                       </Container>
                     )}
+                    <Contact />
                   </div>
                 </div>
               </BrowserWindow>
