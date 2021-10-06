@@ -161,64 +161,68 @@ function ProjectDetails() {
                     </Container>
                   </div>
                   <div className="project-details__content">
-                    <Container>
-                      <Row>
-                        <Col xl={6}>
-                          {section_1_title && <h2>{section_1_title}</h2>}
-                          {section_1_text && <p>{section_1_text}</p>}
-                          {live_site && (
-                            <div className="project-details__information">
-                              <div className="project-details__site">
-                                <h3>Live site</h3>
-                                <p>
-                                  <a
-                                    href={live_site}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    {alias}
-                                  </a>
-                                </p>
+                    <div className="project-details__wrapper">
+                      <Container>
+                        <Row>
+                          <Col xl={6}>
+                            {section_1_title && <h2>{section_1_title}</h2>}
+                            {section_1_text && <p>{section_1_text}</p>}
+                            {live_site && (
+                              <div className="project-details__information">
+                                <div className="project-details__site">
+                                  <h3>Live site</h3>
+                                  <p>
+                                    <a
+                                      href={live_site}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      {alias}
+                                    </a>
+                                  </p>
+                                </div>
+                                <div className="project-details__stack">
+                                  <h3>Stack</h3>
+                                  <p>{stack}</p>
+                                </div>
                               </div>
-                              <div className="project-details__stack">
-                                <h3>Stack</h3>
-                                <p>{stack}</p>
-                              </div>
-                            </div>
-                          )}
-                          {description && (
-                            // ABOUT Desc
-                            <div className="about__description">
-                              <h2>A bit about me</h2>
-                              {AboutData[0].description.map((paragraph, i) => (
-                                <p key={i}>{paragraph}</p>
-                              ))}
-                            </div>
-                          )}
-                        </Col>
-                        <Col xl={6}>
-                          {section_1_image && (
-                            <div className="project-details__image">
-                              <img src={section_1_image} alt="" />
-                            </div>
-                          )}
-                          {stack_skills && (
-                            <div className="about__skills">
-                              <h3 className="about__skills__title">
-                                Stack and skills
-                              </h3>
-                              <ul>
-                                {AboutData[0].stack_skills.map(
-                                  (listItem, i) => (
-                                    <li key={i}>{listItem}</li>
+                            )}
+                            {description && (
+                              // ABOUT Desc
+                              <div className="about__description">
+                                <h2>A bit about me</h2>
+                                {AboutData[0].description.map(
+                                  (paragraph, i) => (
+                                    <p key={i}>{paragraph}</p>
                                   )
                                 )}
-                              </ul>
-                            </div>
-                          )}
-                        </Col>
-                      </Row>
-                    </Container>
+                              </div>
+                            )}
+                          </Col>
+                          <Col xl={6}>
+                            {section_1_image && (
+                              <div className="project-details__image project-details__image--one">
+                                <img src={section_1_image} alt="" />
+                              </div>
+                            )}
+                            {stack_skills && (
+                              <div className="about__skills">
+                                <h3 className="about__skills__title">
+                                  Stack and skills
+                                </h3>
+                                <ul>
+                                  {AboutData[0].stack_skills.map(
+                                    (listItem, i) => (
+                                      <li key={i}>{listItem}</li>
+                                    )
+                                  )}
+                                </ul>
+                              </div>
+                            )}
+                          </Col>
+                        </Row>
+                      </Container>
+                    </div>
                     {url === "about" ? (
                       <section className="about__work-section">
                         <Container>
@@ -239,48 +243,52 @@ function ProjectDetails() {
                         </Container>
                       </section>
                     ) : (
-                      <Container>
-                        <Row>
-                          <Col xl={6}>
-                            {section_2_image && (
-                              <div className="project-details__image">
-                                <img src={section_2_image} alt="" />
-                              </div>
-                            )}
-                          </Col>
-                          <Col xl={6}>
-                            {section_2_text && (
-                              <div className="project-details__approach">
-                                <h2>What the approach of the project was</h2>
-                                <p>{section_2_text}</p>
-                              </div>
-                            )}
-                          </Col>
-                        </Row>
-                      </Container>
+                      <div className="project-details__wrapper">
+                        <Container>
+                          <Row>
+                            <Col xl={6}>
+                              {section_2_image && (
+                                <div className="project-details__image project-details__image--two">
+                                  <img src={section_2_image} alt="" />
+                                </div>
+                              )}
+                            </Col>
+                            <Col xl={6}>
+                              {section_2_text && (
+                                <div className="project-details__approach">
+                                  <h2>What the approach of the project was</h2>
+                                  <p>{section_2_text}</p>
+                                </div>
+                              )}
+                            </Col>
+                          </Row>
+                        </Container>
+                      </div>
                     )}
                     {url === "about" ? (
                       ""
                     ) : (
-                      <Container>
-                        <Row>
-                          <Col xl={6}>
-                            {section_3_text && (
-                              <div className="project-details__approach">
-                                <h2>What the outcome was of the project</h2>
-                                <p>{section_3_text}</p>
-                              </div>
-                            )}
-                          </Col>
-                          <Col xl={6}>
-                            {section_3_image && (
-                              <div className="project-details__image">
-                                <img src={section_3_image} alt="" />
-                              </div>
-                            )}
-                          </Col>
-                        </Row>
-                      </Container>
+                      <div className="project-details__wrapper">
+                        <Container>
+                          <Row>
+                            <Col xl={6}>
+                              {section_3_text && (
+                                <div className="project-details__approach">
+                                  <h2>What the outcome was of the project</h2>
+                                  <p>{section_3_text}</p>
+                                </div>
+                              )}
+                            </Col>
+                            <Col xl={6}>
+                              {section_3_image && (
+                                <div className="project-details__image project-details__image--three">
+                                  <img src={section_3_image} alt="" />
+                                </div>
+                              )}
+                            </Col>
+                          </Row>
+                        </Container>
+                      </div>
                     )}
                     <Contact />
                   </div>
