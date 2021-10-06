@@ -76,7 +76,7 @@ function ProjectDetails() {
 
   const placesWorked = WorkExperienceData.map((item, index) => {
     return (
-      <div className="" key={index}>
+      <div className="about__work-experience" key={index}>
         <h3>
           {item.job_role} @{" "}
           <a href={item.company_link} target="_blank" rel="noopener noreferrer">
@@ -213,10 +213,19 @@ function ProjectDetails() {
                       </Row>
                     </Container>
                     {url === "about" ? (
-                      <section>
+                      <section className="about__work-section">
                         <Container>
                           <Row>
-                            <Col md={10}>{placesWorked}</Col>
+                            <Col md={10}>
+                              <h3>Where I've worked</h3>
+                              <p>
+                                I’ve had the privilege of working in a variety
+                                of agencies meaning I’ve worked with over 30
+                                different clients ranging from finance, charties
+                                and big household named brands.
+                              </p>
+                              {placesWorked}
+                            </Col>
                           </Row>
                         </Container>
                       </section>
