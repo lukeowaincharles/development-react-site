@@ -9,7 +9,7 @@
     &__image {
       max-width: 306px;
       max-height: 306px;
-      margin: 0 auto;
+      margin: 0 0 0 auto;
       position: relative;
 
       img {
@@ -33,9 +33,14 @@
       }
     }
   }
+
   .container {
     position: relative;
     z-index: 5;
+
+    @include media-breakpoint-up(xl) {
+      padding: 0 104px;
+    }
   }
 
   &__header {
@@ -50,6 +55,7 @@
     h1 {
       font-weight: bold;
       max-width: 490px;
+      margin-bottom: 32px;
     }
 
     &:after {
@@ -65,7 +71,7 @@
 
   &__content {
     background-color: $white;
-    padding: 32px 0;
+    padding: 32px 0 0;
 
     h2,
     h3,
