@@ -108,13 +108,17 @@ function ProjectDetails() {
   return (
     <div>
       {!url ? (
-        <div>
-          <div style={{ textAlign: "center" }}>
-            <h1>404: Page Not Found</h1>
+        <div className="error-page">
+          <div className="error-page__content">
+            <div className="error-page__message">
+              <h1>404: Page Not Found</h1>
+            </div>
+            <div className="error-page__button">
+              <a className="btn btn-primary" href="/">
+                Return to home
+              </a>
+            </div>
           </div>
-          <a className="btn btn-primary" href="/">
-            Return to home
-          </a>
         </div>
       ) : (
         <Container>
