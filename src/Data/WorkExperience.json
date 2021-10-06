@@ -1,0 +1,27 @@
+[
+  {
+    "job_role": "Lead Frontend Developer",
+    "company": "Everything Connected",
+    "company_link": "https://www.e-c.agency/",
+    "work_period": "January 2019 - Present",
+    "experience": [
+      "Communicate with multi-disciplinary teams of developers, designers, account/project managers and clients on a daily basis",
+      "Work with a variety of different languages",
+      "Resourcing teams"
+    ]
+  },
+  {
+    "job_role": "Frontend Developer",
+    "company": "Like Digital",
+    "company_link": "https://like.digital/",
+    "work_period": "April 2018 - December 2018",
+    "experience": [""]
+  },
+  {
+    "job_role": "Frontend Developer & Designer",
+    "company": "Run",
+    "company_link": "https://rundigital.co.uk/",
+    "work_period": "May 2015 - April 2018",
+    "experience": ["Communicate with team and clients daily", "Design and build bespoke websites"]
+  }
+]
