@@ -78,18 +78,30 @@ function ProjectDetails() {
   const placesWorked = WorkExperienceData.map((item, index) => {
     return (
       <div className="about__work-experience" key={index}>
-        <h3>
-          {item.job_role} @{" "}
-          <a href={item.company_link} target="_blank" rel="noopener noreferrer">
-            {item.company}
-          </a>
-        </h3>
-        <p>{item.work_period}</p>
-        <ul>
-          {item.experience.map((listItem, index) => (
-            <li key={index}>{listItem}</li>
-          ))}
-        </ul>
+        <div className="about__company-logo">
+          <img src={item.logo} alt={item.company} />
+        </div>
+        <div className="about__work-content">
+          <h3 className="about__work-title">
+            {item.job_role} @{" "}
+            <a
+              className="about__work-link"
+              href={item.company_link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.company}
+            </a>
+          </h3>
+          <p className="about__work-period">{item.work_period}</p>
+          <ul className="about__work-list">
+            {item.experience.map((listItem, index) => (
+              <li key={index}>
+                <p>{listItem}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   });
@@ -173,7 +185,7 @@ function ProjectDetails() {
                           {description && (
                             // ABOUT Desc
                             <div className="about__description">
-                              <h3>A bit about me</h3>
+                              <h2>A bit about me</h2>
                               {AboutData[0].description.map((paragraph, i) => (
                                 <p key={i}>{paragraph}</p>
                               ))}
@@ -188,7 +200,9 @@ function ProjectDetails() {
                           )}
                           {stack_skills && (
                             <div className="about__skills">
-                              <h4>Stack and skills</h4>
+                              <h3 className="about__skills__title">
+                                Stack and skills
+                              </h3>
                               <ul>
                                 {AboutData[0].stack_skills.map(
                                   (listItem, i) => (
@@ -206,13 +220,15 @@ function ProjectDetails() {
                         <Container>
                           <Row>
                             <Col xl={10}>
-                              <h3>Where I've worked</h3>
-                              <p>
-                                I’ve had the privilege of working in a variety
-                                of agencies meaning I’ve worked with over 30
-                                different clients ranging from finance, charties
-                                and big household named brands.
-                              </p>
+                              <div className="about__work-section-content">
+                                <h3>Where I've worked</h3>
+                                <p>
+                                  I’ve had the privilege of working in a variety
+                                  of agencies meaning I’ve worked with over 30
+                                  different clients ranging from finance,
+                                  charties and big household named brands.
+                                </p>
+                              </div>
                               {placesWorked}
                             </Col>
                           </Row>
