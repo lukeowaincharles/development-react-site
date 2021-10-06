@@ -119,7 +119,7 @@ function ProjectDetails() {
                 <div className={`${"project-details"} ${url}`} id={`${id}`}>
                   <div className="project-details__header">
                     <Container>
-                      {logo ? (
+                      {logo && (
                         <div className="projects__logo">
                           <img
                             width="100%"
@@ -128,33 +128,29 @@ function ProjectDetails() {
                             alt={`${url} ${"logo"}`}
                           />
                         </div>
-                      ) : (
-                        ""
                       )}
-                      {headline ? <h1>{headline}</h1> : ""}
-                      {intro ? (
+                      {headline && <h1>{headline}</h1>}
+                      {intro && (
                         <Row>
-                          <Col md={6}>
+                          <Col lg={6}>
                             <h1>{intro}</h1>
                           </Col>
-                          <Col md={6}>
+                          <Col lg={6}>
                             <div className="about__image">
                               <img src="/images/about-me.jpg" alt="" />
                             </div>
                           </Col>
                         </Row>
-                      ) : (
-                        ""
                       )}
                     </Container>
                   </div>
                   <div className="project-details__content">
                     <Container>
                       <Row>
-                        <Col md={6}>
-                          {section_1_title ? <h2>{section_1_title}</h2> : ""}
-                          {section_1_text ? <p>{section_1_text}</p> : ""}
-                          {live_site ? (
+                        <Col xl={6}>
+                          {section_1_title && <h2>{section_1_title}</h2>}
+                          {section_1_text && <p>{section_1_text}</p>}
+                          {live_site && (
                             <div className="project-details__information">
                               <div className="project-details__site">
                                 <h3>Live site</h3>
@@ -173,10 +169,8 @@ function ProjectDetails() {
                                 <p>{stack}</p>
                               </div>
                             </div>
-                          ) : (
-                            ""
                           )}
-                          {description ? (
+                          {description && (
                             // ABOUT Desc
                             <div className="about__description">
                               <h3>A bit about me</h3>
@@ -184,19 +178,15 @@ function ProjectDetails() {
                                 <p key={i}>{paragraph}</p>
                               ))}
                             </div>
-                          ) : (
-                            ""
                           )}
                         </Col>
-                        <Col md={6}>
-                          {section_1_image ? (
+                        <Col xl={6}>
+                          {section_1_image && (
                             <div className="project-details__image">
                               <img src={section_1_image} alt="" />
                             </div>
-                          ) : (
-                            ""
                           )}
-                          {stack_skills ? (
+                          {stack_skills && (
                             <div className="about__skills">
                               <h4>Stack and skills</h4>
                               <ul>
@@ -207,8 +197,6 @@ function ProjectDetails() {
                                 )}
                               </ul>
                             </div>
-                          ) : (
-                            ""
                           )}
                         </Col>
                       </Row>
@@ -217,7 +205,7 @@ function ProjectDetails() {
                       <section className="about__work-section">
                         <Container>
                           <Row>
-                            <Col md={10}>
+                            <Col xl={10}>
                               <h3>Where I've worked</h3>
                               <p>
                                 I’ve had the privilege of working in a variety
@@ -233,23 +221,19 @@ function ProjectDetails() {
                     ) : (
                       <Container>
                         <Row>
-                          <Col md={6}>
-                            {section_2_image ? (
+                          <Col xl={6}>
+                            {section_2_image && (
                               <div className="project-details__image">
                                 <img src={section_2_image} alt="" />
                               </div>
-                            ) : (
-                              ""
                             )}
                           </Col>
-                          <Col md={6}>
-                            {section_2_text ? (
+                          <Col xl={6}>
+                            {section_2_text && (
                               <div className="project-details__approach">
                                 <h2>What the approach of the project was</h2>
                                 <p>{section_2_text}</p>
                               </div>
-                            ) : (
-                              ""
                             )}
                           </Col>
                         </Row>
@@ -260,23 +244,19 @@ function ProjectDetails() {
                     ) : (
                       <Container>
                         <Row>
-                          <Col md={6}>
-                            {section_3_text ? (
+                          <Col xl={6}>
+                            {section_3_text && (
                               <div className="project-details__approach">
                                 <h2>What the outcome was of the project</h2>
                                 <p>{section_3_text}</p>
                               </div>
-                            ) : (
-                              ""
                             )}
                           </Col>
-                          <Col md={6}>
-                            {section_3_image ? (
+                          <Col xl={6}>
+                            {section_3_image && (
                               <div className="project-details__image">
                                 <img src={section_3_image} alt="" />
                               </div>
-                            ) : (
-                              ""
                             )}
                           </Col>
                         </Row>
