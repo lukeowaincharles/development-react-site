@@ -5,6 +5,58 @@
 }
 
 .project-details {
+  &__wrapper {
+    padding: 40px 0;
+
+    @include media-breakpoint-up(xl) {
+      padding: 45px 0;
+    }
+  }
+
+  &__image {
+    position: relative;
+    max-width: 487px;
+    margin: 20px auto;
+    @include imageBackground(100%, 100%, 16px, 168.46deg, $bodyGrad, -5deg);
+
+    &--one,
+    &--three {
+      @include imageBackground(
+        100%,
+        100%,
+        16px,
+        168.46deg,
+        $imageGradBlue,
+        -5deg
+      );
+      @include media-breakpoint-up(xl) {
+        right: -140px;
+      }
+    }
+
+    &--two {
+      @include imageBackground(
+        100%,
+        100%,
+        16px,
+        168.46deg,
+        $imageGradRed,
+        -5deg
+      );
+      @include media-breakpoint-up(xl) {
+        left: -140px;
+      }
+    }
+
+    img {
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      max-width: 487px;
+    }
+  }
+
   .about {
     &__image {
       max-width: 306px;
