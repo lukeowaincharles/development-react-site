@@ -21,9 +21,6 @@ function PortfolioProjects() {
                 alt={`${item.url} ${"logo"}`}
               />
             </div>
-            {/* <div>
-              <img src={ `${item.image}`} alt="" />
-            </div> */}
             <h2>{item.headline}</h2>
             <ButtonPrimary link={item.url} title="View casestudy" />
           </BrowserWindow>
