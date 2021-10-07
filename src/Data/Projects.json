@@ -1,6 +1,7 @@
 [
   {
     "url": "silverstone",
+    "tab": "Silverstone case study",
     "image": "/images/portfolio-silverstone.png",
     "icon": "folder folder--shortcut",
     "logo": "/images/silverstone-logo.svg",
@@ -29,6 +30,7 @@
   },
   {
     "url": "jmfinn",
+    "tab": "JMFinn case study",
     "image": "/images/portfolio-jmfinn.png",
     "icon": "folder folder--shortcut",
     "logo": "/images/jmfinn-logo.svg",
@@ -55,6 +57,7 @@
   },
   {
     "url": "hiscox",
+    "tab": "Hiscox case study",
     "image": "/images/portfolio-hiscox.png",
     "icon": "folder folder--shortcut",
     "logo": "/images/hiscox-logo.svg",

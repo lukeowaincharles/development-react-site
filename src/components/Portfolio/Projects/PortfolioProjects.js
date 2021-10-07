@@ -11,7 +11,7 @@ function PortfolioProjects() {
           <BrowserWindow
             key={index}
             classes={item.url}
-            tab={`${item.url} ${"casestudy"}`}
+            tab={`${item.tab}`}
           >
             <div className="projects__logo">
               <img

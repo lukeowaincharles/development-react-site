@@ -94,7 +94,7 @@ function ProjectDetails() {
                 classes={`${"browser-window--project-page"} ${
                   url + "--project-page"
                 }`}
-                tab={`${url} ${"casestudy"}`}
+                tab={url === "about" ? aboutPage.tab : page.tab}
               >
                 <div className={`${"project-details"} ${url}`} id={`${id}`}>
                   <div className="project-details__header">
@@ -159,11 +159,9 @@ function ProjectDetails() {
                               // ABOUT Desc
                               <div className="about__description">
                                 <h2>A bit about me</h2>
-                                {aboutPage.description.map(
-                                  (paragraph, i) => (
-                                    <p key={i}>{paragraph}</p>
-                                  )
-                                )}
+                                {aboutPage.description.map((paragraph, i) => (
+                                  <p key={i}>{paragraph}</p>
+                                ))}
                               </div>
                             )}
                           </Col>
@@ -179,11 +177,9 @@ function ProjectDetails() {
                                   Stack and skills
                                 </h3>
                                 <ul>
-                                  {aboutPage.stack_skills.map(
-                                    (listItem, i) => (
-                                      <li key={i}>{listItem}</li>
-                                    )
-                                  )}
+                                  {aboutPage.stack_skills.map((listItem, i) => (
+                                    <li key={i}>{listItem}</li>
+                                  ))}
                                 </ul>
                               </div>
                             )}
