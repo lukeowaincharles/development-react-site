@@ -264,10 +264,21 @@
   }
 
   &--archive,
-  &--project-page {
+  &--project-page,
+  &.page-not-found {
     position: relative;
     max-width: 1008px;
     margin: 40px auto;
+  }
+
+  &.page-not-found {
+    .browser-window__content {
+      background-color: $white;
+
+      @include media-breakpoint-up(md) {
+        height: calc(100vh - 162px);
+      }
+    }
   }
 
   &--archive {
