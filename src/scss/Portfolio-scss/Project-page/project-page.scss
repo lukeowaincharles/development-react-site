@@ -120,11 +120,10 @@
       }
 
       a {
-        color: $brand-mid-purple;
+        color: $brand-blue;
 
         &:active,
         &:hover {
-          color: $brand-purple;
           text-decoration: underline;
         }
       }
@@ -190,6 +189,10 @@
   &__content {
     background-color: $white;
     padding: 32px 0 0;
+
+    h2 {
+      font-size: rem(24px);
+    }
 
     h2,
     h3,
