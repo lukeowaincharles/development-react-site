@@ -72,18 +72,39 @@ function ProjectDetails() {
   return (
     <div>
       {!url ? (
-        <div className="error-page">
-          <div className="error-page__content">
-            <div className="error-page__message">
-              <h1>404: Page Not Found</h1>
-            </div>
-            <div className="error-page__button">
-              <a className="btn btn-primary" href="/">
-                Return to home
-              </a>
+        <BrowserWindow
+          hasDrag={false}
+          classes="page-not-found"
+          tab="Page not found"
+        >
+          <div className="error-page">
+            <div className="error-page__content">
+              <div className="error-page__message">
+                <h1>404: Page Not Found</h1>
+                <p>
+                  Whoooops this wasn't meant to happen, somehow the page you're
+                  looking for does not exist.
+                </p>
+                <p>
+                  If you can't find what you are looking for then get in touch
+                  with me at{" "}
+                  <a
+                    href="mailto:lukeowaincharles@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    lukeowaincharles@gmail.com
+                  </a>
+                </p>
+              </div>
+              <div className="error-page__button">
+                <a className="btn btn-primary" href="/">
+                  Return to home
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </BrowserWindow>
       ) : (
         <Container>
           <Row>
