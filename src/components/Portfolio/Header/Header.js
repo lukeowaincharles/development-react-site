@@ -8,8 +8,7 @@ function Header() {
     day = myCurrentDate.toLocaleString("default", { weekday: "short" }),
     date = myCurrentDate.getDate(),
     month = myCurrentDate.toLocaleString("default", { month: "short" }),
-    year = myCurrentDate.getFullYear(),
-    fullYear = day + " " + date + " " + month + " " + year;
+    fullYear = day + " " + date + " " + month;
   return (
     <div className="header">
       <Container>

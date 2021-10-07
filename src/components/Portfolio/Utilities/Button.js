@@ -1,15 +1,16 @@
 import React from "react";
 
 function ButtonPrimary(props) {
+  const {classes, link, title} = props;
   return (
     <React.Fragment>
       <a
-        className={`${"btn btn-primary"} ${props.classes}`}
-        href={props.link}
+        className={`${"btn btn-primary"} ${classes}`}
+        href={link}
         target="_self"
         rel="bookmark"
       >
-        {props.title}
+        {title}
       </a>
     </React.Fragment>
   );
