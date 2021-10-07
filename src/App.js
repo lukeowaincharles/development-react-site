@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import ProjectDetails from "./components/Portfolio/Projects/ProjectDetails";
 import "./App.scss";
 import PageLoader from "./components/Archive/PageLoader";
@@ -14,15 +14,17 @@ import useWindowWidth from "./components/Portfolio/Utilities/WindowWidth";
 import ArchiveSiteDesktop from "./assets/images/archive-site--desktop.png";
 import ArchiveSiteMobile from "./assets/images/archive-site--mobile.png";
 import CookieConsentBanner from "./components/Portfolio/Utilities/CookieConsentBanner/CookieConsentBanner";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const width = useWindowWidth();
+  const width = useWindowWidth(),
+    location = useLocation();
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
-        <Switch>
+      <Header />
+      <AnimatePresence exitBeforeEnter intial={false}>
+        <Switch location={location} key={location.pathname}>
           <Route
             exact
             path="/"
@@ -49,7 +51,11 @@ function App() {
             exact
             path="/archive"
             render={() => (
-              <BrowserWindow hasDrag={false} classes="browser-window--archive" tab="Archived web site">
+              <BrowserWindow
+                hasDrag={false}
+                classes="browser-window--archive"
+                tab="Archived web site"
+              >
                 <div className="archived">
                   <PageLoader />
                   {width >= 992 ? (
@@ -61,9 +67,14 @@ function App() {
               </BrowserWindow>
             )}
           />
-          <Route exact path="/:id" component={ProjectDetails} />
+          <Route
+            exact
+            path="/:id"
+            component={ProjectDetails}
+            location={location}
+          />
         </Switch>
-      </BrowserRouter>
+      </AnimatePresence>
       <CookieConsentBanner />
     </div>
   );
