@@ -8,7 +8,7 @@
     "headline": "Building a world class website for one of the UK’s biggest sport’s brand.",
     "section_1_title": "Transforming the digital presence of UK’s motorsport",
     "section_1_text": "Silverstone asked everything—connected to create a fully functional site that reflects the company’s branding and values. The goal was to create a buzz similar to the race track while aiding people to prepare for their visit on race day.",
-    "section_1_image": "/images/portfolio-silverstone.png",
+    "section_1_image": "/images/silverstone-section-1.png",
     "live_site": "https://www.silverstone.co.uk/",
     "alias": "silverstone.co.uk",
     "stack": "Drupal 8, Twig, SCSS, Javascript",
@@ -16,17 +16,17 @@
       "Based on wireframes and designed components from the design team, I worked with the rest of the tech unit to sprint plan and estimated the frontend development resources needed.",
       "As timelines were tight, we decided to use Launchpad, a Drupal distribution website starter kit I had previously created. Launchpad was built to reduce the time spent on repetitive tasks when starting a new development project."
     ],
-    "section_2_image": "/images/portfolio-silverstone.png",
+    "section_2_image": "/images/silverstone-section-2.png",
     "section_3_text": [
       "As the primary frontend developer, I had to constantly liaise with the design and project management team to ensure the build represented the designs and kept to client timelines.",
       "Though working initially alone, I used git to commit changes to our repository for version control and collect feedback on my pull requests to maintain a high code level."
     ],
-    "section_3_image": "/images/portfolio-silverstone.png",
+    "section_3_image": "/images/silverstone-section-3.png",
     "section_4_text": [
       "Though there were challenges throughout this 9 month-long project, I had successfully worked with backend developers to create a functional and customisable site, that the content team could create and design new pages in.",
       "Since launch, we have received positive feedback and are working alongside Silverstone to improve the user experience and efficiency of the build."
     ],
-    "section_4_image": "/images/portfolio-silverstone.png"
+    "section_4_image": "/images/silverstone-section-4.png"
   },
   {
     "url": "jmfinn",
@@ -37,7 +37,7 @@
     "headline": "Headless Gatsby build using Drupal as the CMS.",
     "section_1_title": "Challenging the traditional approach to financial services",
     "section_1_text": "JM Finn approached everything—connected to reimagine their brand to stand out from other financial institutions without separating from their existing client base. This update also created an opportunity to modernise the tech stack used on their website to mirror their disruptor strategy.",
-    "section_1_image": "",
+    "section_1_image": "/images/jmfinn-section-1.png",
     "live_site": "https://www.jmfinn.com/",
     "alias": "jmfinn.com",
     "stack": "Gatsby, GraphQL, Drupal 8 CMS",
@@ -45,15 +45,15 @@
       "As JM Finn had well-established content which was working successfully in communicating their mission and other information, the development effort was to update their frontend layer to introduce the new branding while focusing on improving the speed and efficiency of the website.",
       "This project felt like a prime opportunity to push the development team forward, and I advocated for using a headless Drupal build due to the security benefits and the default speed improvements that come approach."
     ],
-    "section_2_image": "",
+    "section_2_image": "/images/jmfinn-section-2.png",
     "section_3_text": [
       "Working as part of a team, I directed my efforts on building new components and styling them per the designs. Part of my role was to review pull requests via bitbucket and refactoring code that my coworkers had created to ensure we kept to our goals of guaranteeing speed improvements and security of the new headless site."
     ],
-    "section_3_image": "",
+    "section_3_image": "/images/jmfinn-section-3.png",
     "section_4_text": [
       "Working as part of a team, I directed my efforts on building new components and styling them per the designs. Part of my role was to review pull requests via bitbucket and refactoring code that my coworkers had created to ensure we kept to our goals of guaranteeing speed improvements and security of the new headless site."
     ],
-    "section_4_image": ""
+    "section_4_image": "/images/jmfinn-section-4.png"
   },
   {
     "url": "hiscox",
@@ -64,7 +64,7 @@
     "headline": "Drupal 8 website redesign and build for Business Insurance.",
     "section_1_title": "Hiscox’s lead web development agency for the UK and Europe",
     "section_1_text": "Hiscox has been a long-standing partnership spanning 6 years of projects. I worked with backend developers and the product owner to update their business insurance quotation tool.",
-    "section_1_image": "",
+    "section_1_image": "/images/hiscox-section-1.png",
     "live_site": "https://www.hiscox.co.uk/business-insurance",
     "alias": "hiscox.co.uk/business-insurance",
     "stack": "Drupal 8, Twig, SCSS, jQuery",
@@ -72,15 +72,15 @@
       "Taking an agile approach to the project, we used 10 sprint rounds to rebuild components to reflect the new design and to test the build for launch.",
       "To ensure a smooth sprint journey, I often spoke with the client to manage expectations around output and to understand the visual requirements needed for the brochureware site and the quoting tool."
     ],
-    "section_2_image": "",
+    "section_2_image": "/images/hiscox-section-2.png",
     "section_3_text": [
       "As part of the frontend development team, my core role focused on styling components to a high level that matched the designs supplied.",
       "I was also tasked with ensuring that the interactions on the quotation tool helped users feel confident that their quote was being processed and trust the figures generated."
     ],
-    "section_3_image": "",
+    "section_3_image": "/images/hiscox-section-3.png",
     "section_4_text": [
       "After 9 months of work, we successfully launched the new microsite and quotation tool. We received positive feedback from the client, which has resulted in us continuing our long term engagement with Hiscox."
     ],
-    "section_4_image": ""
+    "section_4_image": "/images/hiscox-section-4.png"
   }
 ]
