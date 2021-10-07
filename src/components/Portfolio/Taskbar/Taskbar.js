@@ -5,16 +5,34 @@ function Taskbar() {
   const [isOpen, setOpen] = useState(false);
 
   const MENUITEMS = [
+    { title: "Casestudies" },
     { url: "silverstone", title: "Silverstone" },
     { url: "jmfinn", title: "JMFinn" },
     { url: "hiscox", title: "Hiscox" },
-    { url: "teenage-cancer-trust", title: "Teenage Cancer Trust" },
-    { url: "run-digital", title: "Run Digital" },
+    { title: "Other projects" },
+    {
+      url: "https://donate.teenagecancertrust.org/",
+      title: "Teenage Cancer Trust",
+      external: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      url: "https://rundigital.co.uk/",
+      title: "Run Digital",
+      external: "_blank",
+      rel: "noopener noreferrer",
+    },
   ];
   const PROJECTMENUITEMS = MENUITEMS.map((item, index) => {
     return (
       <li key={index}>
-        <a href={item.url}>{item.title}</a>
+        {item.url ? (
+          <a href={item.url} target={item.external} rel={item.rel}>
+            {item.title}
+          </a>
+        ) : (
+          <p>{item.title}</p>
+        )}
       </li>
     );
   });
