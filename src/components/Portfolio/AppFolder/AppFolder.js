@@ -6,7 +6,7 @@ function AppFolder() {
   const APPCONTENT = ProjectData.map((item, index) => {
     return (
       <React.Fragment key={index}>
-        {item.url ? (
+        {item.url && (
           <a href={item.url} target="_self" rel="bookmark" className="app-folder__link" title={`${"Quicklink to"} ${item.url} ${"casestudy"}`}>
             <div className="app-folder__content">
               <div className="app-folder__background">
@@ -15,8 +15,6 @@ function AppFolder() {
               <p>{item.url}</p>
             </div>
           </a>
-        ) : (
-          ""
         )}
       </React.Fragment>
     );
@@ -25,7 +23,7 @@ function AppFolder() {
   const ABOUTCONTENT = AboutData.map((item, index) => {
     return (
       <React.Fragment key={index}>
-        <a href={item.url} target="_self" rel="bookmark" className="app-folder__link">
+        <a href={item.url} target="_self" rel="bookmark" className="app-folder__link" title="Find out more about me">
           <div className="app-folder__content">
             <div className="app-folder__background">
               <div className={`${"app-folder__icon"} ${item.icon}`}></div>

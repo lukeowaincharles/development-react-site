@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LinkData from "../../../Data/Links.json";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 function Taskbar() {
   const [isOpen, setOpen] = useState(false);
@@ -39,40 +40,50 @@ function Taskbar() {
 
   const LINKCONTENT = LinkData.map((item, index) => {
     return (
-      <a
-        href={item.link}
-        target={item.target}
-        rel={item.target === "_blank" ? "noopener noreferrer" : "bookmark"}
-        className={`${"app-folder__link"} ${item.icon}`}
+      <OverlayTrigger
         key={index}
-        aria-label={`${"Link to"} ${item.title}`}
-        title={`${"Link to "}${item.title}`}
+        placement="top"
+        overlay={<Tooltip id={`${item.title}`}>{item.title}</Tooltip>}
+        delay={{ show: 200, hide: 300 }}
       >
-        <div className="app-folder__content">
-          <div className="app-folder__background">
-            <div className={`${"app-folder__icon"} ${item.icon}`}></div>
+        <a
+          href={item.link}
+          target={item.target}
+          rel={item.target === "_blank" ? "noopener noreferrer" : "bookmark"}
+          className={`${"app-folder__link"} ${item.icon}`}
+          key={index}
+          aria-label={`${"Link to"} ${item.title}`}
+        >
+          <div className="app-folder__content">
+            <div className="app-folder__background">
+              <div className={`${"app-folder__icon"} ${item.icon}`}></div>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </OverlayTrigger>
     );
   });
   return (
     <div className="taskbar">
       <div className="app-folder__link menu" title="Menu for casestudies">
-        <div
-          className="app-folder__background"
-          onClick={() => {
-            setOpen(!isOpen);
-          }}
+        <OverlayTrigger
+          placement="top"
+          overlay={<Tooltip id="projects">Projects</Tooltip>}
+          delay={{ show: 200, hide: 300 }}
         >
-          <div className="app-folder__icon"></div>
-        </div>
-        {isOpen ? (
+          <div
+            className="app-folder__background"
+            onClick={() => {
+              setOpen(!isOpen);
+            }}
+          >
+            <div className="app-folder__icon"></div>
+          </div>
+        </OverlayTrigger>
+        {isOpen && (
           <div className="project-menu">
             <ul>{PROJECTMENUITEMS}</ul>
           </div>
-        ) : (
-          ""
         )}
       </div>
       {LINKCONTENT}
