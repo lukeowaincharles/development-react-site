@@ -19,6 +19,10 @@
     margin: 20px auto;
     @include imageBackground(100%, 100%, 16px, 168.46deg, $bodyGrad, -5deg);
 
+    &:before {
+      box-shadow: 0 4px 4px 0 rgba($black, 10%);
+    }
+
     &--one,
     &--three {
       @include imageBackground(
