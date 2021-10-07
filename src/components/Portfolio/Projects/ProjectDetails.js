@@ -109,7 +109,6 @@ function ProjectDetails() {
       ) : (
         <Container>
           <Row>
-            <Col lg={1}></Col>
             <Col md={10} lg={10}>
               <motion.div
                 initial={{
@@ -347,7 +346,7 @@ function ProjectDetails() {
                 </BrowserWindow>
               </motion.div>
             </Col>
-            <Col md={2} lg={1}>
+            <Col md={{span: 2, offset: 1}} lg={1} offse>
               <AppFolder />
             </Col>
           </Row>
