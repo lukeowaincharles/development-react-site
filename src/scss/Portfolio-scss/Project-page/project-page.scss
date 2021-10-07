@@ -34,7 +34,8 @@
       }
     }
 
-    &--two {
+    &--two,
+    &--four {
       @include imageBackground(
         100%,
         100%,
@@ -78,12 +79,6 @@
       h2 {
         font-size: rem(24px);
       }
-    }
-
-    &__description,
-    &__skills {
-      padding-top: 28px;
-      padding-bottom: 60px;
     }
 
     &__work-section {

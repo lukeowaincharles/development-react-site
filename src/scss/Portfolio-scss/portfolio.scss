@@ -1,4 +1,10 @@
 .portfolio {
+  margin-bottom: 170px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+
   &__content {
     margin-top: 40px;
 

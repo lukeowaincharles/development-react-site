@@ -1,11 +1,21 @@
 .app-folder {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 40px;
-  height: 100vh;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: column;
+    height: 100vh;
+  }
 
   &__link {
     margin-bottom: 15px;
+
+    &:not(.taskbar &) {
+      display: inline-block;
+      width: 50%;
+    }
 
     @include media-breakpoint-up(md) {
       margin-bottom: 30px;
