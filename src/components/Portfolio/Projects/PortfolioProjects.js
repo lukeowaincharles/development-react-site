@@ -7,7 +7,7 @@ function PortfolioProjects() {
   const CONTENT = ProjectData.map((item, index) => {
     return (
       <React.Fragment key={index}>
-        {item.url && item.image ? (
+        {item.url && item.image && (
           <BrowserWindow
             key={index}
             classes={item.url}
@@ -22,10 +22,8 @@ function PortfolioProjects() {
               />
             </div>
             <h2>{item.headline}</h2>
-            <ButtonPrimary link={item.url} title="View casestudy" />
+            <ButtonPrimary link={item.url} title="View case study" />
           </BrowserWindow>
-        ) : (
-          ""
         )}
       </React.Fragment>
     );
