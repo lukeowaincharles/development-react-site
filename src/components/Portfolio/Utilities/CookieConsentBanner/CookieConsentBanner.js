@@ -33,17 +33,33 @@ function CookieConsentBanner() {
       disableButtonStyles
       buttonText="Accept"
       declineButtonText="Decline"
-      buttonClasses="btn btn-primary"
-      declineButtonClasses="btn btn-secondary"
+      buttonClasses="btn btn-primary btn-success"
+      declineButtonClasses="btn btn-outline-secondary"
+      containerClasses="cookie-consent__container"
+      contentClasses="cookie-consent__content"
       style={{
         alignItems: "center",
         background: "#2b0c36",
-        padding: "16px",
-        maxWidth: "400px",
+        padding: "24px",
+        maxWidth: "451px",
+        borderRadius: "8px",
+      }}
+      contentStyle={{
+        margin: 0,
       }}
       buttonStyle={{ marginLeft: "16px" }}
+      declineButtonStyle={{ color: "#ffffff" }}
     >
-      <span>We use cookies to improve user experience and analyze website traffic. By clicking “Accept“, you agree and opt-in to use our website's cookies.</span>
+      <p>
+        <span role="img" aria-label="Analytical cookie">
+          🍪
+        </span>{" "}
+        Just a note — I use cookies
+      </p>
+      <p style={{ fontSize: "14px", marginBottom: "24px" }}>
+        I use analytics to help me understand how people anonymously use my
+        site, so I can build a better experience.
+      </p>
     </CookieConsent>
   );
 }
