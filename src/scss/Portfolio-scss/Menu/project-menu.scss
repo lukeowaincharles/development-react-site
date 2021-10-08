@@ -9,24 +9,26 @@
 .project-menu {
   position: absolute;
   bottom: 80px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: -16px;
   border-radius: 6px;
   background-color: rgba($brand-dark-purple, 95%);
   box-shadow: 0 4px 4px 0 rgba($black, 25%);
   min-width: 224px;
-  margin-left: 26px;
 
   @include media-breakpoint-up(sm) {
     margin-left: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &:after {
     content: "";
     position: absolute;
     bottom: -14px;
-    left: 35%;
-    transform: translateX(-50%);
+    left: 20px;
     height: 14px;
     width: 20px;
     border-left: 20px solid transparent;
@@ -34,6 +36,7 @@
     border-top: 14px solid rgba($brand-dark-purple, 95%);
 
     @include media-breakpoint-up(sm) {
+      transform: translateX(-50%);
       left: 50%;
     }
   }

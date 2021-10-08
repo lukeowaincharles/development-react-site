@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   margin-top: 40px;
 
+  @include media-breakpoint-up(xsm) {
+    flex-wrap: nowrap;
+  }
+
   @include media-breakpoint-up(md) {
     flex-direction: column;
     height: calc(100vh - 80px);
