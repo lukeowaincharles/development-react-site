@@ -6,7 +6,7 @@ function Taskbar() {
   const [isOpen, setOpen] = useState(false);
 
   const MENUITEMS = [
-    { title: "Casestudies" },
+    { title: "Case studies" },
     { url: "silverstone", title: "Silverstone" },
     { url: "jmfinn", title: "JMFinn" },
     { url: "hiscox", title: "Hiscox" },
@@ -65,7 +65,7 @@ function Taskbar() {
   });
   return (
     <div className="taskbar">
-      <div className="app-folder__link menu" title="Menu for casestudies">
+      <div className="app-folder__link menu">
         <OverlayTrigger
           placement="top"
           overlay={<Tooltip id="projects">Projects</Tooltip>}
