@@ -4,6 +4,16 @@
   width: 100%;
   margin-bottom: 32px;
 
+  &:not(.browser-window--project-page) {
+    &:hover {
+      cursor: grab;
+    }
+  
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     position: absolute;
     z-index: 2;
