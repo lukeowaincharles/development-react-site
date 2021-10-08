@@ -7,6 +7,9 @@
   @include media-breakpoint-up(md) {
     flex-direction: column;
     height: calc(100vh - 80px);
+    &:not(.portfolio &) {
+      position: fixed;
+    }
   }
 
   &__link {
