@@ -35,7 +35,7 @@ function CookieConsentBanner() {
       declineButtonText="Decline"
       buttonClasses="btn btn-primary btn-success"
       declineButtonClasses="btn btn-outline-secondary"
-      containerClasses="cookie-consent__container"
+      containerClasses="cookie-consent"
       contentClasses="cookie-consent__content"
       style={{
         alignItems: "center",
@@ -47,6 +47,7 @@ function CookieConsentBanner() {
       contentStyle={{
         margin: 0,
       }}
+      buttonWrapperClasses="cookie-consent__buttons"
       buttonStyle={{ marginLeft: "16px" }}
       declineButtonStyle={{ color: "#ffffff" }}
     >

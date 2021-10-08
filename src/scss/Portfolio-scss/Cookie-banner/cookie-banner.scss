@@ -1,0 +1,10 @@
+.cookie-consent {
+  &__buttons {
+    .btn-success {
+      &:active,
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
