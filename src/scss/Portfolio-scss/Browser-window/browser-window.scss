@@ -4,11 +4,11 @@
   width: 100%;
   margin-bottom: 32px;
 
-  &:not(.browser-window--project-page) {
+  &:not(.browser-window--project-page, .browser-window--archive, .page-not-found) {
     &:hover {
       cursor: grab;
     }
-  
+
     &:active {
       cursor: grabbing;
     }
