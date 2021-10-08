@@ -28,6 +28,8 @@
     padding: 4px 16px;
     margin-bottom: -11px;
     margin-left: 16px;
+    font-size: rem(14px);
+    line-height: 1.7;
   }
 
   .projects__logo {
@@ -43,7 +45,8 @@
 
     .projects__logo,
     .btn,
-    h2 {
+    h2,
+    .projects__title {
       position: relative;
       z-index: 5;
     }
@@ -58,7 +61,8 @@
       height: 100%;
     }
 
-    h2 {
+    h2,
+    .projects__title {
       font-size: rem(18px);
       margin-bottom: 16px;
       max-width: 200px;
@@ -77,6 +81,11 @@
     .browser-window__content {
       padding: 22px 15px 26px;
       font-size: rem(22px);
+
+      .aboutme__title {
+        font-weight: 600;
+        font-size: rem(26px);
+      }
     }
 
     .btn {
@@ -120,9 +129,11 @@
         padding: 37px 40px 152px;
       }
 
-      h2 {
+      h2,
+      .projects__title {
         font-size: rem(20px);
         margin-bottom: 24px;
+        max-width: 300px;
       }
 
       .btn {
