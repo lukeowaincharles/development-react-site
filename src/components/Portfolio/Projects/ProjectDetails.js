@@ -73,39 +73,67 @@ function ProjectDetails() {
   return (
     <div>
       {!url ? (
-        <BrowserWindow
-          hasDrag={false}
-          classes="page-not-found"
-          tab="Page not found"
+        <motion.div
+          initial={{
+            opacity: 0,
+            scale: 0.9,
+            transition: {
+              ease: "easeInOut",
+              duration: 0.4,
+            },
+          }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            transition: {
+              ease: "easeInOut",
+              duration: 0.4,
+            },
+          }}
+          exit={{
+            opacity: 0,
+            scale: 0.75,
+            transition: {
+              ease: "easeInOut",
+              duration: 0.4,
+            },
+          }}
+          key={id}
         >
-          <div className="error-page">
-            <div className="error-page__content">
-              <div className="error-page__message">
-                <h1>404: Page Not Found</h1>
-                <p>
-                  Whoooops this wasn't meant to happen, somehow the page you're
-                  looking for does not exist.
-                </p>
-                <p>
-                  If you can't find what you are looking for then get in touch
-                  with me at{" "}
-                  <a
-                    href="mailto:lukeowaincharles@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    lukeowaincharles@gmail.com
+          <BrowserWindow
+            hasDrag={false}
+            classes="page-not-found"
+            tab="Page not found"
+          >
+            <div className="error-page">
+              <div className="error-page__content">
+                <div className="error-page__message">
+                  <h1>404: Page Not Found</h1>
+                  <p>
+                    Whoooops this wasn't meant to happen, somehow the page
+                    you're looking for does not exist.
+                  </p>
+                  <p>
+                    If you can't find what you are looking for then get in touch
+                    with me at{" "}
+                    <a
+                      href="mailto:lukeowaincharles@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      lukeowaincharles@gmail.com
+                    </a>
+                  </p>
+                </div>
+                <div className="error-page__button">
+                  <a className="btn btn-primary" href="/">
+                    Return to home
                   </a>
-                </p>
-              </div>
-              <div className="error-page__button">
-                <a className="btn btn-primary" href="/">
-                  Return to home
-                </a>
+                </div>
               </div>
             </div>
-          </div>
-        </BrowserWindow>
+          </BrowserWindow>
+        </motion.div>
       ) : (
         <Container>
           <Row>
@@ -346,8 +374,35 @@ function ProjectDetails() {
                 </BrowserWindow>
               </motion.div>
             </Col>
-            <Col md={{span: 2, offset: 1}} lg={1} offse>
-              <AppFolder />
+            <Col md={{ span: 2, offset: 1 }} lg={1}>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  x: "100px",
+                  transition: {
+                    ease: "easeInOut",
+                    duration: 0.4,
+                  },
+                }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    ease: "easeInOut",
+                    duration: 0.4,
+                  },
+                }}
+                exit={{
+                  opacity: 0,
+                  x: "100px",
+                  transition: {
+                    ease: "easeInOut",
+                    duration: 0.4,
+                  },
+                }}
+              >
+                <AppFolder />
+              </motion.div>
             </Col>
           </Row>
         </Container>
