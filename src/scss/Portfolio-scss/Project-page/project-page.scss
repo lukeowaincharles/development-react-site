@@ -83,8 +83,11 @@
     }
 
     .about__skills {
+      padding: 24px 0;
+
       @include media-breakpoint-up(xl) {
         max-width: 80%;
+        padding: 0;
       }
     }
   }
