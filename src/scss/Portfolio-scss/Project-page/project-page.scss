@@ -44,7 +44,7 @@
         -5deg
       );
       @include media-breakpoint-up(xl) {
-        right: -140px;
+        right: -50px;
       }
     }
 
@@ -60,6 +60,10 @@
       );
       @include media-breakpoint-up(xl) {
         left: -140px;
+      }
+
+      @include media-breakpoint-up(xlg) {
+        left: -120px;
       }
     }
 
