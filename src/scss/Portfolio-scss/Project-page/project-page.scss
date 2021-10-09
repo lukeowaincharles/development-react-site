@@ -6,10 +6,20 @@
 
 .project-details {
   &__wrapper {
-    padding: 40px 0;
+    padding: 40px 0 0;
 
     @include media-breakpoint-up(xl) {
       padding: 45px 0;
+    }
+
+    &:nth-child(even) {
+      .row {
+        flex-direction: column-reverse;
+
+        @include media-breakpoint-up(xl) {
+          flex-direction: row;
+        }
+      }
     }
   }
 
@@ -209,7 +219,6 @@
 
   &__content {
     background-color: $white;
-    padding: 32px 0 0;
 
     h2 {
       font-size: rem(24px);
