@@ -64,7 +64,15 @@ function Taskbar() {
     );
   });
   return (
-    <div className="taskbar">
+    <div className={`${"taskbar"} ${isOpen ? "taskbar--menu-open" : ""}`}>
+      {isOpen && (
+        <div
+          className="taskbar__overlay"
+          onClick={() => {
+            setOpen(!isOpen);
+          }}
+        ></div>
+      )}
       <div className="app-folder__link menu">
         <OverlayTrigger
           placement="top"
