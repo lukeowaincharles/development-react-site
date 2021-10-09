@@ -68,7 +68,7 @@ function Taskbar() {
       <div className="app-folder__link menu">
         <OverlayTrigger
           placement="top"
-          overlay={<Tooltip id="projects">Projects</Tooltip>}
+          overlay={<Tooltip id="projects">Case studies</Tooltip>}
           delay={{ show: 200, hide: 300 }}
         >
           <div
