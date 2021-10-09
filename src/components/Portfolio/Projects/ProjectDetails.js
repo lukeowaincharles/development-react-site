@@ -44,7 +44,7 @@ function ProjectDetails() {
     return (
       <div className="about__work-experience" key={index}>
         <div className="about__company-logo">
-          <img src={item.logo} alt={item.company} />
+          <img width="71px" height="73px" src={item.logo} alt={item.company} />
         </div>
         <div className="about__work-content">
           <h3 className="about__work-title">
@@ -193,7 +193,7 @@ function ProjectDetails() {
                             </Col>
                             <Col lg={6}>
                               <div className="about__image">
-                                <img src="/images/about-me.jpg" alt="" />
+                                <img width="100%" height="100%" src="/images/about-me.jpg" alt="" />
                               </div>
                             </Col>
                           </Row>
@@ -251,7 +251,7 @@ function ProjectDetails() {
                             >
                               {page?.section_1_image && (
                                 <div className="project-details__image project-details__image--one">
-                                  <img src={page.section_1_image} alt="" />
+                                  <img width="100%" height="100%" src={page.section_1_image} alt="" />
                                 </div>
                               )}
                               {aboutPage?.stack_skills && (
@@ -299,7 +299,7 @@ function ProjectDetails() {
                               <Col xl={5} className="project-details__column">
                                 {page?.section_2_image && (
                                   <div className="project-details__image project-details__image--two">
-                                    <img src={page.section_2_image} alt="" />
+                                    <img width="100%" height="100%" src={page.section_2_image} alt="" />
                                   </div>
                                 )}
                               </Col>
@@ -341,7 +341,7 @@ function ProjectDetails() {
                                 <Col xl={5} className="project-details__column">
                                   {page?.section_3_image && (
                                     <div className="project-details__image project-details__image--three">
-                                      <img src={page.section_3_image} alt="" />
+                                      <img width="100%" height="100%" src={page.section_3_image} alt="" />
                                     </div>
                                   )}
                                 </Col>
@@ -354,7 +354,7 @@ function ProjectDetails() {
                                 <Col xl={5} className="project-details__column">
                                   {page?.section_4_image && (
                                     <div className="project-details__image project-details__image--four">
-                                      <img src={page.section_4_image} alt="" />
+                                      <img width="100%" height="100%" src={page.section_4_image} alt="" />
                                     </div>
                                   )}
                                 </Col>
