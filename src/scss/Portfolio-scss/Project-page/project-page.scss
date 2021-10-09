@@ -59,7 +59,29 @@
       position: relative;
       z-index: 1;
       max-width: 487px;
+
+      @include media-breakpoint-up(xl) {
+        width: auto;
+      }
     }
+  }
+
+  .about-details__column {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .about__skills {
+      @include media-breakpoint-up(xl) {
+        max-width: 80%;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    align-items: center;
   }
 
   .about {
@@ -191,6 +213,11 @@
 
     h2 {
       font-size: rem(24px);
+
+      @include media-breakpoint-up(md) {
+        font-size: rem(28px);
+        margin-bottom: 24px;
+      }
     }
 
     h2,
@@ -205,6 +232,12 @@
     ul {
       color: $grey-700;
     }
+
+    p {
+      @include media-breakpoint-up(md) {
+        font-size: rem(18px);
+      }
+    }
   }
 
   &__information {
@@ -213,6 +246,7 @@
 
     @include media-breakpoint-up(md) {
       flex-direction: row;
+      margin-top: 32px;
     }
 
     a {
