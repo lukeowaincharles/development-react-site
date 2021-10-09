@@ -204,7 +204,7 @@ function ProjectDetails() {
                       <div className="project-details__wrapper">
                         <Container>
                           <Row>
-                            <Col xl={6}>
+                            <Col xl={7}>
                               {page?.section_1_title && (
                                 <h2>{page.section_1_title}</h2>
                               )}
@@ -241,7 +241,12 @@ function ProjectDetails() {
                                 </div>
                               )}
                             </Col>
-                            <Col xl={6}>
+                            <Col
+                              xl={5}
+                              className={`${
+                                url === "about" ? "about-details__column" : "project-details__column"
+                              }`}
+                            >
                               {page?.section_1_image && (
                                 <div className="project-details__image project-details__image--one">
                                   <img src={page.section_1_image} alt="" />
@@ -289,14 +294,14 @@ function ProjectDetails() {
                         <div className="project-details__wrapper">
                           <Container>
                             <Row>
-                              <Col xl={6}>
+                              <Col xl={5} className="project-details__column">
                                 {page?.section_2_image && (
                                   <div className="project-details__image project-details__image--two">
                                     <img src={page.section_2_image} alt="" />
                                   </div>
                                 )}
                               </Col>
-                              <Col xl={6}>
+                              <Col xl={7}>
                                 {page?.section_2_text && (
                                   <div className="project-details__approach">
                                     <h2>The approach</h2>
@@ -319,7 +324,7 @@ function ProjectDetails() {
                           <div className="project-details__wrapper">
                             <Container>
                               <Row>
-                                <Col xl={6}>
+                                <Col xl={7}>
                                   {page?.section_3_text && (
                                     <div className="project-details__approach">
                                       <h2>My role</h2>
@@ -331,7 +336,7 @@ function ProjectDetails() {
                                     </div>
                                   )}
                                 </Col>
-                                <Col xl={6}>
+                                <Col xl={5} className="project-details__column">
                                   {page?.section_3_image && (
                                     <div className="project-details__image project-details__image--three">
                                       <img src={page.section_3_image} alt="" />
@@ -344,14 +349,14 @@ function ProjectDetails() {
                           <div className="project-details__wrapper">
                             <Container>
                               <Row>
-                                <Col xl={6}>
+                                <Col xl={5} className="project-details__column">
                                   {page?.section_4_image && (
                                     <div className="project-details__image project-details__image--four">
                                       <img src={page.section_4_image} alt="" />
                                     </div>
                                   )}
                                 </Col>
-                                <Col xl={6}>
+                                <Col xl={7}>
                                   {page?.section_4_text && (
                                     <div className="project-details__approach">
                                       <h2>The outcome</h2>
