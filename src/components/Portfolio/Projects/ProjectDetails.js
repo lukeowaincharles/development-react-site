@@ -244,7 +244,9 @@ function ProjectDetails() {
                             <Col
                               xl={5}
                               className={`${
-                                url === "about" ? "about-details__column" : "project-details__column"
+                                url === "about"
+                                  ? "about-details__column"
+                                  : "project-details__column"
                               }`}
                             >
                               {page?.section_1_image && (
@@ -379,7 +381,7 @@ function ProjectDetails() {
                 </BrowserWindow>
               </motion.div>
             </Col>
-            <Col md={{ span: 2, offset: 1 }} lg={1}>
+            <Col md={2} lg={{ span: 1, offset: 1 }}>
               <motion.div
                 initial={{
                   opacity: 0,
