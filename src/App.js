@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import ProjectDetails from "./components/Portfolio/Projects/ProjectDetails";
 import "./App.scss";
@@ -19,6 +19,12 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   const width = useWindowWidth(),
     location = useLocation();
+
+  useEffect(() => {
+    if (width <= 768) {
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname, width]);
 
   return (
     <div className="App">
