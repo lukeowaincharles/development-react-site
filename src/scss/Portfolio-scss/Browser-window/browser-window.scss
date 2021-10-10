@@ -1,0 +1,311 @@
+.browser-window {
+  box-shadow: 0px 4px 4px 0px #0000001a;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 32px;
+
+  &:not(.browser-window--project-page, .browser-window--archive, .page-not-found) {
+    &:hover {
+      cursor: grab;
+    }
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__tab {
+    background-color: $brand-mid-purple;
+    height: 30px;
+    width: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 4px 16px;
+    margin-bottom: -11px;
+    margin-left: 16px;
+    font-size: rem(14px);
+    line-height: 1.7;
+  }
+
+  .projects__logo {
+    margin-bottom: 24px;
+  }
+
+  &__content {
+    padding: 22px 15px 26px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    overflow: hidden;
+
+    .projects__logo,
+    .btn,
+    h2,
+    .projects__title {
+      position: relative;
+      z-index: 5;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+
+    h2,
+    .projects__title {
+      font-size: rem(18px);
+      margin-bottom: 16px;
+      max-width: 200px;
+    }
+
+    .btn {
+      color: $white;
+    }
+  }
+
+  &.aboutme {
+    @include media-breakpoint-up(lg) {
+      max-width: 225px;
+    }
+
+    .browser-window__content {
+      padding: 22px 15px 26px;
+      font-size: rem(22px);
+
+      .aboutme__title {
+        font-weight: 600;
+        font-size: rem(26px);
+      }
+    }
+
+    .btn {
+      background-color: $brand-blue;
+      border-color: $brand-blue;
+
+      &:active,
+      &:hover {
+        background-color: darken($brand-blue, 30%);
+        border-color: darken($brand-blue, 30%);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: 117px;
+      right: 0;
+    }
+  }
+
+  &.silverstone {
+    @include media-breakpoint-up(lg) {
+      max-width: 591px;
+    }
+
+    .projects__logo {
+      width: 156px;
+    }
+
+    .browser-window__content {
+      background-color: $silverstone-blue;
+
+      &:after {
+        background-image: url("../../../assets/images/portfolio-silverstone-background.svg");
+        right: 0;
+        width: 100%;
+        background-size: cover;
+        z-index: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 37px 40px 152px;
+      }
+
+      h2,
+      .projects__title {
+        font-size: rem(20px);
+        margin-bottom: 24px;
+        max-width: 300px;
+      }
+
+      .btn {
+        color: $silverstone-blue;
+        background-color: $white;
+        border-color: $white;
+
+        &:active,
+        &:hover {
+          background-color: $black;
+          border-color: $black;
+          color: $white;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: 65px;
+    }
+  }
+
+  &.jmfinn {
+    @include media-breakpoint-up(lg) {
+      max-width: 310px;
+    }
+
+    .projects__logo {
+      width: 92px;
+    }
+
+    .browser-window__content {
+      &:before {
+        @include gradient(90deg, $overlay);
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+      }
+
+      &:after {
+        background-image: url("../../../assets/images/portfolio-jmfinn-background.svg");
+        left: 0;
+        width: 100%;
+        background-size: cover;
+        z-index: 0;
+      }
+
+      .btn {
+        background-color: $jmfinn-pink;
+        border: $jmfinn-pink;
+
+        &:active,
+        &:hover {
+          background-color: darken($jmfinn-pink, 30%);
+          border: darken($jmfinn-pink, 30%);
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 22px 15px 56px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      left: 0;
+      bottom: 210px;
+    }
+  }
+
+  &.hiscox {
+    @include media-breakpoint-up(lg) {
+      max-width: 384px;
+    }
+
+    .projects__logo {
+      width: 77px;
+    }
+
+    .browser-window__content {
+      background-color: $white;
+      color: $black;
+
+      &:after {
+        right: -40px;
+        background-image: url("../../../assets/images/portfolio-hiscox-background.svg");
+        width: 177px;
+
+        @include media-breakpoint-up(lg) {
+          right: -15px;
+        }
+      }
+
+      .btn {
+        background-color: $hiscox-red;
+        border: $hiscox-red;
+
+        &:active,
+        &:hover {
+          background-color: darken($hiscox-red, 30%);
+          border: darken($hiscox-red, 30%);
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      right: 145px;
+      bottom: 235px;
+    }
+  }
+
+  &.light {
+    background-color: $white;
+  }
+
+  &.dark {
+    background-color: $brand-dark-purple;
+  }
+
+  &__bar {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba($off-white, 0.2);
+  }
+
+  &__button {
+    display: inline-flex;
+    margin-right: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+
+    &.close {
+      border: $brand-red solid 2px;
+    }
+
+    &.minimise {
+      border: $brand-yellow solid 2px;
+    }
+
+    &.enlarge {
+      border: $brand-green solid 2px;
+    }
+  }
+
+  &--archive,
+  &--project-page,
+  &.page-not-found {
+    position: relative;
+    max-width: 1008px;
+    margin: 40px auto;
+  }
+
+  &.page-not-found {
+    .browser-window__content {
+      background-color: $white;
+
+      @include media-breakpoint-up(md) {
+        height: calc(100vh - 162px);
+      }
+    }
+  }
+
+  &--archive {
+    .browser-window__content {
+      padding: 0;
+    }
+  }
+}

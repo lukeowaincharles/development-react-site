@@ -1,0 +1,40 @@
+[
+  {
+    "job_role": "Lead Frontend Developer",
+    "logo": "/images/everything-connected-logo.png",
+    "company": "Everything Connected",
+    "company_link": "https://www.e-c.agency/",
+    "work_period": "January 2019 - Present",
+    "experience": [
+      "Communicate with multi-disciplinary teams of developers, designers, account/project managers and clients on a daily basis",
+      "Work with a variety of different languages",
+      "Building Drupal 8/9 (regular and headless implementation) sites while maintaining older sites for a range of clients. Reviewing Pull Requests to maintain code standards throughout the team. Ensuring documentation is created for processes and new implementations. Talking closely with design team to make sure designs are build-able and that the development team write accessible markup.",
+      "Ensuring mine/others code is maintainable and the frontend mirrors the designs."
+    ]
+  },
+  {
+    "job_role": "Frontend Developer",
+    "logo": "/images/like-digital-logo.png",
+    "company": "Like Digital",
+    "company_link": "https://like.digital/",
+    "work_period": "April 2018 - December 2018",
+    "experience": [
+      "Developing large ecommerce websites for a range of clients improving small and large features, testing multiple browsers and devices to ensure cross-browser compatibility of all new features. Writing maintainable code which is easy to read and understand, keeping a great standard of code across all clients.",
+      "Maintaining great communication with the whole dev team and project managers to ensure sprints are completed on time.",
+      "Working with the designers and using Zeplin.io to build a pixel perfect site that meets clients expectations."
+    ]
+  },
+  {
+    "job_role": "Frontend Developer & Designer",
+    "logo": "/images/run-logo.png",
+    "company": "Run",
+    "company_link": "https://rundigital.co.uk/",
+    "work_period": "May 2015 - April 2018",
+    "experience": [
+      "Working on a range of processes within the studio, focusing on the design and build of engaging and visually compelling websites with user-friendly UI that are cross-browser compatible and mobile responsive. Managing workflow and communication with technical and non technical clients, while projects run parallel. Also including design and building client emails.",
+      "Maintaining a streamlined development process that improves efficiency and ensures a high quality and easy-to-manage end product.",
+      "Testing front-end code in multiple browsers to ensure cross-browser compatibility.",
+      "Developing client brand standards as well as implementing company guidelines."
+    ]
+  }
+]

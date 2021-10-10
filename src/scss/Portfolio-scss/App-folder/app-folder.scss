@@ -1,0 +1,118 @@
+.app-folder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+
+  @include media-breakpoint-up(xsm) {
+    flex-wrap: nowrap;
+  }
+
+  @include media-breakpoint-up(md) {
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 80px);
+
+    &:not(.portfolio &) {
+      position: fixed;
+    }
+  }
+
+  &__link {
+    margin-bottom: 15px;
+
+    &:not(.taskbar &) {
+      display: inline-block;
+      width: 50%;
+    }
+
+    &:active,
+    &:hover {
+      .app-folder__background {
+        &:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba($black, 0.5);
+          border-radius: 13px;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 30px;
+    }
+
+    &.bin {
+      position: relative;
+
+      @include media-breakpoint-up(md) {
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -16px;
+          height: 100%;
+          width: 1px;
+          background-color: rgba($off-white, 30%);
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__background {
+    position: relative;
+    background-color: $brand-dark-purple;
+    border-radius: 13px;
+    min-height: 56px;
+    width: 56px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    background-image: url("../../../assets/images/icons/folder.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 31px;
+
+    &.folder--shortcut {
+      background-image: url("../../../assets/images/icons/folder--shortcut.svg");
+      height: 35px;
+    }
+
+    &.text {
+      background-image: url("../../../assets/images/icons/text.svg");
+    }
+
+    &.gmail {
+      background-image: url("../../../assets/images/icons/gmail.svg");
+      max-width: 32px;
+      margin: 0 auto;
+    }
+
+    &.github {
+      background-image: url("../../../assets/images/icons/github.svg");
+    }
+
+    &.linkedin {
+      background-image: url("../../../assets/images/icons/linkedin.svg");
+    }
+
+    &.bin {
+      background-image: url("../../../assets/images/icons/bin.svg");
+    }
+  }
+}

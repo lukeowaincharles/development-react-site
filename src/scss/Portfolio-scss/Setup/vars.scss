@@ -1,0 +1,95 @@
+//Colours
+$brand-purple: #7c3aed;
+$brand-dark-purple: #2c0c37;
+$brand-darker-purple: #2b0c36;
+$brand-mid-purple: #3e134d;
+$brand-light-purple: #a855f7;
+$brand-blue: #4338ca;
+$brand-light-blue: #6366f1;
+$brand-lighter-blue: #55bdf7;
+$brand-grad-blue: #6369f1;
+$brand-red: #ef4444;
+$brand-yellow: #fcd34d;
+$brand-green: #34d399;
+
+$grad-red: #f74e58;
+$grad-red2: #d41212;
+
+$white: #ffffff;
+$off-white: #f5f3ff;
+$section-grey: #f7f6fe;
+$black: #000000;
+$dark-top-grad: #332037;
+
+$btn-link: #312e81;
+
+$grey-50: #f9fafb;
+$grey-700: #4b5563;
+$grey-900: #111827;
+
+$silverstone-blue: #0d1496;
+$jmfinn-pink: #c05362;
+$hiscox-red: #d92a1c;
+
+$header: rgba($brand-purple, 0.5) 22.68%, rgba($brand-blue, 0.5) 77.32%;
+$bodyGrad: $brand-light-purple 0%, $brand-light-blue 100%;
+$overlay: $dark-top-grad 0%, rgba(51, 32, 55, 0.58) 0.01%,
+  rgba(51, 32, 55, 0) 76.07%;
+$imageGradBlue: $brand-lighter-blue 22.86%, $brand-grad-blue 100%;
+$imageGradRed: $grad-red 0, $grad-red2 100%;
+
+$color-primary-1: #18181a;
+$color-primary-2: #088387;
+$color-primary-3: #910a83;
+$color-primary-4: #578063;
+$color-primary-5: #69787d;
+$color-primary-6: #f99d1c;
+$color-primary-7: #da291c;
+$color-primary-8: #85b1ff;
+$color-primary-9: #0067ac;
+$color-primary-10: #cd2d22;
+$color-primary-11: #122032;
+$color-primary-12: #0b046c;
+
+$color-secondary-1: #70007f;
+
+$color-grey-1: #dbdbdb;
+$color-grey-2: #fbfbfb;
+$color-grey-3: #f5f5f5;
+$color-grey-4: #f6f6f6;
+$color-grey-5: #eeeeee;
+$color-grey-6: #ececec;
+$color-grey-7: #cccccc;
+$color-grey-8: #e8e8e8;
+$color-grey-9: #bbbbbb;
+$color-grey-10: #adadad;
+$color-grey-15: #999999;
+$color-grey-17: #95928d;
+$color-grey-20: #8a8a8a;
+$color-grey-70: #5c5c5c;
+$color-grey-75: #666666;
+$color-grey-80: #4a4a4a;
+$color-grey-90: #333333;
+$color-grey-92: #2d2d2d;
+$color-grey-95: #222222;
+
+/* Fonts */
+
+$body-font: "Inter", sans-serif;
+
+$grid-breakpoints: () !default;
+$grid-breakpoints: map-merge(
+  $grid-breakpoints,
+  (
+    "xs": 0,
+    "xsm": 330px,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xlg": 1350px,
+    "xxl": 1550px,
+  )
+);
+
+// z-indexes

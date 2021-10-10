@@ -1,0 +1,353 @@
+.browser-window--project-page {
+  .browser-window__content {
+    padding: 0;
+  }
+}
+
+.project-details {
+  &__wrapper {
+    padding: 40px 0 0;
+
+    @include media-breakpoint-up(xl) {
+      padding: 45px 0;
+    }
+
+    &:nth-child(even) {
+      .row {
+        flex-direction: column-reverse;
+
+        @include media-breakpoint-up(xl) {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    max-width: 487px;
+    margin: 20px auto;
+    @include imageBackground(100%, 100%, 16px, 168.46deg, $bodyGrad, -5deg);
+
+    &:before {
+      box-shadow: 0 4px 4px 0 rgba($black, 10%);
+    }
+
+    &--one,
+    &--three {
+      @include imageBackground(
+        100%,
+        100%,
+        16px,
+        168.46deg,
+        $imageGradBlue,
+        -5deg
+      );
+      @include media-breakpoint-up(xl) {
+        right: -50px;
+      }
+    }
+
+    &--two,
+    &--four {
+      @include imageBackground(
+        100%,
+        100%,
+        16px,
+        168.46deg,
+        $imageGradRed,
+        -5deg
+      );
+      @include media-breakpoint-up(xl) {
+        left: -140px;
+      }
+
+      @include media-breakpoint-up(xlg) {
+        left: -120px;
+      }
+    }
+
+    img {
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      max-width: 487px;
+
+      @include media-breakpoint-up(xl) {
+        width: auto;
+      }
+    }
+  }
+
+  .about-details__column {
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .about__skills {
+      padding: 24px 0;
+
+      @include media-breakpoint-up(xl) {
+        max-width: 80%;
+        padding: 0;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    align-items: center;
+  }
+
+  .about {
+    &__image {
+      max-width: 306px;
+      max-height: 306px;
+      margin: 0 0 0 auto;
+      position: relative;
+
+      img {
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+
+      @include imageBackground(100%, 100%, 16px, 168.46deg, $bodyGrad, -5deg);
+    }
+
+    &__description {
+      h2 {
+        font-size: rem(24px);
+      }
+    }
+
+    &__work-section {
+      background-color: $section-grey;
+      padding: 48px 0;
+    }
+
+    &__company-logo {
+      max-width: 71px;
+      border-radius: 16px;
+      overflow: hidden;
+      width: 100%;
+      max-height: 71px;
+      margin-right: 33px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 2px rgba($black, 20%);
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__work-experience {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+      }
+
+      h3 {
+        font-size: rem(18px);
+      }
+
+      a {
+        color: $brand-blue;
+
+        &:active,
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__work-section-content {
+      max-width: 487px;
+      margin-bottom: 56px;
+    }
+
+    &__skills {
+      &__title {
+        font-size: rem(16px);
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li {
+        display: inline-block;
+        width: 50%;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 5;
+
+    @include media-breakpoint-up(xl) {
+      padding: 0 104px;
+    }
+  }
+
+  &__header {
+    overflow: hidden;
+    position: relative;
+    padding: 32px 0 40px;
+
+    @include media-breakpoint-up(md) {
+      padding: 65px 0 75px;
+    }
+
+    h1 {
+      font-weight: bold;
+      max-width: 490px;
+      margin-bottom: 32px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    background-color: $white;
+
+    h2 {
+      font-size: rem(24px);
+
+      @include media-breakpoint-up(md) {
+        font-size: rem(28px);
+        margin-bottom: 24px;
+      }
+    }
+
+    h2,
+    h3,
+    h4 {
+      color: $grey-900;
+      max-width: 100%;
+      font-weight: bold;
+    }
+
+    p,
+    ul {
+      color: $grey-700;
+    }
+
+    p {
+      @include media-breakpoint-up(md) {
+        font-size: rem(18px);
+      }
+    }
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      margin-top: 32px;
+    }
+
+    a {
+      color: $grey-700;
+
+      &:active,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h3 {
+      font-size: rem(16px);
+    }
+  }
+
+  &__site {
+    margin-right: 32px;
+  }
+
+  &.silverstone {
+    .projects__logo {
+      width: 156px;
+    }
+
+    .project-details__header {
+      background-color: $silverstone-blue;
+
+      &:after {
+        background-image: url("../../../assets/images/portfolio-silverstone-background.svg");
+        right: 0;
+        width: 100%;
+        background-size: cover;
+        z-index: 0;
+      }
+    }
+  }
+
+  &.jmfinn {
+    .projects__logo {
+      width: 92px;
+    }
+
+    .project-details__header {
+      &:before {
+        @include gradient(90deg, $overlay);
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+      }
+
+      &:after {
+        background-image: url("../../../assets/images/jmfinn-project-detail.jpeg");
+        left: 0;
+        width: 100%;
+        background-size: cover;
+        z-index: 0;
+      }
+    }
+  }
+
+  &.hiscox {
+    .projects__logo {
+      width: 77px;
+    }
+
+    .project-details__header {
+      background-color: $white;
+      color: $black;
+
+      &:after {
+        right: -47%;
+        background-image: url("../../../assets/images/portfolio-hiscox-background.svg");
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+          right: -38%;
+        }
+      }
+    }
+  }
+}

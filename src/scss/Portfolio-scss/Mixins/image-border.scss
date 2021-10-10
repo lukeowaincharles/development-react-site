@@ -1,0 +1,19 @@
+@mixin imageBackground(
+  $width,
+  $height,
+  $radius,
+  $gradDirection,
+  $gradColor,
+  $rotation
+) {
+  &:before {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    @include gradient($gradDirection, $gradColor);
+    transform: rotate($rotation);
+    z-index: 0;
+  }
+}

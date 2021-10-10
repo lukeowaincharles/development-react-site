@@ -1,0 +1,30 @@
+[
+  {
+    "url": "about",
+    "tab": "About me",
+    "title": "Frontend Developer",
+    "name": "Luke Charles",
+    "intro": "Hello, I'm Luke 👋 Frontend Developer, Photographer and Motorbike Rider.",
+    "description": [
+      "With over 6 years experience as a Frontend Developer I’ve learnt that I love building inspiring and creative websites and products that aren’t just great to look at but also functionaly and accessbile to all users.",
+      "I enjoy focusing on the details and ensuring sites are pixel perfect and working with designers to make sure their vision comes to life."
+    ],
+    "stack_skills": [
+      "HTML5",
+      "SCSS",
+      "React",
+      "Drupal",
+      "Magento",
+      "Wordpress",
+      "Npm scripts",
+      "Gulp",
+      "Figma",
+      "Gatsby",
+      "JS/jQuery",
+      "BEM"
+    ],
+
+    "image": "",
+    "icon": "text"
+  }
+]

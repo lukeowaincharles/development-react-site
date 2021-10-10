@@ -1,0 +1,33 @@
+.header {
+  @include gradient(233deg, $header);
+  padding: 8px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      margin: 0;
+      width: 100%;
+      min-width: fit-content;
+    }
+  }
+
+  .time {
+    display: flex;
+
+    .clock {
+      margin-left: 16px;
+    }
+  }
+}
+
+.menu {
+  &__link {
+    display: flex;
+
+    img {
+      padding-right: 18px;
+    }
+  }
+}
