@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ProjectData from "../../../Data/Projects.json";
 import SubProjectData from "../../../Data/SubProjects.json";
 import AboutData from "../../../Data/About.json";
@@ -126,9 +126,9 @@ function ProjectDetails() {
                   </p>
                 </div>
                 <div className="error-page__button">
-                  <a className="btn btn-primary" href="/">
+                  <Link className="btn btn-primary" to="/">
                     Return to home
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
