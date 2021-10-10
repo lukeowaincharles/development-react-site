@@ -13,6 +13,13 @@
   z-index: 20;
   background-color: rgba($brand-darker-purple, 50%);
 
+  // Fix small issue with 'width: fit-content;' on safari
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      width: auto;
+    }
+  }
+
   .taskbar__overlay {
     position: fixed;
     top: calc(-100vh + 110px);
