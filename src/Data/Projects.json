@@ -14,7 +14,7 @@
     "stack": "Drupal 8, Twig, SCSS, Javascript",
     "section_2_text": [
       "Based on wireframes and designed components from the design team, I worked with the rest of the tech unit to sprint plan and estimated the frontend development resources needed.",
-      "As timelines were tight, we decided to use Launchpad, a Drupal distribution website starter kit I had previously created. Launchpad was built to reduce the time spent on repetitive tasks when starting a new development project."
+      "As timelines were tight, we decided to use Launchpad, a Drupal distribution website starter kit I had previously worked on. Launchpad was built to reduce the time spent on repetitive tasks when starting a new development project."
     ],
     "section_2_image": "/images/silverstone-section-2.png",
     "section_3_text": [
