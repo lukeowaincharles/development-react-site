@@ -34,7 +34,7 @@ function BrowserWindow({
     >
       <div className="browser-window__bar">
         {closeWindow === true ? (
-          <Link to="/" className="browser-window__link close__link">
+          <Link aria-label="Return to the home page" to="/" className="browser-window__link close__link">
             <span className="browser-window__button close"></span>
           </Link>
         ) : (
@@ -42,7 +42,7 @@ function BrowserWindow({
         )}
         <span className="browser-window__button minimise"></span>
         {enlargeWindow === true ? (
-          <Link to={pageLink} className="browser-window__link enlarge__link">
+          <Link aria-label="Navigate to the project page" to={pageLink} className="browser-window__link enlarge__link">
             <span className="browser-window__button enlarge"></span>
           </Link>
         ) : (
