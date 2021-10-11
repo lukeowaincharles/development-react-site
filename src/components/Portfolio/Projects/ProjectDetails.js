@@ -170,6 +170,7 @@ function ProjectDetails() {
                   classes={`${"browser-window--project-page"} ${
                     url + "--project-page"
                   }`}
+                  closeWindow={true}
                   tab={url === "about" ? aboutPage.tab : page.tab}
                 >
                   <div className={`${"project-details"} ${url}`} id={`${id}`}>
@@ -193,7 +194,12 @@ function ProjectDetails() {
                             </Col>
                             <Col lg={6}>
                               <div className="about__image">
-                                <img width="100%" height="100%" src="/images/about-me.jpg" alt="" />
+                                <img
+                                  width="100%"
+                                  height="100%"
+                                  src="/images/about-me.jpg"
+                                  alt=""
+                                />
                               </div>
                             </Col>
                           </Row>
@@ -251,7 +257,12 @@ function ProjectDetails() {
                             >
                               {page?.section_1_image && (
                                 <div className="project-details__image project-details__image--one">
-                                  <img width="100%" height="100%" src={page.section_1_image} alt="" />
+                                  <img
+                                    width="100%"
+                                    height="100%"
+                                    src={page.section_1_image}
+                                    alt=""
+                                  />
                                 </div>
                               )}
                               {aboutPage?.stack_skills && (
@@ -299,7 +310,12 @@ function ProjectDetails() {
                               <Col xl={5} className="project-details__column">
                                 {page?.section_2_image && (
                                   <div className="project-details__image project-details__image--two">
-                                    <img width="100%" height="100%" src={page.section_2_image} alt="" />
+                                    <img
+                                      width="100%"
+                                      height="100%"
+                                      src={page.section_2_image}
+                                      alt=""
+                                    />
                                   </div>
                                 )}
                               </Col>
@@ -341,7 +357,12 @@ function ProjectDetails() {
                                 <Col xl={5} className="project-details__column">
                                   {page?.section_3_image && (
                                     <div className="project-details__image project-details__image--three">
-                                      <img width="100%" height="100%" src={page.section_3_image} alt="" />
+                                      <img
+                                        width="100%"
+                                        height="100%"
+                                        src={page.section_3_image}
+                                        alt=""
+                                      />
                                     </div>
                                   )}
                                 </Col>
@@ -354,7 +375,12 @@ function ProjectDetails() {
                                 <Col xl={5} className="project-details__column">
                                   {page?.section_4_image && (
                                     <div className="project-details__image project-details__image--four">
-                                      <img width="100%" height="100%" src={page.section_4_image} alt="" />
+                                      <img
+                                        width="100%"
+                                        height="100%"
+                                        src={page.section_4_image}
+                                        alt=""
+                                      />
                                     </div>
                                   )}
                                 </Col>
