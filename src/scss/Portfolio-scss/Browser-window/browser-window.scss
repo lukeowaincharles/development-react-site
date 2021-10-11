@@ -285,6 +285,26 @@
     }
   }
 
+  &__link {
+    margin-right: 6px;
+
+    .close,
+    .enlarge {
+      margin-right: 0;
+    }
+
+    &:active,
+    &:hover {
+      .close {
+        background-color: $brand-red;
+      }
+
+      .enlarge {
+        background-color: $brand-green;
+      }
+    }
+  }
+
   &--archive,
   &--project-page,
   &.page-not-found {

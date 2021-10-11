@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import useWindowWidth from "../Utilities/WindowWidth";
+import { Link } from "react-router-dom";
 
-function BrowserWindow({ children, classes, tab, hasDrag }) {
+function BrowserWindow({
+  children,
+  classes,
+  tab,
+  hasDrag,
+  closeWindow,
+  enlargeWindow,
+  pageLink,
+}) {
   const [browserColor] = useState("dark"),
     width = useWindowWidth();
 
@@ -24,9 +33,21 @@ function BrowserWindow({ children, classes, tab, hasDrag }) {
       className={`${"browser-window"} ${classes} ${browserColor}`}
     >
       <div className="browser-window__bar">
-        <span className="browser-window__button close"></span>
+        {closeWindow === true ? (
+          <Link to="/" className="browser-window__link close__link">
+            <span className="browser-window__button close"></span>
+          </Link>
+        ) : (
+          <span className="browser-window__button close"></span>
+        )}
         <span className="browser-window__button minimise"></span>
-        <span className="browser-window__button enlarge"></span>
+        {enlargeWindow === true ? (
+          <Link to={pageLink} className="browser-window__link enlarge__link">
+            <span className="browser-window__button enlarge"></span>
+          </Link>
+        ) : (
+          <span className="browser-window__button enlarge"></span>
+        )}
         {tab && (
           <div className="browser-window__tab">
             <p>{tab}</p>
