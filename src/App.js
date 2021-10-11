@@ -61,6 +61,7 @@ function App() {
                 hasDrag={false}
                 classes="browser-window--archive"
                 tab="Archived web site"
+                closeWindow={true}
               >
                 <div className="archived">
                   <PageLoader />
