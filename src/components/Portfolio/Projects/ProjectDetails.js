@@ -294,7 +294,7 @@ function ProjectDetails() {
                                     I’ve had the privilege of working in a
                                     variety of agencies meaning I’ve worked with
                                     over 30 different clients ranging from
-                                    finance, charties and big household named
+                                    finance, charities and big household named
                                     brands.
                                   </p>
                                 </div>
