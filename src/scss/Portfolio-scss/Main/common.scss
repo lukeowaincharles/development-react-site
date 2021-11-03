@@ -11,6 +11,10 @@ body {
   animation-delay: 0.4s;
   color: $white;
   -webkit-font-smoothing: antialiased;
+
+  &.light {
+    @include gradient(168.46deg, $bodyGradLight);
+  }
 }
 
 img {
