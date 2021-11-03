@@ -15,6 +15,7 @@ import ArchiveSiteDesktop from "./assets/images/archive-site--desktop.png";
 import ArchiveSiteMobile from "./assets/images/archive-site--mobile.png";
 import CookieConsentBanner from "./components/Portfolio/Utilities/CookieConsentBanner/CookieConsentBanner";
 import { AnimatePresence } from "framer-motion";
+import DarkModeSwitch from "./components/Portfolio/Utilities/DarkModeSwitch/DarkModeSwitch";
 
 function App() {
   const width = useWindowWidth(),
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <DarkModeSwitch />
       <AnimatePresence exitBeforeEnter intial={false}>
         <Switch location={location} key={location.pathname}>
           <Route
