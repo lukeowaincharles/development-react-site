@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import BrowserWindow from "../Browser/BrowserWindow";
 import ProjectData from "../../../Data/Projects.json";
 import ButtonPrimary from "../Utilities/Button";
 
 function PortfolioProjects() {
+  const [isActive, setActive] = useState(-1);
+
   const CONTENT = ProjectData.map((item, index) => {
     return (
       <React.Fragment key={index}>
@@ -14,6 +16,8 @@ function PortfolioProjects() {
             pageLink={item.url}
             classes={item.url}
             tab={`${item.tab}`}
+            onClick={() => setActive(index)}
+            selected={index === isActive}
           >
             <div className="projects__logo">
               <img
