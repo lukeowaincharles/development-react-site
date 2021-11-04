@@ -2,6 +2,10 @@
   @include gradient(233deg, $header);
   padding: 8px 0;
 
+  .light & {
+    @include gradient(233deg, $headerLight);
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
