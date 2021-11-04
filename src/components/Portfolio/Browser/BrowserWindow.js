@@ -11,8 +11,9 @@ function BrowserWindow({
   closeWindow,
   enlargeWindow,
   pageLink,
+  mode
 }) {
-  const [browserColor] = useState("dark"),
+  const [browserColor, setBrowserColor] = useState("dark"),
     width = useWindowWidth();
 
   let dragAttr = "";
@@ -30,7 +31,7 @@ function BrowserWindow({
   return (
     <motion.div
       {...dragAttr}
-      className={`${"browser-window"} ${classes} ${browserColor}`}
+      className={`${"browser-window"} ${classes} ${mode} ${browserColor}`}
     >
       <div className="browser-window__bar">
         {closeWindow === true ? (
