@@ -29,10 +29,21 @@ function DarkModeSwitch() {
 
   const onSelectMode = (mode) => {
     setMode(mode);
+    const browserWindow = Array.from(
+      document.getElementsByClassName("browser-window")
+    );
     if (mode === "light") {
       document.body.classList.add("light");
+      browserWindow.forEach((item) => {
+        item.classList.remove("dark");
+        item.classList.add("light");
+      });
     } else {
       document.body.classList.remove("light");
+      browserWindow.forEach((item) => {
+        item.classList.remove("light");
+        item.classList.add("dark");
+      });
     }
   };
 
