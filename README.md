@@ -3,6 +3,9 @@
 
 <div style="text-align:center;margin: 20px 0;"><img style="max-width:540px;height:100%;" alt="Full site image" src="src/assets/images/full-site-oct-2021.png"/></div>
 
+Light mode version
+<div style="text-align:center;margin: 20px 0;"><img style="max-width:540px;height:100%;" alt="Full site image" src="src/assets/images/full-site-nov-2021-light-mode.png"/></div>
+
 This can be viewed at <a href="https://www.lukeowaincharles.co.uk/" target="_blank" rel="noopener noreferrer">lukeowaincharles.co.uk</a>
 
 ### Archived build
