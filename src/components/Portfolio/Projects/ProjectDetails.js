@@ -10,7 +10,7 @@ import AppFolder from "../AppFolder/AppFolder";
 import Contact from "../Contact/Contact";
 import { motion } from "framer-motion";
 
-function ProjectDetails() {
+function ProjectDetails({mode}) {
   const [id] = useState(useParams().id),
     [url, setUrl] = useState(""),
     [page, setPage] = useState(null),
@@ -104,6 +104,7 @@ function ProjectDetails() {
             hasDrag={false}
             classes="page-not-found"
             tab="Page not found"
+            mode={mode}
           >
             <div className="error-page">
               <div className="error-page__content">
@@ -172,6 +173,7 @@ function ProjectDetails() {
                   }`}
                   closeWindow={true}
                   tab={url === "about" ? aboutPage.tab : page.tab}
+                  mode={mode}
                 >
                   <div className={`${"project-details"} ${url}`} id={`${id}`}>
                     <div className="project-details__header">

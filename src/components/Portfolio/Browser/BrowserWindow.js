@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import useWindowWidth from "../Utilities/WindowWidth";
 import { Link } from "react-router-dom";
@@ -13,8 +13,7 @@ function BrowserWindow({
   pageLink,
   mode
 }) {
-  const [browserColor, setBrowserColor] = useState("dark"),
-    width = useWindowWidth();
+  const width = useWindowWidth();
 
   let dragAttr = "";
 
@@ -31,7 +30,7 @@ function BrowserWindow({
   return (
     <motion.div
       {...dragAttr}
-      className={`${"browser-window"} ${classes} ${mode} ${browserColor}`}
+      className={`${"browser-window"} ${classes} ${mode}`}
     >
       <div className="browser-window__bar">
         {closeWindow === true ? (

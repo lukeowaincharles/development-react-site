@@ -3,7 +3,7 @@ import BrowserWindow from "../Browser/BrowserWindow";
 import ProjectData from "../../../Data/Projects.json";
 import ButtonPrimary from "../Utilities/Button";
 
-function PortfolioProjects() {
+function PortfolioProjects({mode}) {
   const CONTENT = ProjectData.map((item, index) => {
     return (
       <React.Fragment key={index}>
@@ -14,6 +14,7 @@ function PortfolioProjects() {
             pageLink={item.url}
             classes={item.url}
             tab={`${item.tab}`}
+            mode={mode}
           >
             <div className="projects__logo">
               <img
@@ -34,7 +35,7 @@ function PortfolioProjects() {
       </React.Fragment>
     );
   });
-  return <React.Fragment>{CONTENT}</React.Fragment>;
+  return <>{CONTENT}</>;
 }
 
 export default PortfolioProjects;
