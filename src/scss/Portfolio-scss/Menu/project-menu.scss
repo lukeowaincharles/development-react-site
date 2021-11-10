@@ -11,9 +11,14 @@
   bottom: 80px;
   left: -16px;
   border-radius: 6px;
-  background-color: rgba($brand-dark-purple, 95%);
-  box-shadow: 0 4px 4px 0 rgba($black, 25%);
+  background-color: rgba($brand-dark-purple, 0.95);
+  box-shadow: 0 4px 4px 0 rgba($black, 0.25);
   min-width: 224px;
+
+  .light & {
+    background-color: rgba($white, 0.97);
+    color: $grey-700;
+  }
 
   @include media-breakpoint-up(sm) {
     margin-left: 0;
@@ -33,7 +38,11 @@
     width: 20px;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 14px solid rgba($brand-dark-purple, 95%);
+    border-top: 14px solid rgba($brand-dark-purple, 0.95);
+
+    .light & {
+      border-top: 14px solid rgba($white, 0.97);
+    }
 
     @include media-breakpoint-up(sm) {
       transform: translateX(-50%);
@@ -60,6 +69,11 @@
     font-size: rem(14px);
     border-radius: 4px;
     color: $off-white;
+    transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+
+    .light & {
+      color: $grey-700;
+    }
 
     &:active,
     &:hover {

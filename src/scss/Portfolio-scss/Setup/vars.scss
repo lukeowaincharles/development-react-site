@@ -11,6 +11,8 @@ $brand-grad-blue: #6369f1;
 $brand-red: #ef4444;
 $brand-yellow: #fcd34d;
 $brand-green: #34d399;
+$brand-orange: #fb923c;
+$brand-pink: #db2777;
 
 $grad-red: #f74e58;
 $grad-red2: #d41212;
@@ -24,6 +26,8 @@ $dark-top-grad: #332037;
 $btn-link: #312e81;
 
 $grey-50: #f9fafb;
+$grey-100: #f3f4f6;
+$grey-300: #d2cfe5;
 $grey-700: #4b5563;
 $grey-900: #111827;
 
@@ -32,9 +36,9 @@ $jmfinn-pink: #c05362;
 $hiscox-red: #d92a1c;
 
 $header: rgba($brand-purple, 0.5) 22.68%, rgba($brand-blue, 0.5) 77.32%;
-$headerLight: rgba($grad-red2, 0.5) 22.68%, rgba($grad-red2, 0.5) 77.32%;
+$headerLight: rgba($brand-orange, 0.2) 12.68%, rgba($brand-pink, 0.3) 87.32%;
 $bodyGrad: $brand-light-purple 0%, $brand-light-blue 100%;
-$bodyGradLight: $grad-red 0%, $grad-red2 100%;
+$bodyGradLight: $brand-orange 0%, $brand-pink 100%;
 $overlay: $dark-top-grad 0%, rgba(51, 32, 55, 0.58) 0.01%,
   rgba(51, 32, 55, 0) 76.07%;
 $imageGradBlue: $brand-lighter-blue 22.86%, $brand-grad-blue 100%;
@@ -54,6 +58,8 @@ $color-primary-11: #122032;
 $color-primary-12: #0b046c;
 
 $color-secondary-1: #70007f;
+
+$color-grey-e0: #e0e0e0;
 
 $color-grey-1: #dbdbdb;
 $color-grey-2: #fbfbfb;
