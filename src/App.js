@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import ProjectDetails from "./components/Portfolio/Projects/ProjectDetails";
 import "./App.scss";
@@ -15,20 +15,64 @@ import ArchiveSiteDesktop from "./assets/images/archive-site--desktop.png";
 import ArchiveSiteMobile from "./assets/images/archive-site--mobile.png";
 import CookieConsentBanner from "./components/Portfolio/Utilities/CookieConsentBanner/CookieConsentBanner";
 import { AnimatePresence } from "framer-motion";
+// import DarkModeSwitch from "./components/Portfolio/Utilities/DarkModeSwitch/DarkModeSwitch";
 
 function App() {
   const width = useWindowWidth(),
-    location = useLocation();
+    location = useLocation(),
+    [mode, setMode] = useState("dark");
 
   useEffect(() => {
     if (width <= 768) {
       window.scrollTo(0, 0);
     }
+
+    // Add a listener to update the styles
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) =>
+        onSelectMode(e.matches ? "dark" : "light")
+      );
+
+    // On load set the mode
+    onSelectMode(
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light"
+    );
+
+    // Remove the listener
+    return () => {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .removeEventListener("change", () => {});
+    };
   }, [location.pathname, width]);
+
+  const onSelectMode = (mode) => {
+    setMode(mode);
+    const browserWindow = Array.from(
+      document.getElementsByClassName("browser-window")
+    );
+    if (mode === "light") {
+      document.body.classList.add("light");
+      browserWindow.forEach((item) => {
+        item.classList.remove("dark");
+        item.classList.add("light");
+      });
+    } else {
+      document.body.classList.remove("light");
+      browserWindow.forEach((item) => {
+        item.classList.remove("light");
+        item.classList.add("dark");
+      });
+    }
+  };
 
   return (
     <div className="App">
       <Header />
+      {/* <DarkModeSwitch onSelectMode={onSelectMode} mode={mode} /> */}
       <AnimatePresence exitBeforeEnter intial={false}>
         <Switch location={location} key={location.pathname}>
           <Route
@@ -40,8 +84,8 @@ function App() {
                   <Row>
                     <Col md={6} lg={10}>
                       <section className="portfolio__content">
-                        <PortfolioProjects />
-                        <AboutMe />
+                        <PortfolioProjects mode={mode} />
+                        <AboutMe mode={mode} />
                       </section>
                     </Col>
                     <Col md={6} lg={2} className="portfolio__column">
@@ -62,6 +106,7 @@ function App() {
                 classes="browser-window--archive"
                 tab="Archived web site"
                 closeWindow={true}
+                mode={mode}
               >
                 <div className="archived">
                   <PageLoader />
@@ -77,8 +122,10 @@ function App() {
           <Route
             exact
             path="/:id"
-            component={ProjectDetails}
+            // component={ProjectDetails}
             location={location}
+            mode={mode}
+            render={() => <ProjectDetails mode={mode} />}
           />
         </Switch>
       </AnimatePresence>

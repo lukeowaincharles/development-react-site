@@ -24,6 +24,14 @@
     &:not(.taskbar &) {
       display: inline-block;
       width: 50%;
+
+      .light & {
+        &:last-child {
+          .app-folder__background {
+            background-color: $grey-300;
+          }
+        }
+      }
     }
 
     &:active,
@@ -78,6 +86,10 @@
     width: 56px;
     display: flex;
     align-items: center;
+
+    .light & {
+      background-color: $white;
+    }
   }
 
   &__icon {
