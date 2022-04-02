@@ -5,10 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Luke Charles Frontend developer"
-    />
+    <meta name="description" content="Luke Charles Frontend developer" />
     <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -26,11 +23,40 @@
     -->
     <title>Luke Charles | Portfolio</title>
     <!-- Google Analytics -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <script>
+      if (
+        navigator.userAgent.indexOf("MSIE") !== -1 ||
+        navigator.appVersion.indexOf("Trident/") > -1
+      ) {
+        /* Microsoft Internet Explorer detected in. */
+        document.body.onload = createIeMessage;
+
+        function createIeMessage() {
+          // create a new div element
+          const el = document.createElement("div");
+
+          // and give it some content
+          const elContent = document.createTextNode(
+            "This browser is not supported please use a more modern browser."
+          );
+
+          // add the text node to the newly created div
+          el.appendChild(elContent);
+
+          // add the newly created element and its content into the DOM
+          const currentDiv = document.getElementById("root");
+          document.body.insertBefore(el, currentDiv);
+        }
+      }
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
