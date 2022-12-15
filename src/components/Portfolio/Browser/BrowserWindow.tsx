@@ -3,6 +3,23 @@ import { motion } from "framer-motion";
 import useWindowWidth from "../Utilities/WindowWidth";
 import { Link } from "react-router-dom";
 
+type BrowserTypes = {
+  children: React.ReactNode;
+  classes: string;
+  tab: string;
+  hasDrag: boolean;
+  closeWindow: boolean;
+  enlargeWindow: boolean;
+  pageLink: string;
+  mode: string;
+}
+
+type DragType = {
+  dragAttr: any;
+  drag: boolean;
+  dragConstraints: number;
+}
+
 function BrowserWindow({
   children,
   classes,
@@ -12,10 +29,11 @@ function BrowserWindow({
   enlargeWindow,
   pageLink,
   mode
-}) {
+}: BrowserTypes, opts: DragType) {
   const width = useWindowWidth();
 
-  let dragAttr = "";
+ 
+  let dragAttr = opts.dragAttr;
 
   if (hasDrag !== false) {
     dragAttr =
