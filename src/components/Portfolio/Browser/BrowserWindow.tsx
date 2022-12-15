@@ -10,7 +10,7 @@ type BrowserTypes = {
   hasDrag: boolean;
   closeWindow: boolean;
   enlargeWindow: boolean;
-  pageLink: string;
+  pageLink: any;
   mode: string;
 }
 
