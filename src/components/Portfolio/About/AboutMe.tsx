@@ -3,7 +3,11 @@ import BrowserWindow from "../Browser/BrowserWindow";
 import AboutData from "../../../Data/About.json";
 import ButtonPrimary from "../Utilities/Button";
 
-function AboutMe({ mode }) {
+type ModeType = {
+  mode: string;
+}
+
+function AboutMe({ mode }: ModeType) {
   const ABOUTCONTENT = AboutData,
     TITLE = ABOUTCONTENT[0].title;
   return (
@@ -13,6 +17,8 @@ function AboutMe({ mode }) {
       enlargeWindow={true}
       pageLink={"/about"}
       mode={mode}
+      hasDrag
+      closeWindow
     >
       {TITLE ? <h2 className="aboutme__title">{TITLE}</h2> : ""}
       {ABOUTCONTENT[0].image ? (
@@ -22,7 +28,7 @@ function AboutMe({ mode }) {
       ) : (
         ""
       )}
-      <ButtonPrimary link="about" title="Find out more" classes="purple" />
+      <ButtonPrimary btnLink="about" title="Find out more" classes="purple" />
     </BrowserWindow>
   );
 }
