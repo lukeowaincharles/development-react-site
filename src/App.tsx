@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
-import ProjectDetails from "./components/Portfolio/Projects/ProjectDetails";
+import ProjectDetails from "./components/Portfolio/Projects/ProjectDetails.js";
 import "./App.scss";
 import PageLoader from "./components/Archive/PageLoader";
 import Header from "./components/Portfolio/Header/Header";
@@ -49,7 +49,7 @@ function App() {
     };
   }, [location.pathname, width]);
 
-  const onSelectMode = (mode) => {
+  const onSelectMode = ({ mode }: any) => {
     setMode(mode);
     const browserWindow = Array.from(
       document.getElementsByClassName("browser-window")
@@ -73,7 +73,7 @@ function App() {
     <div className="App">
       <Header />
       {/* <DarkModeSwitch onSelectMode={onSelectMode} mode={mode} /> */}
-      <AnimatePresence exitBeforeEnter intial={false}>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <Switch location={location} key={location.pathname}>
           <Route
             exact
@@ -107,6 +107,8 @@ function App() {
                 tab="Archived web site"
                 closeWindow={true}
                 mode={mode}
+                enlargeWindow
+                pageLink
               >
                 <div className="archived">
                   <PageLoader />
@@ -124,7 +126,6 @@ function App() {
             path="/:id"
             // component={ProjectDetails}
             location={location}
-            mode={mode}
             render={() => <ProjectDetails mode={mode} />}
           />
         </Switch>

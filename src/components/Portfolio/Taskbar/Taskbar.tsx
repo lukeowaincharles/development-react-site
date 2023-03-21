@@ -47,7 +47,7 @@ function Taskbar() {
         delay={{ show: 200, hide: 300 }}
       >
         <a
-          href={item.link}
+          href={`${item.link}`}
           target={item.target}
           rel={item.target === "_blank" ? "noopener noreferrer" : "bookmark"}
           className={`${"app-folder__link"} ${item.icon}`}

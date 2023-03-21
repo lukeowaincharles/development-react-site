@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import CookieConsent, {
   getCookieConsentValue,
   Cookies,
@@ -6,11 +6,11 @@ import CookieConsent, {
 import { initGA } from "../Analytics/Analytics";
 
 function CookieConsentBanner() {
-  const handleAcceptCookie = () => {
+  const handleAcceptCookie = useCallback(() => {
     if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
       initGA(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
     }
-  };
+  }, []);
 
   const handleDeclineCookie = () => {
     Cookies.remove("_ga");
@@ -23,7 +23,7 @@ function CookieConsentBanner() {
     if (isConsent === "true") {
       handleAcceptCookie();
     }
-  }, []);
+  }, [handleAcceptCookie]);
 
   return (
     <CookieConsent

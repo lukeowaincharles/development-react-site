@@ -3,7 +3,11 @@ import BrowserWindow from "../Browser/BrowserWindow";
 import ProjectData from "../../../Data/Projects.json";
 import ButtonPrimary from "../Utilities/Button";
 
-function PortfolioProjects({mode}) {
+type BrowserTypes = {
+  mode: string;
+};
+
+function PortfolioProjects({ mode }: BrowserTypes) {
   const CONTENT = ProjectData.map((item, index) => {
     return (
       <React.Fragment key={index}>
@@ -15,6 +19,8 @@ function PortfolioProjects({mode}) {
             classes={item.url}
             tab={`${item.tab}`}
             mode={mode}
+            hasDrag
+            closeWindow
           >
             <div className="projects__logo">
               <img
@@ -29,7 +35,11 @@ function PortfolioProjects({mode}) {
             ) : (
               <h2 className="projects__title">{item.headline}</h2>
             )}
-            <ButtonPrimary link={item.url} title="View case study" />
+            <ButtonPrimary
+              classes=""
+              btnLink={item.url}
+              title="View case study"
+            />
           </BrowserWindow>
         )}
       </React.Fragment>

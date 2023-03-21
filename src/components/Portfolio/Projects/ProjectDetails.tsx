@@ -5,12 +5,16 @@ import ProjectData from "../../../Data/Projects.json";
 import SubProjectData from "../../../Data/SubProjects.json";
 import AboutData from "../../../Data/About.json";
 import WorkExperienceData from "../../../Data/WorkExperience.json";
-import BrowserWindow from "../Browser/BrowserWindow.tsx";
-import AppFolder from "../AppFolder/AppFolder.tsx";
-import Contact from "../Contact/Contact.tsx";
+import BrowserWindow from "../Browser/BrowserWindow";
+import AppFolder from "../AppFolder/AppFolder";
+import Contact from "../Contact/Contact";
 import { motion } from "framer-motion";
 
-function ProjectDetails({mode}) {
+type BrowserTypes = {
+  mode: string;
+};
+
+function ProjectDetails({ mode }: BrowserTypes) {
   const [id] = useState(useParams().id),
     [url, setUrl] = useState(""),
     [page, setPage] = useState(null),
@@ -105,6 +109,9 @@ function ProjectDetails({mode}) {
             classes="page-not-found"
             tab="Page not found"
             mode={mode}
+            enlargeWindow
+            closeWindow
+            pageLink
           >
             <div className="error-page">
               <div className="error-page__content">
@@ -174,6 +181,8 @@ function ProjectDetails({mode}) {
                   closeWindow={true}
                   tab={url === "about" ? aboutPage.tab : page.tab}
                   mode={mode}
+                  enlargeWindow
+                  pageLink
                 >
                   <div className={`${"project-details"} ${url}`} id={`${id}`}>
                     <div className="project-details__header">
