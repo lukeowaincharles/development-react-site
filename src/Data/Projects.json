@@ -13,7 +13,7 @@
     "alias": "saveourwildisles.org.uk",
     "stack": "Prismic, Amplify, Next.js, Typescript",
     "section_2_text": [
-      "Using Prismic, Next.js and Typescript allowed us to build a component based website very quickly.",
+      "Using Prismic, Next.js and Typescript we were able to quickly build a component based website.",
       "This was the first project that I had built using Typescript and after the initial steep learning curve, I settled into the build which was both fun and challenging."
     ],
     "section_2_image": "/images/wild-isles-section-2.png",
