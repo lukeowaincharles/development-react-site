@@ -7,19 +7,19 @@
     "logo": "/images/wildisles.svg",
     "headline": "",
     "section_1_title": "Creating an informative and sleek component based site to accompany the new BBC series",
-    "section_1_text": "Showcasing what the UK's Wild Isles have to offer and highlight why they are worth saving.",
+    "section_1_text": "WWF, RSPB and National Trust asked Catch to create a site to accompany the TV series to help showcase what the UK's Wild Isles have to offer and highlight why they are worth saving.",
     "section_1_image": "/images/wild-isles-section-1.png",
     "live_site": "https://www.saveourwildisles.org.uk",
     "alias": "saveourwildisles.org.uk",
     "stack": "Prismic, Amplify, Next.js, Typescript",
     "section_2_text": [
       "Using Prismic, Next.js and Typescript allowed us to build a component based website very quickly.",
-      "This was the first project that I had built using Typescript which was both fun and challenging, but after a steep learning curve I settled into the build."
+      "This was the first project that I had built using Typescript and after the initial steep learning curve, I settled into the build which was both fun and challenging."
     ],
     "section_2_image": "/images/wild-isles-section-2.png",
     "section_3_text": [
       "Being the primary frontend developer my role was to build out and style the components that would be used across the site. Closely talking with the backend developers to drive the project forward.",
-      "Each step of the build I made sure to think about the maintainability of the site and where possible broke down components into smaller more manageable chunks, reusing parts where I could - reducing repeated code."
+      "Each step of the build I made sure to think about the maintainability of the site and where possible breaking down components into smaller more manageable chunks, reusing parts where I could - reducing repeated code."
     ],
     "section_3_image": "/images/wild-isles-section-3.png",
     "section_4_text": [
