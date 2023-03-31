@@ -22,6 +22,34 @@
     "whatyoudchange": ""
   },
   {
+    "url": "hiscox",
+    "tab": "Hiscox case study",
+    "image": "/images/portfolio-hiscox.png",
+    "icon": "folder folder--shortcut",
+    "logo": "/images/hiscox-logo.svg",
+    "headline": "Drupal 8 website redesign and build for Business Insurance.",
+    "section_1_title": "Hiscox’s lead web development agency for the UK and Europe",
+    "section_1_text": "Hiscox has been a long-standing partnership spanning 6 years of projects. I worked with backend developers and the product owner to update their business insurance quotation tool.",
+    "section_1_image": "/images/hiscox-section-1.png",
+    "live_site": "https://www.hiscox.co.uk/business-insurance",
+    "alias": "hiscox.co.uk/business-insurance",
+    "stack": "Drupal 8, Twig, SCSS, jQuery",
+    "section_2_text": [
+      "Taking an agile approach to the project, we used 10 sprint rounds to rebuild components to reflect the new design and to test the build for launch.",
+      "To ensure a smooth sprint journey, I often spoke with the client to manage expectations around output and to understand the visual requirements needed for the brochureware site and the quoting tool."
+    ],
+    "section_2_image": "/images/hiscox-section-2.png",
+    "section_3_text": [
+      "As part of the frontend development team, my core role focused on styling components to a high level that matched the designs supplied.",
+      "I was also tasked with ensuring that the interactions on the quotation tool helped users feel confident that their quote was being processed and trust the figures generated."
+    ],
+    "section_3_image": "/images/hiscox-section-3.png",
+    "section_4_text": [
+      "After several months of work, we successfully launched the new microsite and quotation tool. We received positive feedback from the client, which has resulted in us continuing our long term engagement with Hiscox."
+    ],
+    "section_4_image": "/images/hiscox-section-4.png"
+  },
+  {
     "url": "run-digital",
     "image": "",
     "icon": "",
