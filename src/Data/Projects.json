@@ -19,7 +19,7 @@
     "section_2_image": "/images/wild-isles-section-2.png",
     "section_3_text": [
       "Being the primary frontend developer my role was to build out and style the components that would be used across the site. Closely talking with the backend developers to drive the project forward.",
-      "Each step of the build I made sure to think about the maintainability of the site and where possible broke down components into smaller more manageable chunks, reusing parts where I could - reducing repeated code"
+      "Each step of the build I made sure to think about the maintainability of the site and where possible broke down components into smaller more manageable chunks, reusing parts where I could - reducing repeated code."
     ],
     "section_3_image": "/images/wild-isles-section-3.png",
     "section_4_text": [
