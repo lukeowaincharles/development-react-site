@@ -1,5 +1,37 @@
 [
   {
+    "url": "wildisles",
+    "tab": "Save Our Wild Isles case study",
+    "image": "/images/portfolio-silverstone.png",
+    "icon": "folder folder--shortcut",
+    "logo": "/images/wildisles.svg",
+    "headline": "Creating an informative and sleek component based site to accompany the BBC series.",
+    "section_1_title": "Providing an online hub of information to support the Wild Isles series",
+    "section_1_text": [
+      "We are at risk of losing the beautiful nature of the British Isles. But there is still time to save it. To support the BBC Wild Isles mission, Catch Digital worked with WWF, RSPB and National Trust to design and build a website that would showcase what the British Wild Isles have to offer and highlight why they are worth saving."
+    ],
+    "section_1_image": "/images/wild-isles-section-1.png",
+    "live_site": "https://www.saveourwildisles.org.uk",
+    "alias": "saveourwildisles.org.uk",
+    "stack": "Prismic, Amplify, Next.js, Typescript",
+    "section_2_text": [
+      "Speed was an important factor for this build as the air date of the series gave the project a hard deadline. The site needed to be live and bug free before the tv series released.",
+      "Using Prismic, Next.js and Typescript we were able to quickly build a component based website.",
+      "Typescript was new to me, and gave a steep learning curve to start with but being a quick learner and asking questions when needed meant this didn't impact the deadline."
+    ],
+    "section_2_image": "/images/wild-isles-section-2.png",
+    "section_3_text": [
+      "As the primary frontend developer I established a solid foundation to the website and project by building out a component based system. This systematic approach meant styled components could be consistently used across the site.",
+      "A core part of my approach was to ensure maintainability of the site and where possible breaking down components into smaller more manageable chunks, reusing parts where I could - reducing repeated code."
+    ],
+    "section_3_image": "/images/wild-isles-section-3.png",
+    "section_4_text": [
+      "In just 6 short weeks the site was ready to go live alongside the anticipated new series aired on the BBC.",
+      "Myself and Catch received great feedback from the client, who were extremely happy with the work we had produced in a short space of time."
+    ],
+    "section_4_image": "/images/wild-isles-section-4.png"
+  },
+  {
     "url": "silverstone",
     "tab": "Silverstone case study",
     "image": "/images/portfolio-silverstone.png",
@@ -54,33 +86,5 @@
       "Since launching the new JM Finn brand and website, they have won new business and multiple industry awards. We attribute this not to just their great offering but also their industry challenging rebrand and speedy, informative, and functional website."
     ],
     "section_4_image": "/images/jmfinn-section-4.png"
-  },
-  {
-    "url": "hiscox",
-    "tab": "Hiscox case study",
-    "image": "/images/portfolio-hiscox.png",
-    "icon": "folder folder--shortcut",
-    "logo": "/images/hiscox-logo.svg",
-    "headline": "Drupal 8 website redesign and build for Business Insurance.",
-    "section_1_title": "Hiscox’s lead web development agency for the UK and Europe",
-    "section_1_text": "Hiscox has been a long-standing partnership spanning 6 years of projects. I worked with backend developers and the product owner to update their business insurance quotation tool.",
-    "section_1_image": "/images/hiscox-section-1.png",
-    "live_site": "https://www.hiscox.co.uk/business-insurance",
-    "alias": "hiscox.co.uk/business-insurance",
-    "stack": "Drupal 8, Twig, SCSS, jQuery",
-    "section_2_text": [
-      "Taking an agile approach to the project, we used 10 sprint rounds to rebuild components to reflect the new design and to test the build for launch.",
-      "To ensure a smooth sprint journey, I often spoke with the client to manage expectations around output and to understand the visual requirements needed for the brochureware site and the quoting tool."
-    ],
-    "section_2_image": "/images/hiscox-section-2.png",
-    "section_3_text": [
-      "As part of the frontend development team, my core role focused on styling components to a high level that matched the designs supplied.",
-      "I was also tasked with ensuring that the interactions on the quotation tool helped users feel confident that their quote was being processed and trust the figures generated."
-    ],
-    "section_3_image": "/images/hiscox-section-3.png",
-    "section_4_text": [
-      "After several months of work, we successfully launched the new microsite and quotation tool. We received positive feedback from the client, which has resulted in us continuing our long term engagement with Hiscox."
-    ],
-    "section_4_image": "/images/hiscox-section-4.png"
   }
 ]
