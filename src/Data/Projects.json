@@ -5,25 +5,29 @@
     "image": "/images/portfolio-silverstone.png",
     "icon": "folder folder--shortcut",
     "logo": "/images/wildisles.svg",
-    "headline": "",
-    "section_1_title": "Creating an informative and sleek component based site to accompany the new BBC series",
-    "section_1_text": "WWF, RSPB and National Trust asked Catch to create a site to accompany the TV series to help showcase what the UK's Wild Isles have to offer and highlight why they are worth saving.",
+    "headline": "Creating an informative and sleek component based site to accompany the BBC series.",
+    "section_1_title": "Providing an online hub of information to support the Wild Isles series",
+    "section_1_text": [
+      "We are at risk of losing the beautiful nature of the British Isles. But there is still time to save it. To support the BBC Wild Isles mission, Catch Digital worked with WWF, RSPB and National Trust to design and build a website that would showcase what the British Wild Isles have to offer and highlight why they are worth saving."
+    ],
     "section_1_image": "/images/wild-isles-section-1.png",
     "live_site": "https://www.saveourwildisles.org.uk",
     "alias": "saveourwildisles.org.uk",
     "stack": "Prismic, Amplify, Next.js, Typescript",
     "section_2_text": [
+      "Speed was an important factor for this build as the air date of the series gave the project a hard deadline. The site needed to be live and bug free before the tv series released.",
       "Using Prismic, Next.js and Typescript we were able to quickly build a component based website.",
-      "This was the first project that I had built using Typescript and after the initial steep learning curve, I settled into the build which was both fun and challenging."
+      "Typescript was new to me, and gave a steep learning curve to start with but being a quick learner and asking questions when needed meant this didn't impact the deadline."
     ],
     "section_2_image": "/images/wild-isles-section-2.png",
     "section_3_text": [
-      "Being the primary frontend developer my role was to build out and style the components that would be used across the site. Closely talking with the backend developers to drive the project forward.",
-      "Each step of the build I made sure to think about the maintainability of the site and where possible breaking down components into smaller more manageable chunks, reusing parts where I could - reducing repeated code."
+      "As the primary frontend developer I established a solid foundation to the website and project by building out a component based system. This systematic approach meant styled components could be consistently used across the site.",
+      "A core part of my approach was to ensure maintainability of the site and where possible breaking down components into smaller more manageable chunks, reusing parts where I could - reducing repeated code."
     ],
     "section_3_image": "/images/wild-isles-section-3.png",
     "section_4_text": [
-      "Around 6 weeks of development the site was ready to go live alongside the anticipated new series aired on the BBC. We recieved great feedback from the client, who were extremely happy with the work we had produced in a short space of time."
+      "In just 6 short weeks the site was ready to go live alongside the anticipated new series aired on the BBC.",
+      "Myself and Catch received great feedback from the client, who were extremely happy with the work we had produced in a short space of time."
     ],
     "section_4_image": "/images/wild-isles-section-4.png"
   },

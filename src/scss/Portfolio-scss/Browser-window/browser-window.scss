@@ -289,6 +289,13 @@
         z-index: 0;
       }
 
+      h2,
+      .projects__title {
+        font-size: rem(20px);
+        margin-bottom: 24px;
+        max-width: 300px;
+      }
+
       .btn {
         background-color: $wildisles-yellow;
         border: $wildisles-yellow;
