@@ -16,11 +16,5 @@
     "title": "Contact",
     "icon": "gmail",
     "target": "_blank"
-  },
-  {
-    "link": "archive",
-    "title": "Archive",
-    "icon": "bin",
-    "target": "_self"
   }
 ]

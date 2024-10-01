@@ -2,17 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import ProjectDetails from "./components/Portfolio/Projects/ProjectDetails";
 import "./App.scss";
-import PageLoader from "./components/Archive/PageLoader";
 import Header from "./components/Portfolio/Header/Header";
 import { Container, Row, Col } from "react-bootstrap";
-import BrowserWindow from "./components/Portfolio/Browser/BrowserWindow";
 import PortfolioProjects from "./components/Portfolio/Projects/PortfolioProjects";
 import AboutMe from "./components/Portfolio/About/AboutMe";
 import AppFolder from "./components/Portfolio/AppFolder/AppFolder";
 import Taskbar from "./components/Portfolio/Taskbar/Taskbar";
 import useWindowWidth from "./components/Portfolio/Utilities/WindowWidth";
-import ArchiveSiteDesktop from "./assets/images/archive-site--desktop.png";
-import ArchiveSiteMobile from "./assets/images/archive-site--mobile.png";
 import CookieConsentBanner from "./components/Portfolio/Utilities/CookieConsentBanner/CookieConsentBanner";
 import { AnimatePresence } from "framer-motion";
 // import DarkModeSwitch from "./components/Portfolio/Utilities/DarkModeSwitch/DarkModeSwitch";
@@ -95,28 +91,6 @@ function App() {
                   <Taskbar />
                 </Container>
               </div>
-            )}
-          />
-          <Route
-            exact
-            path="/archive"
-            render={() => (
-              <BrowserWindow
-                hasDrag={false}
-                classes="browser-window--archive"
-                tab="Archived web site"
-                closeWindow={true}
-                mode={mode}
-              >
-                <div className="archived">
-                  <PageLoader />
-                  {width >= 992 ? (
-                    <img src={ArchiveSiteDesktop} alt="" />
-                  ) : (
-                    <img src={ArchiveSiteMobile} alt="" />
-                  )}
-                </div>
-              </BrowserWindow>
             )}
           />
           <Route
