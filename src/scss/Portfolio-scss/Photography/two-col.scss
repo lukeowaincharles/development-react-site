@@ -1,0 +1,15 @@
+.two-col,
+.two-col-media {
+  padding: rem(48px) 0;
+}
+
+.two-col-media {
+  &.dark {
+    background-color: $grey-800;
+    color: $white;
+  }
+
+  img {
+    border-radius: rem(15px);
+  }
+}
