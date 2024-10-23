@@ -12,6 +12,18 @@ body {
   color: $white;
   -webkit-font-smoothing: antialiased;
 
+  &.photo-app {
+    color: black;
+    @include gradient(0deg, $photo);
+
+    header {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      padding: rem(16px) 0;
+    }
+  }
+
   &.light {
     @include gradient(168.46deg, $bodyGradLight);
   }

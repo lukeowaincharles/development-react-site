@@ -12,6 +12,7 @@ import useWindowWidth from "./components/Portfolio/Utilities/WindowWidth";
 import CookieConsentBanner from "./components/Portfolio/Utilities/CookieConsentBanner/CookieConsentBanner";
 import { AnimatePresence } from "framer-motion";
 // import DarkModeSwitch from "./components/Portfolio/Utilities/DarkModeSwitch/DarkModeSwitch";
+import PhotoDetails from "./components/Portfolio/Photo/PhotoDetails";
 
 function App() {
   const width = useWindowWidth(),
@@ -36,6 +37,13 @@ function App() {
         ? "dark"
         : "light"
     );
+
+    const onPhotoApp = () => {
+      if (location.pathname === "/photography") {
+        document.body.classList.add("photo-app")
+      }
+    }
+    onPhotoApp()
 
     // Remove the listener
     return () => {
@@ -92,6 +100,13 @@ function App() {
                 </Container>
               </div>
             )}
+          />
+          <Route 
+            exact
+            path="/photography"
+            location={location}
+            mode={mode}
+            render={() => <PhotoDetails mode={mode} />}
           />
           <Route
             exact
