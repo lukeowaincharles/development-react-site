@@ -2,6 +2,10 @@
   background-color: $off-white;
   padding: rem(48px) 0 rem(80px);
 
+  &__eyebrow {
+    margin-bottom: rem(8px);
+  }
+
   img {
     border-radius: rem(15px);
   }

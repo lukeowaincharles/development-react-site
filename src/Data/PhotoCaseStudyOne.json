@@ -8,6 +8,12 @@
       {
         "title": "",
         "text": "",
+        "image": "../../../images/IN1A2936.jpg",
+        "imageAlt": "St Andrews Links Clubhouse morning sunlight"
+      },
+      {
+        "title": "",
+        "text": "",
         "image": "../../../images/IN1A3571.jpg",
         "imageAlt": "Golfer on St Andrews Jubilee course approach shot"
       },
@@ -26,32 +32,14 @@
       {
         "title": "",
         "text": "",
-        "image": "../../../images/IN1A2936.jpg",
-        "imageAlt": "St Andrews Links Clubhouse morning sunlight"
-      },
-      {
-        "title": "",
-        "text": "",
         "image": "../../../images/IN1A2947.jpg",
         "imageAlt": "The Himalayas, St Andrews in morning sunlight"
       },
       {
         "title": "",
         "text": "",
-        "image": "../../../images/IN1A2953.jpg",
-        "imageAlt": "Flag with course and landscape in background sunny morning"
-      },
-      {
-        "title": "",
-        "text": "",
         "image": "../../../images/IN1A2955.jpg",
         "imageAlt": "St Andrews Links Collegiate golf banner"
-      },
-      {
-        "title": "",
-        "text": "",
-        "image": "../../../images/IN1A3572.jpg",
-        "imageAlt": "Golfer approach shot with divot flying through the air"
       },
       {
         "title": "",
@@ -68,6 +56,18 @@
       {
         "title": "",
         "text": "",
+        "image": "../../../images/IN1A2953.jpg",
+        "imageAlt": "Flag with course and landscape in background sunny morning"
+      },
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A5937.jpg",
+        "imageAlt": "Lone flag with part of the landscape showing"
+      },
+      {
+        "title": "",
+        "text": "",
         "image": "../../../images/IN1A5733.jpg",
         "imageAlt": "Golfer walking with caddy holding umbrella"
       },
@@ -80,8 +80,14 @@
       {
         "title": "",
         "text": "",
-        "image": "../../../images/IN1A5937.jpg",
-        "imageAlt": "Lone flag with part of the landscape showing"
+        "image": "../../../images/IN1A6012.jpg",
+        "imageAlt": "Golfer and caddy discussing tee shot"
+      },
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A6026.jpg",
+        "imageAlt": "Golfer and caddy walking the fairway"
       }
     ]
   }

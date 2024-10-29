@@ -42,7 +42,7 @@ function TwoColMedia({
           <Col md={{ span: "6", order: layout }}>
             {eyebrow && (
               <div>
-                <span>{eyebrow}</span>
+                <span className="two-col-media__eyebrow">{eyebrow}</span>
               </div>
             )}
             {title && <h2>{title}</h2>}

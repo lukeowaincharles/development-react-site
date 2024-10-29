@@ -24,8 +24,8 @@ function CarouselBlock({
     });
   }, []);
 
-  let width = "643",
-    height = "429";
+  let width = "709",
+    height = "473";
 
   if (orientation === "portrait") {
     width = "429";
@@ -56,9 +56,7 @@ function CarouselBlock({
           <Col md="4">
             <div className="carousel-block__content">
               {eyebrow && (
-                <div>
-                  <span>{eyebrow}</span>
-                </div>
+                <p className="carousel-block__eyebrow">{eyebrow}</p>
               )}
               {title && <h2>{title}</h2>}
               {description &&
