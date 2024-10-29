@@ -44,3 +44,17 @@ a {
     color: $brand-mid-purple;
   }
 }
+
+.photo {
+  .btn {
+    &.dark {
+      background-color: $grey-900;
+      border-color: $grey-900;
+
+      &:hover {
+        background-color: $white;
+        color: $grey-900;
+      }
+    }
+  }
+}

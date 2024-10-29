@@ -3,10 +3,63 @@
     "url": "photography",
     "tab": "Photography",
     "title": "Capturing beautiful moments through the lens",
-   
-    "intro": "Hello",
+
+    "intro": "",
     "description": [
-      "Hey I am Luke..."
+      "As a passionate golf photographer, I am dedicated to capturing the beauty and excitement of the game. My goal is to create images that evoke the spirit and elegance of golf. Whether it's the serene landscapes or the dynamic action of a golfer's swing.",
+      "With a keen eye for detail and a love for this beautiful sport, I've honed my craft to produce high-quality photographs that tell a story.",
+      "If you're a golfer, club, society or brand looking for exceptional photography to showcase your golf experience in a unique and memorable way, please click the button below."
+    ],
+    "portraitImages": [
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A2303.jpg",
+        "imageAlt": "Golfer tee shot at Sunningdale Heath",
+        "orientation": "portrait"
+      },
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A2312.jpg",
+        "imageAlt": "Golfer walking along fairway",
+        "orientation": "portrait"
+      },
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A2331.jpg",
+        "imageAlt": "Golfer making a putt in the pouring rain",
+        "orientation": "portrait"
+      },
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A2798.jpg",
+        "imageAlt": "'Samaritan' John catching a golf ball",
+        "orientation": "portrait"
+      },
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A5719.jpg",
+        "imageAlt": "Golfer hitting tee shot with driver",
+        "orientation": "portrait"
+      },
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A5720.jpg",
+        "imageAlt": "Golfer hitting tee shot with driver complete, ball flying through the air",
+        "orientation": "portrait"
+      },
+      {
+        "title": "",
+        "text": "",
+        "image": "../../../images/IN1A5945.jpg",
+        "imageAlt": "Golfer Tee shot with iron",
+        "orientation": "portrait"
+      }
     ],
 
     "image": "",

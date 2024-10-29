@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ButtonPrimaryExt from "../Portfolio/Utilities/ButtonExternal";
 
 function TwoColText({
   eyebrow,
@@ -8,7 +9,17 @@ function TwoColText({
   contentOne,
   contentTwo,
   layout,
+  buttonLink,
+  buttonTitle,
+  buttonClasses,
+  buttonLinkTwo,
+  buttonTitleTwo,
+  buttonClassesTwo
 }) {
+  function isString(variable) {
+    return typeof variable === "string";
+  }
+
   return (
     <section className={`${"two-col"}${classes}`}>
       <Container>
@@ -20,10 +31,22 @@ function TwoColText({
               </div>
             )}
             {title && <h2>{title}</h2>}
-            <p>{contentOne}</p>
+            {contentOne && isString(contentOne) === false ? (
+              contentOne.map((paragraph, i) => (
+                <p key={i}>{JSON.parse(JSON.stringify(paragraph))}</p>
+              ))
+            ) : (
+              <p>{contentOne}</p>
+            )}
+            {buttonLink && <ButtonPrimaryExt link={`${buttonLink}`} title={`${buttonTitle}`} classes={`${buttonClasses}`} />}
           </Col>
           <Col>
-            <p>{contentTwo}</p>
+            {contentTwo && isString(contentTwo) === false ? (
+              contentTwo.map((paragraph, i) => <p key={i}>{JSON.parse(JSON.stringify(paragraph))}</p>)
+            ) : (
+              <p>{contentTwo}</p>
+            )}
+            {buttonLinkTwo && <ButtonPrimaryExt link={`${buttonLinkTwo}`} title={`${buttonTitleTwo}`} classes={`${buttonClassesTwo}`} />}
           </Col>
         </Row>
       </Container>
