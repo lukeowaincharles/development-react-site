@@ -11,6 +11,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  .container {
+    position: relative;
+    height: 100%;
+  }
+
   &__content {
     position: absolute;
     z-index: 1;

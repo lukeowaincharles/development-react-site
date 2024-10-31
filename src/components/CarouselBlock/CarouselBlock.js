@@ -20,6 +20,15 @@ function CarouselBlock({
         startAt: 0,
         perView: 1.5,
         type: "slider",
+        breakpoints: {
+          1200: {
+            perView: 1.5
+          },
+          768: {
+            perView: 1,
+            gap: 16,
+          },
+        },
       }).mount();
     });
   }, []);
@@ -53,66 +62,63 @@ function CarouselBlock({
     <section className={`${"carousel-block"}${classes}`}>
       <Container>
         <Row>
-          <Col md="4">
+          <Col xl="4">
             <div className="carousel-block__content">
-              {eyebrow && (
-                <p className="carousel-block__eyebrow">{eyebrow}</p>
-              )}
+              {eyebrow && <p className="carousel-block__eyebrow">{eyebrow}</p>}
               {title && <h2>{title}</h2>}
               {description &&
                 description.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
             </div>
           </Col>
-          </Row>
-          </Container>
-            <div className="glide-container">
-              <div className="glide">
-                <div className="glide__track" data-glide-el="track">
-                  <ul className="glide__slides">{CAROUSELCONTENT}</ul>
-                </div>
-                <div className="glide__arrows" data-glide-el="controls">
-                  <button
-                    className="glide__arrow glide__arrow--prev"
-                    data-glide-dir="<"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      className="bi bi-chevron-left"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
-                      />
-                    </svg>
-                    <span className="visually-hidden">prev</span>
-                  </button>
-                  <button
-                    className="glide__arrow glide__arrow--next"
-                    data-glide-dir=">"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      className="bi bi-chevron-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                      />
-                    </svg>
-                    <span className="visually-hidden">next</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-        
+        </Row>
+      </Container>
+      <div className="glide-container">
+        <div className="glide">
+          <div className="glide__track" data-glide-el="track">
+            <ul className="glide__slides">{CAROUSELCONTENT}</ul>
+          </div>
+          <div className="glide__arrows" data-glide-el="controls">
+            <button
+              className="glide__arrow glide__arrow--prev"
+              data-glide-dir="<"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-chevron-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                />
+              </svg>
+              <span className="visually-hidden">prev</span>
+            </button>
+            <button
+              className="glide__arrow glide__arrow--next"
+              data-glide-dir=">"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+              <span className="visually-hidden">next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

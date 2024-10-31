@@ -89,6 +89,17 @@
           }
         }
       }
+
+      &__socials {
+        margin-top: rem(24px);
+
+        a {
+          &:hover,
+          &:active {
+            color: $grey-700;
+          }
+        }
+      }
     }
   }
 }

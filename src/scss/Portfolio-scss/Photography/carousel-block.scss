@@ -17,6 +17,7 @@
 
   .glide-container {
     margin-left: rem(16px);
+    margin-right: rem(16px);
     padding-block: rem(24px);
   }
 
@@ -41,41 +42,25 @@
 
 @include media-breakpoint-up(md) {
   .carousel-block {
-
-    .col-md-4 {
-      position: relative;
+    .glide-container {
+      margin-right: 0;
     }
+  }
+}
 
-    &__content {
-      position: absolute;
-    }
+@include media-breakpoint-up(xl) {
+  .carousel-block {
+    position: relative;
+    min-height: 600px;
 
     .glide-container {
       margin-left: 40%;
+      margin-right: 0;
       width: 60%;
-      height: 80%;
       padding-block: 0;
       padding-bottom: rem(24px);
-    }
-
-    .glide {
-      &__slide {
-        opacity: 0.3;
-        transition: opacity ease-in-out 400ms;
-
-        &--active {
-          opacity: 1;
-
-          .glide__content {
-            opacity: 1;
-          }
-        }
-      }
-
-      &__content {
-        opacity: 0;
-        transition: opacity ease-in-out 400ms;
-      }
+      position: absolute;
+      top: 48px;
     }
   }
 }
