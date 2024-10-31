@@ -56,4 +56,50 @@
       }
     }
   }
+
+  &--photo-page {
+    padding: 0;
+
+    .contact {
+      &__content {
+        @include gradient(0deg, $photoContact);
+        color: $white;
+        border-radius: 0;
+
+        .btn {
+          background-color: $white;
+          border-color: $white;
+          color: $grey-900;
+
+          svg {
+            path {
+              fill: $grey-900;
+            }
+          }
+
+          &:hover {
+            background-color: $grey-700;
+            color: $white;
+
+            svg {
+              path {
+                fill: $white;
+              }
+            }
+          }
+        }
+      }
+
+      &__socials {
+        margin-top: rem(24px);
+
+        a {
+          &:hover,
+          &:active {
+            color: $grey-700;
+          }
+        }
+      }
+    }
+  }
 }

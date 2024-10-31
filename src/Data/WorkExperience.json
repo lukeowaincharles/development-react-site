@@ -1,6 +1,6 @@
 [
   {
-    "job_role": "Frontend Developer",
+    "job_role": "Front End Developer",
     "logo": "/images/catch-logo.svg",
     "company": "Catch",
     "company_link": "https://www.catchdigital.com/",
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "job_role": "Lead Frontend Developer",
+    "job_role": "Lead Front End Developer",
     "logo": "/images/everything-connected-logo.png",
     "company": "Everything Connected",
     "company_link": "https://www.e-c.agency/",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "job_role": "Frontend Developer",
+    "job_role": "Front End Developer",
     "logo": "/images/like-digital-logo.png",
     "company": "Like Digital",
     "company_link": "https://like.digital/",
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "job_role": "Frontend Developer & Designer",
+    "job_role": "Front End Developer & Designer",
     "logo": "/images/run-logo.png",
     "company": "Run",
     "company_link": "https://rundigital.co.uk/",
@@ -46,7 +46,7 @@
     "experience": [
       "Working on a range of processes within the studio, focusing on the design and build of engaging and visually compelling websites with user-friendly UI that are cross-browser compatible and mobile responsive. Managing workflow and communication with technical and non technical clients, while projects run parallel. Also including design and building client emails.",
       "Maintaining a streamlined development process that improves efficiency and ensures a high quality and easy-to-manage end product.",
-      "Testing front-end code in multiple browsers to ensure cross-browser compatibility.",
+      "Testing front end code in multiple browsers to ensure cross-browser compatibility.",
       "Developing client brand standards as well as implementing company guidelines."
     ]
   }

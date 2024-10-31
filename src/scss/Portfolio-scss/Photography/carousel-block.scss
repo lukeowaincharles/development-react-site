@@ -1,0 +1,66 @@
+.carousel-block {
+  background-color: $off-white;
+  padding: rem(48px) 0 rem(80px);
+
+  &__eyebrow {
+    margin-bottom: rem(8px);
+  }
+
+  img {
+    border-radius: rem(15px);
+  }
+
+  &.dark {
+    background-color: $grey-800;
+    color: $white;
+  }
+
+  .glide-container {
+    margin-left: rem(16px);
+    margin-right: rem(16px);
+    padding-block: rem(24px);
+  }
+
+  .glide {
+    &__arrows {
+      position: relative;
+      left: 0;
+      bottom: -45px;
+    }
+
+    &__arrow {
+      &--next {
+        left: 80px;
+      }
+
+      &:focus {
+        outline: 2px solid $brand-lighter-blue;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .carousel-block {
+    .glide-container {
+      margin-right: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .carousel-block {
+    position: relative;
+    min-height: 600px;
+
+    .glide-container {
+      margin-left: 40%;
+      margin-right: 0;
+      width: 60%;
+      padding-block: 0;
+      padding-bottom: rem(24px);
+      position: absolute;
+      top: 48px;
+    }
+  }
+}

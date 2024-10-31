@@ -12,6 +12,18 @@ body {
   color: $white;
   -webkit-font-smoothing: antialiased;
 
+  &.photo-app {
+    color: black;
+    @include gradient(0deg, $photo);
+
+    header {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      padding: rem(16px) 0;
+    }
+  }
+
   &.light {
     @include gradient(168.46deg, $bodyGradLight);
   }
@@ -30,5 +42,19 @@ a {
   &:hover,
   &:active {
     color: $brand-mid-purple;
+  }
+}
+
+.photo {
+  .btn {
+    &.dark {
+      background-color: $grey-900;
+      border-color: $grey-900;
+
+      &:hover {
+        background-color: $white;
+        color: $grey-900;
+      }
+    }
   }
 }

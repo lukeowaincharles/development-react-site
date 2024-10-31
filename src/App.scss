@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 @import "./scss/Portfolio-scss/Portfolio-components.scss";
 
 @import "./scss/site-components/pageloader.scss";
