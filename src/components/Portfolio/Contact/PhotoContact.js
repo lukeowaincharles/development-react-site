@@ -19,7 +19,7 @@ function PhotoContact() {
           Send me an email
         </a>
         <div className="contact__socials">
-          <a href="https://www.instagram.com/lukecharlesphoto/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/lukecharlesphoto/" target="_blank" rel="noopener noreferrer" aria-label="Follow me on instagram">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
