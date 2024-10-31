@@ -1,12 +1,10 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import PhotoHero from "./PhotoHero";
 import PhotoData from "../../../Data/Photography.json";
 import PhotoCaseStudyOne from "../../../Data/PhotoCaseStudyOne.json";
-// import TwoColText from "../../TwoCol/TwoColText";
 import TwoColMedia from "../../TwoCol/TwoColMedia";
 import PhotoContact from "../Contact/PhotoContact";
 import CarouselBlock from "../../CarouselBlock/CarouselBlock";
-// import { motion } from "framer-motion";
 
 function PhotoDetails() {
   const PHOTOCONTENT = PhotoData,
@@ -16,22 +14,9 @@ function PhotoDetails() {
     DESC = PHOTOCONTENT[0].description,
     SLIDES = PHOTOCASESTUDYONE[0].slides;
 
-  // hero component - move to own file? Yes
-  const HeroPhoto = () => {
-    return (
-      <section className="photo-hero">
-        <Container>
-          <div className="photo-hero__content">
-            <h1>{PHOTOCONTENT[0].title}</h1>
-          </div>
-        </Container>
-      </section>
-    );
-  };
-
   return (
     <div className="photo">
-      <HeroPhoto />
+      <PhotoHero title={PHOTOCONTENT[0].title} />
 
       <TwoColMedia
         title=""
@@ -45,24 +30,8 @@ function PhotoDetails() {
         buttonClasses="dark"
       />
 
-      {/* <TwoColMedia
-        title="Title here"
-        classes=""
-        layout="first"
-        contentOne=""
-        mediaTwo="../../../images/IN1A3571.jpg"
-        altTwo="image alt"
-      /> */}
-
       <CarouselBlock eyebrow="Showcase" title={CASESTUDYONETITLE} description={CASESTUDYONEDESC} classes=" dark" content={SLIDES} />
 
-      {/* <TwoColText
-        title="Some more content to break up the page?"
-        classes=""
-        layout="last"
-        contentOne=""
-        contentTwo=""
-      /> */}
       <PhotoContact />
     </div>
   );
