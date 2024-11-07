@@ -27,9 +27,6 @@ function PhotoGallery({ title, description, images }) {
       height = "477";
     }
 
-    console.log(image.orientation);
-    
-
     return (
       <div className="photo-gallery__grid-image" key={i}>
         <Button onClick={() => handleShow(image.id)}>
