@@ -16,5 +16,11 @@
     "title": "Contact",
     "icon": "gmail",
     "target": "_blank"
+  },
+  {
+    "link": "/photography",
+    "title": "Golf Photography page",
+    "icon": "camera",
+    "target": "_self"
   }
 ]
