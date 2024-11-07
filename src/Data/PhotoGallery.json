@@ -8,49 +8,56 @@
         "title": "",
         "text": "",
         "image": "../../../images/IN1A3850-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer holding the flag | Luke Charles Photographer"
+        "imageAlt": "Golfer holding the flag | Luke Charles Photographer",
+        "orientation": "portrait"
       },
       {
         "id": 1,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2312-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer walking a fairway at Sunningdale Heath | Luke Charles Photographer"
+        "imageAlt": "Golfer walking a fairway at Sunningdale Heath | Luke Charles Photographer",
+        "orientation": "portrait"
       },
       {
         "id": 2,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2331-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer holing a putt in the rain | Luke Charles Photographer"
+        "imageAlt": "Golfer holing a putt in the rain | Luke Charles Photographer",
+        "orientation": "portrait"
       },
       {
         "id": 3,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A3842-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Tee shot follow through in black and white on the Old Course, St Andrews | Luke Charles Photographer"
+        "imageAlt": "Golfer walking across green looking back, St Andrews | Luke Charles Photographer",
+        "orientation": "landscape"
       },
       {
         "id": 4,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2798-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer catching ball in contemplation | Luke Charles Photographer"
+        "imageAlt": "Golfer catching ball in contemplation | Luke Charles Photographer",
+        "orientation": "portrait"
       },
       {
         "id": 5,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A3941-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer reading the green | Luke Charles Photographer"
+        "imageAlt": "Golfer reading the green | Luke Charles Photographer",
+        "orientation": "landscape"
       },
       {
         "id": 6,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A5719-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Tee shot in black and white on the Old Course, St Andrews | Luke Charles Photographer"
+        "imageAlt": "Tee shot in black and white on the Old Course, St Andrews | Luke Charles Photographer",
+        "orientation": "portrait"
       },
 
       {
@@ -58,63 +65,72 @@
         "title": "",
         "text": "",
         "image": "../../../images/IN1A5945-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer tee shot with iron in black and white at the Old Course, St Andrews | Luke Charles Photographer"
+        "imageAlt": "Golfer tee shot with iron in black and white at the Old Course, St Andrews | Luke Charles Photographer",
+        "orientation": "portrait"
       },
       {
         "id": 8,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2468-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer in the rain holing a putt | Luke Charles Photographer"
+        "imageAlt": "Golfer in the rain holing a putt | Luke Charles Photographer",
+        "orientation": "landscape"
       },
       {
         "id": 9,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2671-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Young deer in the heather on golf course | Luke Charles Photographer"
+        "imageAlt": "Young deer in the heather on golf course | Luke Charles Photographer",
+        "orientation": "portrait"
       },
       {
         "id": 10,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2693-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Four ball walking up the fairway towards the green | Luke Charles Photographer"
+        "imageAlt": "Four ball walking up the fairway towards the green | Luke Charles Photographer",
+        "orientation": "landscape"
       },
       {
         "id": 11,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2795-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfers walking to the green | Luke Charles Photographer"
+        "imageAlt": "Golfers walking to the green | Luke Charles Photographer",
+        "orientation": "landscape"
       },
       {
         "id": 12,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A3759-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer alone on the green putting | Luke Charles Photographer"
+        "imageAlt": "Golfer alone on the green putting | Luke Charles Photographer",
+        "orientation": "landscape"
       },
       {
         "id": 13,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A3242-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfer and caddy walking the fairway | Luke Charles Photographer"
+        "imageAlt": "Golfer and coach talking before round | Luke Charles Photographer",
+        "orientation": "landscape"
       },
       {
         "id": 14,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2303-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Tee shot in the rain at Sunningdale Heath | Luke Charles Photographer"
+        "imageAlt": "Tee shot in the rain at Sunningdale Heath | Luke Charles Photographer",
+        "orientation": "portrait"
       },
       {
         "id": 15,
         "title": "",
         "text": "",
         "image": "../../../images/IN1A2634-luke-charles-photographer-frontend-developer.jpg",
-        "imageAlt": "Golfers tee shot with driver | Luke Charles Photographer"
+        "imageAlt": "Golfers tee shot with driver | Luke Charles Photographer",
+        "orientation": "landscape"
       }
     ]
   }

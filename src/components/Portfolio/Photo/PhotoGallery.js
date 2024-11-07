@@ -19,10 +19,27 @@ function PhotoGallery({ title, description, images }) {
   };
 
   const MASONRYIMAGES = images.map((image, i) => {
+    let width = "318",
+      height = "212";
+
+    if (image.orientation === "portrait") {
+      width = "318";
+      height = "477";
+    }
+
+    console.log(image.orientation);
+    
+
     return (
       <div className="photo-gallery__grid-image" key={i}>
         <Button onClick={() => handleShow(image.id)}>
-          <img key={image.id} src={image.image} alt={image.imageAlt} />
+          <img
+            key={image.id}
+            src={image.image}
+            alt={image.imageAlt}
+            width={width}
+            height={height}
+          />
         </Button>
       </div>
     );
@@ -42,12 +59,14 @@ function PhotoGallery({ title, description, images }) {
           <Modal.Body>
             <Carousel activeIndex={activeImageIndex} onSelect={handleSelect}>
               {images.map((image, id) => {
-                
                 return (
                   <Carousel.Item key={id}>
                     <figure>
-                      <div className="photo-gallery__bg-image" key={id} style={{ backgroundImage: `url(${image.image})`}}></div>
-                      {/* <img key={id} src={image.image} alt={image.imageAlt} /> */}
+                      <div
+                        className="photo-gallery__bg-image"
+                        key={id}
+                        style={{ backgroundImage: `url(${image.image})` }}
+                      ></div>
                     </figure>
                   </Carousel.Item>
                 );
