@@ -81,23 +81,25 @@
 }
 
 .carousel-control-prev {
-  left: 40%;
+  left: 36%;
 }
 
 .carousel-control-next {
-  right: 40%;
+  right: 36%;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 7%;
+  width: 12%;
   top: auto;
   bottom: 45px;
 
   span {
     border: 2px solid rgba($white, 0.5);
     border-radius: rem(4px);
-    background-size: 80%;
+    background-size: 60%;
+    width: rem(40px);
+    height: rem(40px);
   }
 
   &:hover {
@@ -144,6 +146,7 @@
 
   .carousel-control-prev,
   .carousel-control-next {
+    width: 7%;
     top: 0;
     bottom: 0;
   }
