@@ -29,9 +29,8 @@ function PhotoGallery({ title, description, images }) {
 
     return (
       <div className="photo-gallery__grid-image" key={i}>
-        <Button onClick={() => handleShow(image.id)}>
+        <Button onClick={() => handleShow(i)}>
           <img
-            key={image.id}
             src={image.image}
             alt={image.imageAlt}
             width={width}
