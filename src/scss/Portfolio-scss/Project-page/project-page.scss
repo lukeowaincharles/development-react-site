@@ -361,6 +361,16 @@
     }
   }
 
+  &.ciu {
+    .projects__logo {
+      width: 100px;
+    }
+
+    .project-details__header {
+      background-color: $ciu-blue;
+    }
+  }
+
   &.hiscox {
     .projects__logo {
       width: 77px;
