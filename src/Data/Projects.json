@@ -32,6 +32,32 @@
     "section_4_image": "/images/wild-isles-section-4.png"
   },
   {
+    "url": "ciu",
+    "tab": "CIU case study",
+    "image": "/images/portfolio-silverstone.png",
+    "icon": "folder folder--shortcut",
+    "logo": "/images/ciu-logo.svg",
+    "headline": "Cyprus International University - People from 110 different countries brought together on one campus.",
+    "section_1_title": "A full rebuild to bring more cultures from the world to CIU",
+    "section_1_text": "Creating a diverse environment that enables a phenomenal opportunity for new experiences and learning.",
+    "section_1_image": "/images/ciu-section-1.png",
+    "live_site": "https://www.ciu.edu.tr/",
+    "alias": "ciu.edu.tr",
+    "stack": "Drupal 9, Twig, SCSS, Javascript",
+    "section_2_text": [
+      "Working in sprints to produce reusable page components for the client to give them flexibility to show off the programs they run at the university."
+    ],
+    "section_2_image": "/images/ciu-section-2.png",
+    "section_3_text": [
+      "Being the primary front end developer on this project I made sure to communicate with the designers, back end developers and project manager to make sure the project ran to the delivery timeline."
+    ],
+    "section_3_image": "/images/ciu-section-3.png",
+    "section_4_text": [
+      "A sleek new site that is functional and customisable using various components that the client can easily and quickly make new pages on the site with."
+    ],
+    "section_4_image": "/images/ciu-section-4.png"
+  },
+  {
     "url": "silverstone",
     "tab": "Silverstone case study",
     "image": "/images/portfolio-silverstone.png",
