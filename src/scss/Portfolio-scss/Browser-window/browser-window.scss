@@ -165,6 +165,26 @@
     }
   }
 
+  &.ciu {
+    @include media-breakpoint-up(lg) {
+      max-width: 360px;
+      top: 15px;
+      left: -30px;
+    }
+
+    .browser-window__content {
+      background-color: $ciu-blue;
+
+      .projects__title {
+        max-width: 100%;
+      }
+    }
+
+    .projects__logo {
+      width: 60px;
+    }
+  }
+
   &.jmfinn {
     @include media-breakpoint-up(lg) {
       max-width: 310px;
