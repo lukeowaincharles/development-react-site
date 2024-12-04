@@ -1,0 +1,15 @@
+.video-embed {
+  margin: rem(48px) 0;
+  position: relative;
+
+  &.dark {
+    background-color: $grey-800;
+    color: $white;
+    margin: 0;
+    padding: rem(48px) 0;
+  }
+
+  iframe {
+    aspect-ratio: 16 / 9;
+  }
+}
