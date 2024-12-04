@@ -7,6 +7,7 @@ import PhotoContact from "../Contact/PhotoContact";
 import CarouselBlock from "../../CarouselBlock/CarouselBlock";
 import PhotoGallery from "./PhotoGallery";
 import photoGalleryData from "../../../Data/PhotoGallery.json";
+import VideoEmbed from "./VideoEmbed";
 
 function PhotoDetails() {
   const PHOTOCONTENT = PhotoData,
@@ -42,10 +43,9 @@ function PhotoDetails() {
         content={SLIDES}
       />
 
-      <PhotoGallery
-        title={PHOTOGALLERYTITLE}
-        images={PHOTOGALLERYIMAGES}
-      />
+      <VideoEmbed videoId="oGKrOIkJVVs?si=utVjBKtwBqhx-JVv" />
+
+      <PhotoGallery title={PHOTOGALLERYTITLE} images={PHOTOGALLERYIMAGES} />
 
       <PhotoContact />
     </div>
