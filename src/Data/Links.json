@@ -18,9 +18,9 @@
     "target": "_blank"
   },
   {
-    "link": "/photography",
+    "link": "https://lukecharlesphotography.co.uk/",
     "title": "Golf Photography page",
     "icon": "camera",
-    "target": "_self"
+    "target": "_blank"
   }
 ]
