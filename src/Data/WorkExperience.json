@@ -5,6 +5,7 @@
     "company": "Catch",
     "company_link": "https://www.catchdigital.com/",
     "work_period": "January 2022 - September 2024",
+    "description": "A digital agency renowned for creating optimised websites for esteemed clients such as WWF, Freeview, YOTEL, BBC, and the University of Salford.",
     "experience": [
       "Building/maintaining/improving Drupal 9/10 sites as well as working on React builds",
       "Working on a range of clients - helping improve their sites by working through retainer tasks - focusing on accessibility and performance",
@@ -18,6 +19,7 @@
     "company": "Everything Connected",
     "company_link": "https://www.e-c.agency/",
     "work_period": "January 2019 - December 2021",
+    "description": "A branding and marketing agency serving high-profile clients, including Silverstone, JM Finn, and Hiscox. Delivered scalable and accessible Drupal 8/9 websites (both standard and headless implementations) while maintaining legacy systems for a diverse client portfolio.",
     "experience": [
       "Communicate with multi-disciplinary teams of developers, designers, account/project managers and clients on a daily basis",
       "Work with a variety of different languages",
@@ -32,6 +34,7 @@
     "company": "Like Digital",
     "company_link": "https://like.digital/",
     "work_period": "April 2018 - December 2018",
+    "description": "A digital agency specialising in large scale e-commerce websites, delivering both small and large features for various clients. Ensured cross-browser compatibility and maintained high coding standards across multiple projects.",
     "experience": [
       "Developing large ecommerce websites for a range of clients improving small and large features, testing multiple browsers and devices to ensure cross-browser compatibility of all new features. Writing maintainable code which is easy to read and understand, keeping a great standard of code across all clients.",
       "Maintaining great communication with the whole dev team and project managers to ensure sprints are completed on time.",
@@ -44,6 +47,7 @@
     "company": "Run",
     "company_link": "https://rundigital.co.uk/",
     "work_period": "May 2015 - April 2018",
+    "description": "A creative agency specialising in user-centric website design and development.",
     "experience": [
       "Working on a range of processes within the studio, focusing on the design and build of engaging and visually compelling websites with user-friendly UI that are cross-browser compatible and mobile responsive. Managing workflow and communication with technical and non technical clients, while projects run parallel. Also including design and building client emails.",
       "Maintaining a streamlined development process that improves efficiency and ensures a high quality and easy-to-manage end product.",

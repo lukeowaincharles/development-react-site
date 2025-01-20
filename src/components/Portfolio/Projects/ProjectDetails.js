@@ -59,6 +59,7 @@ function ProjectDetails({mode}) {
             </a>
           </h3>
           <p className="about__work-period">{item.work_period}</p>
+          {item.description && <p>{item.description}</p>}
           <ul className="about__work-list">
             {item.experience.map((listItem, index) => (
               <li key={index}>
